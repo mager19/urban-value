@@ -104,3 +104,61 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+/* estilos propios/*/
+
+body{
+	overflow-x:hidden;
+}
+
+header{
+	background-color: #f9f9f9;
+	color:$white;
+}
+
+section{
+	padding: 4em 0;
+}
+
+.video-container{
+	height: 75vh;
+	overflow: hidden;
+
+	z-index: -100;
+width:100%;
+
+overflow:hidden;
+position:relative;
+top:0;
+left:0;
+}
+
+video{
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	min-width: 100%;
+  	min-height: 100%;
+  	width: auto;
+  	height: auto;
+  	z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+.claim{
+	background-color: #f9f9f9;
+}
+
+.impacto{
+	background-color: #f5f5f5;
+	text-align: center;
+}
+
+.team{
+	background-color: #f9f9f9;
+	text-align: center;
+}
