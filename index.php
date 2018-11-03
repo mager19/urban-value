@@ -16,9 +16,26 @@ get_header();
 ?>
   
 <div class="slide__principal">
-    <div>your content</div>
-    <div>your content</div>
-    <div>your content</div>
+	<?php 
+	$args = array( 'pagename' => 'home');
+	$loop = new WP_Query( $args );
+
+
+	if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+		<?php $getSlideImage = get_field('slide_imagen'); ?>
+		<div class="slide_item" style="backgroud:url(<?php echo $getSlideImage['url']; ?>);">
+			your content
+		</div>
+
+	<!-- post -->
+	<?php endwhile; ?>
+	<!-- post navigation -->
+	<?php else: ?>
+	<!-- no posts found -->
+	<?php endif; ?>
+	
+    
+    
 </div>
 
 
