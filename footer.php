@@ -17,7 +17,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<div class="site-info">
+					<div class="site-info text-center">
 						footer
 					</div><!-- .site-info -->
 				</div>
