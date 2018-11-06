@@ -386,11 +386,35 @@ embed, iframe, object { max-width: 100%; }
 /* estilos propios/*/
 body { overflow-x: hidden; }
 
-header { background-color: #f9f9f9; color: #fff; }
+header { background-color: #333F48; padding: 1rem 0; color: #fff; position: relative; z-index: 2; }
+
+header .main-navigation { height: 100%; display: flex; justify-content: space-between; align-items: center; }
+
+header .main-navigation ul li { margin-left: 2rem; }
+
+header .main-navigation ul li a { color: #fff; font-size: 1.2rem; text-transform: uppercase; }
+
+header .main-navigation ul li a:visited { color: #fff; }
+
+iframe { width: 100%; height: 80vh; }
+
+.ytp-chrome-top { display: none !important; }
+
+.ytp-title { opacity: 0 !important; }
+
+.videoWrapper { position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 0; height: 0; margin-top: -4em; z-index: 1; }
+
+.videoWrapper .overlay { background: rgba(0, 0, 0, 0.4); position: absolute; z-index: 3; height: 100%; width: 100%; }
+
+.videoWrapper .video__info { position: absolute; z-index: 4; top: 33%; text-align: center; margin-left: auto; margin-right: auto; left: 0; right: 0; }
+
+.videoWrapper .video__info h1 { border: 8px solid #fff; color: #fff; font-size: 4em; padding: 1em; width: 50%; margin-left: 25%; }
+
+.videoWrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
 section { padding: 4em 0; }
 
-.video-container { height: 75vh; overflow: hidden; z-index: -100; width: 100%; overflow: hidden; position: relative; top: 0; left: 0; }
+.video-container { height: 92vh; overflow: hidden; z-index: -100; width: 101%; overflow: hidden; position: relative; top: 0; left: 0; }
 
 video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: 0; -ms-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
 

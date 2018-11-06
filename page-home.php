@@ -11,11 +11,17 @@
 
 get_header();?>
 
-<div class="video-container">
-  <video autoplay loop muted id="video-bg">
-    <source src="http://peterdoes.it/img/plane.mp4" type="video/mp4" />
-  </video>
+
+<div class="videoWrapper">
+	<div class="overlay"></div>
+    <iframe width="auto" height="auto" src="https://www.youtube.com/embed/<?php the_field('videohome') ?>?autoplay=1&rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&loop=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <div class="video__info">
+   		<h1><?php the_field( 'titulo_home' ); ?></h1>
+    	
+    </div>
 </div>
+
 
 <!-- claim -->
 <section class="claim">
