@@ -16,6 +16,8 @@ get_header();?>
 <div class="videoWrapper">
 	<div class="overlay"></div>
     <iframe width="auto" height="auto" src="https://www.youtube.com/embed/<?php the_field('videohome') ?>?autoplay=1&rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&loop=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- <iframe src="https://player.vimeo.com/video/156270370?background=1&autoplay=1&loop=1&byline=0&title=0"
+           frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
 
     <div class="video__info">
    		<h1><?php the_field( 'titulo_home' ); ?></h1>
@@ -34,27 +36,35 @@ get_header();?>
 			</div>
 
 			<div class="col-lg-3">
-				<img src="https://imgholder.ru/100x100/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-				<h3>titulo</h3>
-				<h4>Subtitulo</h4>
+				<div class="box">
+					<img src="https://imgholder.ru/100x100/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
+					<h3>titulo</h3>
+					<h4>Subtitulo</h4>
+				</div>
 			</div>
 
 			<div class="col-lg-3">
-				<img src="https://imgholder.ru/100x100/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-				<h3>titulo</h3>
-				<h4>Subtitulo</h4>
+				<div class="box">
+					<img src="https://imgholder.ru/100x100/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
+					<h3>titulo</h3>
+					<h4>Subtitulo</h4>
+				</div>
 			</div>
 
 			<div class="col-lg-3">
-				<img src="https://imgholder.ru/100x100/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-				<h3>titulo</h3>
-				<h4>Subtitulo</h4>
+				<div class="box">
+					<img src="https://imgholder.ru/100x100/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
+					<h3>titulo</h3>
+					<h4>Subtitulo</h4>
+				</div>
 			</div>
 
 			<div class="col-lg-3">
-				<img src="https://imgholder.ru/100x100/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-				<h3>titulo</h3>
-				<h4>Subtitulo</h4>
+				<div class="box">
+					<img src="https://imgholder.ru/100x100/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
+					<h3>titulo</h3>
+					<h4>Subtitulo</h4>
+				</div>
 			</div>
 
 			
@@ -78,15 +88,22 @@ get_header();?>
 
 			if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 				<div class="col-lg-4">
-					<div class="vehiculo__item" style="background-image:url(<?php the_post_thumbnail_url(); ?>); ">
-						<h3><?php 
-						$title_vehiculo = the_title(); 
-						_e($title_vehiculo , 'urbanvalue');
-						?>
-						</h3>
-						<?php the_content(); ?>
-						<a href="<?php the_permalink(); ?>">Ver Mas</a>
+					<div id="wrapper-postal">
+						<div id="postal">
+							<figure style="background-image:url(<?php the_post_thumbnail_url(); ?>); ">
+						<div class="vehiculo__item" >
+							<h3><?php 
+							$title_vehiculo = the_title(); 
+							_e($title_vehiculo , 'urbanvalue');
+							?>
+							</h3></div>
+							</figure>
+							<figure class="back">
+							<?php the_content(); ?>
+							<a href="<?php the_permalink(); ?>">Ver Mas</a>
+							</figure>
 						</div>
+					</div>
 				</div>
 				
 			<!-- post -->
