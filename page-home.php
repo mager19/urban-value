@@ -11,6 +11,7 @@
 
 get_header();?>
 
+<!-- _e()($variable , 'urban&value') -->
 
 <div class="videoWrapper">
 	<div class="overlay"></div>
@@ -18,7 +19,6 @@ get_header();?>
 
     <div class="video__info">
    		<h1><?php the_field( 'titulo_home' ); ?></h1>
-    	
     </div>
 </div>
 
@@ -69,25 +69,34 @@ get_header();?>
 			<div class="col-lg-12">
 				<h2>Por Delante de Nuestra Filosofia Empresarial esta la Pasion por desarrollar productos innovadores</h2>
 			</div>
+		</div>
 
-			<div class="col-lg-3">
-				<h3>titulo</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam fugiat aut corporis eveniet doloribus eius maiores corrupti sequi quae. Iusto veniam explicabo delectus eaque, voluptate aspernatur eos vel saepe est.</p>
-				<button>Ver mas</button>
-			</div>
+		<div class="row">
+			<?php 
+			$args = array( 'post_type' => 'vehiculo',  'post_per_page' => '3', 'order' => 'ASC');
+			$loop = new WP_Query( $args );
 
-			<div class="col-lg-6">
-				<h3>titulo</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam fugiat aut corporis eveniet doloribus eius maiores corrupti sequi quae. Iusto veniam explicabo delectus eaque, voluptate aspernatur eos vel saepe est.</p>
-				<button>Ver mas</button>
-			</div>
+			if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+				<div class="col-lg-4">
+					<div class="vehiculo__item" style="background-image:url(<?php the_post_thumbnail_url(); ?>); ">
+						<h3><?php 
+						$title_vehiculo = the_title(); 
+						_e($title_vehiculo , 'urbanvalue');
+						?>
+						</h3>
+						<?php the_content(); ?>
+						<a href="<?php the_permalink(); ?>">Ver Mas</a>
+						</div>
+				</div>
+				
+			<!-- post -->
+			<?php endwhile; ?>
+			<!-- post navigation -->
+			<?php else: ?>
+			<!-- no posts found -->
+			<?php endif; ?>
 
-			<div class="col-lg-3">
-				<h3>titulo</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam fugiat aut corporis eveniet doloribus eius maiores corrupti sequi quae. Iusto veniam explicabo delectus eaque, voluptate aspernatur eos vel saepe est.</p>
-				<button>Ver mas</button>
-			</div>
-			
+	
 		</div>
 	</div>
 </section>
@@ -99,26 +108,24 @@ get_header();?>
 			<div class="col-lg-12">
 				<h3>GENERAMOS IMPACTOS POSITIVOS</h3>
 			</div>
+		</div>
 
-			<div class="col-lg-3">
-				<h3>65M</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, aperiam.</p>
-			</div>
-
-			<div class="col-lg-3">
-				<h3>65M</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, aperiam.</p>
-			</div>
-
-			<div class="col-lg-3">
-				<h3>65M</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, aperiam.</p>
-			</div>
-
-			<div class="col-lg-3">
-				<h3>65M</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, aperiam.</p>
-			</div>
+		<div class="row">
+			<?php
+                if( have_rows('numero_item' , 'option') ):
+                	while ( have_rows('numero_item' , 'option') ) : the_row();?>
+	                   <div class="col-lg-3">
+	                   		<div class="numero__item">
+	                   			<h3><?php the_sub_field('numero'); ?></h3>
+	                   			<p><?php 
+	                   				$titulo_numero = the_sub_field('titulo_numero'); 
+	                   				_e($titulo_numero, 'urbanvalue');
+	                   			?></p>
+	                   		</div>						
+						</div>
+          <?php 
+      			endwhile; endif; 
+                	wp_reset_postdata();?>
 		</div>
 	</div>
 </section>
@@ -130,45 +137,45 @@ get_header();?>
 			<div class="col-lg-12">
 				<h3>PROYECTOS</h3>
 			</div>
+		</div>
+		
+		<div class="row">
+			<?php
+			$args = array( 'post_type' => 'proyectos',  'post_per_page' => '12', 'order' => 'ASC');
+			$loop = new WP_Query( $args );
+			if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+				<div class="col-lg-4">
+					<div class="proyectos__item">
+						<img src="<?php the_post_thumbnail_url(); ?>" alt="">
 
-			<div class="col-lg-4">
-				<img src="https://imgholder.ru/600x600/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-
-				<div class="proyectos__item__content">
-					Nombre U&V Teatro<br>
-					Ubicación<br>
-					Concepto<br>
-					Retorno<br>
-					Tiempo<br>
-					Status<br>
+						<div class="proyectos__item__content">
+							<ul>
+								<li><?php 
+									$nombrevehiculo = the_field('nombre'); 
+									_e($nombrevehiculo, 'urbanvalue');
+								?></li>
+								<li><?php 
+									$ubicacionvehiculo = the_field('ubicacion'); 
+									_e($ubicacionvehiculo, 'urbanvalue');
+								?></li>
+								<li><?php 
+									$concepto = the_field('concepto');
+									_e($concepto, 'urbanvalue'); 
+								?></li>
+								
+							</ul>
+						
+						</div>
+					</div>
 				</div>
-			</div>
-
-			<div class="col-lg-4">
-				<img src="https://imgholder.ru/600x600/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-
-				<div class="proyectos__item__content">
-					Nombre U&V Teatro<br>
-					Ubicación<br>
-					Concepto<br>
-					Retorno<br>
-					Tiempo<br>
-					Status<br>
-				</div>
-			</div>
-
-			<div class="col-lg-4">
-				<img src="https://imgholder.ru/600x600/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-
-				<div class="proyectos__item__content">
-					Nombre U&V Teatro<br>
-					Ubicación<br>
-					Concepto<br>
-					Retorno<br>
-					Tiempo<br>
-					Status<br>
-				</div>
-			</div>
+			<!-- post -->
+			<?php endwhile; ?>
+			<!-- post navigation -->
+			<?php else: ?>
+			<!-- no posts found -->
+			<?php endif; 
+				wp_reset_postdata();
+			?> 	
 		</div>
 	</div>
 </section>
