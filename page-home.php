@@ -88,15 +88,22 @@ get_header();?>
 
 			if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 				<div class="col-lg-4">
-					<div class="vehiculo__item" style="background-image:url(<?php the_post_thumbnail_url(); ?>); ">
-						<h3><?php 
-						$title_vehiculo = the_title(); 
-						_e($title_vehiculo , 'urbanvalue');
-						?>
-						</h3>
-						<?php the_content(); ?>
-						<a href="<?php the_permalink(); ?>">Ver Mas</a>
+					<div id="wrapper-postal">
+						<div id="postal">
+							<figure style="background-image:url(<?php the_post_thumbnail_url(); ?>); ">
+						<div class="vehiculo__item" >
+							<h3><?php 
+							$title_vehiculo = the_title(); 
+							_e($title_vehiculo , 'urbanvalue');
+							?>
+							</h3></div>
+							</figure>
+							<figure class="back">
+							<?php the_content(); ?>
+							<a href="<?php the_permalink(); ?>">Ver Mas</a>
+							</figure>
 						</div>
+					</div>
 				</div>
 				
 			<!-- post -->
