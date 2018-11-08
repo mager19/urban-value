@@ -130,13 +130,15 @@ function urbanvalue_scripts() {
 
 	wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.3.1/css/all.css' );
 
+	wp_enqueue_script('jquery');
+
 	wp_enqueue_script( 'urbanvalue-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'bootstrapjs', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', array('jquery'), true );
 
-	wp_enqueue_script( 'slickjs', get_template_directory_uri() . '/js/slick.min.js' );
-
 	wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/js/main.js' );
+
+	wp_enqueue_script( 'slickjs', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), true );
 
 	wp_enqueue_script( 'urbanvalue-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

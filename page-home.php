@@ -180,8 +180,7 @@ get_header();?>
 									_e($concepto, 'urbanvalue'); 
 								?></li>
 								
-							</ul>
-						
+							</ul>						
 						</div>
 					</div>
 				</div>
@@ -249,45 +248,39 @@ get_header();?>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h3>NUESTROS CLIENTES</h3>
-			</div>
-			<?php
-			$args = array( 'pagename' => 'clientes');
-			$loop = new WP_Query( $args );
-			if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); 
-				the_content();
+				<h3>NUESTROS CLIENTES</h3>			
+				<div class="slide__clientes">
+					<?php
+					$args = array( 'pagename' => 'clientes');
+					$loop = new WP_Query( $args );
+						if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
 
-				if( have_rows('ingresar_cliente') ):
-
-				 	// loop through the rows of data
-				    while ( have_rows('ingresar_cliente') ) : the_row();?>
-						<div class="col-lg-2">
-							<?php $image = get_sub_field('l_cliente'); ?>
-							<img src="<?php echo $image['url']; ?>" alt="">
-						</div>
-				        
-				<?    endwhile;
-
-				else :
-
-				    // no rows found
-
-				endif;
-			?>
+							if( have_rows('ingresar_cliente') ):
 							
-			<!-- post -->
-			<?php endwhile; ?>
-			<!-- post navigation -->
-			<?php else: ?>
-			<!-- no posts found -->
-			<?php endif; 
-				wp_reset_postdata();
-			?>
-
-			
+							    while ( have_rows('ingresar_cliente') ) : the_row();?>
+									<div class="cliente" style="margin-right: 1em;">
+										<?php $image = get_sub_field('l_cliente'); ?>
+										<img src="<?php echo $image['url']; ?>" alt="">
+									</div>
+							        
+							<?  endwhile;
+						endif;
+					?>
+								
+				<!-- post -->
+				<?php endwhile; ?>
+				<!-- post navigation -->
+				<?php else: ?>
+				<!-- no posts found -->
+				<?php endif; 
+					wp_reset_postdata();
+				?>
+				</div>
+			</div>			
 		</div>
 	</div>
 </section>
+
 
 <?php
 
