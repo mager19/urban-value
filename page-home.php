@@ -180,8 +180,7 @@ get_header();?>
 									_e($concepto, 'urbanvalue'); 
 								?></li>
 								
-							</ul>
-						
+							</ul>						
 						</div>
 					</div>
 				</div>
@@ -204,29 +203,42 @@ get_header();?>
 			<h3>TEAM</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eius cumque quibusdam aliquam quas dolor possimus, cupiditate voluptate, nostrum excepturi vitae quidem architecto dicta laboriosam dolorum porro. Saepe, veniam, nobis?</p>
 
-			<div class="col-lg-3">
-				<img src="https://imgholder.ru/300x350/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-				<h3>Alan Estrada</h3>
-				<h5>Community Manager</h5>
-			</div>
+			<?php
+			$args = array( 'pagename' => 'team');
+			$loop = new WP_Query( $args );
+			if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); 
 
-			<div class="col-lg-3">
-				<img src="https://imgholder.ru/300x350/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-				<h3>Alan Estrada</h3>
-				<h5>Community Manager</h5>
-			</div>
+				if( have_rows('equipo') ):
 
-			<div class="col-lg-3">
-				<img src="https://imgholder.ru/300x350/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-				<h3>Alan Estrada</h3>
-				<h5>Community Manager</h5>
-			</div>
+				 	// loop through the rows of data
+				    while ( have_rows('equipo') ) : the_row();?>
+						
+						<div class="col-lg-3">
+							<div class="equipo">
+								<?php $image = get_sub_field('foto'); ?>
+								<img src="<?php echo $image['url']; ?>" alt="">
+								<h3><?php the_sub_field('nombre'); ?></h3>
+								<h5><?php the_sub_field('cargo'); ?></h5>
+							</div>
+						</div>	
+				        
+				<?    endwhile;
 
-			<div class="col-lg-3">
-				<img src="https://imgholder.ru/300x350/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-				<h3>Alan Estrada</h3>
-				<h5>Community Manager</h5>
-			</div>
+				else :
+
+				    // no rows found
+
+				endif;
+			?>
+							
+			<!-- post -->
+			<?php endwhile; ?>
+			<!-- post navigation -->
+			<?php else: ?>
+			<!-- no posts found -->
+			<?php endif; 
+				wp_reset_postdata();
+			?>
 		</div>
 	</div>
 </section>
@@ -236,29 +248,39 @@ get_header();?>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h3>NUESTROS CLIENTES</h3>
-			</div>
-			<div class="col-lg-2">
-				<img src="https://imgholder.ru/300x300/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-			</div>
-			<div class="col-lg-2">
-				<img src="https://imgholder.ru/300x300/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-			</div>
-			<div class="col-lg-2">
-				<img src="https://imgholder.ru/300x300/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-			</div>
-			<div class="col-lg-2">
-				<img src="https://imgholder.ru/300x300/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-			</div>
-			<div class="col-lg-2">
-				<img src="https://imgholder.ru/300x300/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-			</div>
-			<div class="col-lg-2">
-				<img src="https://imgholder.ru/300x300/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-			</div>
+				<h3>NUESTROS CLIENTES</h3>			
+				<div class="slide__clientes">
+					<?php
+					$args = array( 'pagename' => 'clientes');
+					$loop = new WP_Query( $args );
+						if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
+
+							if( have_rows('ingresar_cliente') ):
+							
+							    while ( have_rows('ingresar_cliente') ) : the_row();?>
+									<div class="cliente" style="margin-right: 1em;">
+										<?php $image = get_sub_field('l_cliente'); ?>
+										<img src="<?php echo $image['url']; ?>" alt="">
+									</div>
+							        
+							<?  endwhile;
+						endif;
+					?>
+								
+				<!-- post -->
+				<?php endwhile; ?>
+				<!-- post navigation -->
+				<?php else: ?>
+				<!-- no posts found -->
+				<?php endif; 
+					wp_reset_postdata();
+				?>
+				</div>
+			</div>			
 		</div>
 	</div>
 </section>
+
 
 <?php
 

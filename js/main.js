@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 
-	document.getElementsByTagName('iframe')[0].contentWindow.getElementsByClassName('ytp-watch-later-button')[0].style.display = 'none';
+	// document.getElementsByTagName('iframe')[0].contentWindow.getElementsByClassName('ytp-watch-later-button')[0].style.display = 'none';
  		
 		$('.slide__principal').slick({
   				autoplay: false,
@@ -33,6 +33,37 @@ jQuery(document).ready(function($){
 		    },
 		    	]
 		});		
+		
+		$('.slide__clientes').slick({
+  				autoplay: true,
+  				speed: 2000,
+				dots: false,
+				infinite: true,
+				slidesToShow: 6, 
+		  		slidesToScroll: 1,
+		  		arrows:true,
+		  		pauseOnHover: true,
+		  		responsive: [
+		  			
+				    {
+				      breakpoint: 800,
+				      settings: {
+				        slidesToShow: 1,
+				        slidesToScroll: 1,
+				        infinite: true,
+				        
+				      }
+		    		},    		
+		    		{
+		      		  breakpoint: 480,
+		      		  settings: {
+		        	  slidesToShow: 1,
+		        	  slidesToScroll: 1,
+		        	  arrows: false,
+		      		}
+		    },
+		    	]
+		});
 
 		var timeoutId;
 var $videoBgAspect = $(".videobg-aspect");
