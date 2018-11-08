@@ -44,11 +44,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 @font-face {
     font-family: 'Avenir';
-    src: url('../fonts/Avenir-Medium.eot');
-    src: url('../fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Avenir-Medium.woff2') format('woff2'),
-        url('../fonts/Avenir-Medium.woff') format('woff'),
-        url('../fonts/Avenir-Medium.svg#Avenir-Medium') format('svg');
+    src: url('fonts/Avenir-Medium.eot');
+    src: url('fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Avenir-Medium.woff2') format('woff2'),
+        url('fonts/Avenir-Medium.woff') format('woff'),
+        url('fonts/Avenir-Medium.svg#Avenir-Medium') format('svg');
     font-weight: 500;
     font-style: normal;
 } 
@@ -125,9 +125,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 body{
 	overflow-x:hidden;
 }
-h1{ font-family: 'Avenir';}
-h2{font-family: 'Noto Serif', serif;}
-p, a{font-family: arial;}
+h1{ font-family: 'Avenir' !important;}
+h2{font-family: 'Noto Serif', serif !important;}
+p, a{font-family: Arial;}
 header{
 	/*background-color: $vlack;*/
 	/*background-color: rgba(30, 30, 30, 0.5);*/
@@ -153,7 +153,7 @@ header{
 	    			/*color:$white;
 	    			font-size: 1.2rem;
 	    			text-transform: uppercase;*/
-	    			color: #999;
+	    			color: $white3;
 				    font-size: 0.72rem;
 				    text-transform: uppercase;
 
