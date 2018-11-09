@@ -436,7 +436,7 @@ video{
 	    height: 260px;
 	    margin: 0 auto;
 	    position: relative;
-	    border: 1px solid #888;
+	    /*border: 1px solid #888;*/
 	    -webkit-perspective: 700px;
 	    -moz-perspective: 700px;
 	    perspective: 700px;
@@ -463,8 +463,9 @@ video{
 
 	        .vehiculo__item {
 	        	h3 {
-				    padding-top: 33%;
+				    padding-top: 54%;
 				    color: #fff;
+				        font-size: 1.2rem;
 				}
 			}
 		figure {
