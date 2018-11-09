@@ -297,7 +297,15 @@ get_header();?>
 
 </section>
 
-
+<section class="cta d-flex h-100">
+	<div class="container justify-content-center align-self-center">
+		<div class="offset-lg-2 col-lg-8">
+			<?php //echo do_shortcode( '[contact-form-7 id="139" title="CTA"]' );?>
+			<?php echo do_shortcode( '[contact-form-7 id="153" title="cta"]' );?>
+			
+		</div>
+	</div>
+</section>
  <!-- </div>  -->
 <script>
 	  jQuery(document).ready(function(){

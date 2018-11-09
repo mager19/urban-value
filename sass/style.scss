@@ -139,6 +139,7 @@ p, a{font-family: Arial;}*/
 h1{ font-family: 'Lato', sans-serif;}
 h2{font-family: 'Lato', sans-serif;}
 p, a{font-family: 'Montserrat', sans-serif;}
+a:hover{color: #999;}
 
 header{
 	/*background-color: $vlack;*/
@@ -625,7 +626,40 @@ video{
 	}
 }
 
+.cta{
+	background-color: $vlack;
+	color: $white2;
+	text-align: center;
 
+	label, input{
+		width: 100%;
+		/*margin-top: 1em;*/
+	}
+	input{
+		height: 40px;
+		border: 1px solid #333;
+    background-color: transparent;
+    color: #fff !important;
+    padding-left: 10px;
+	}
+	textarea{
+		border: 1px solid #333;
+    background-color: transparent;
+    color: #fff !important;
+    padding-left: 10px;
+    height: 8em;
+	}
+	input[type="checkbox"] {
+	    height: 17px;
+	}
+	input.wpcf7-submit {
+	    background-color: #fff;
+	    color: #000 !important;
+	    border-radius: 50px;
+	    text-transform: uppercase;
+	    margin-top: 3px;
+	}
+}
 .footer{
 	background-color: $vlack;
 	color: $white2;
