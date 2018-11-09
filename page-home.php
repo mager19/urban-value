@@ -268,6 +268,8 @@ get_header();?>
 			</div>			
 		</div>
 	</div>
+	<?php get_footer();?>
+
 </section>
 
 
@@ -286,5 +288,3 @@ get_header();?>
 
 get_footer();
 
-
-// hola wilman2
