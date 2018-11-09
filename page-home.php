@@ -24,6 +24,7 @@ get_header();?>
     </div>
 </div>
 
+<!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore itaque laborum odio, quod consequatur repudiandae necessitatibus autem soluta sequi dignissimos ea neque quae doloribus dolorum, quia delectus omnis excepturi officia! -->
 
 <!-- claim -->
 <section class="claim">
