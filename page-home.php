@@ -37,9 +37,20 @@ get_header();?>
 
 			<div class="col-lg-3">
 				<div class="box">
-					<img src="https://imgholder.ru/100x100/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-					<h3>titulo</h3>
-					<h4>Subtitulo</h4>
+					<div id="wrapper-postal">
+							<div id="postal">
+							
+								<figure>
+									<img src="https://imgholder.ru/100x100/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
+									<h3>titulo</h3>
+									<h4>Subtitulo</h4>
+								</figure>
+								<figure class="back d-flex h-100">
+									<p>Evolution
+Our goal is to create a new Urban existence whereby sustainable and intelligent buildings are established as locomotive in the change of the urban landscape.</p>
+								</figure>
+							</div>
+						</div>
 				</div>
 			</div>
 
@@ -98,9 +109,10 @@ get_header();?>
 							?>
 							</h3></div>
 							</figure>
-							<figure class="back">
+							<figure class="back d-flex h-100">
+								<div class="justify-content-center align-self-center" >
 							<?php the_content(); ?>
-							<a href="<?php the_permalink(); ?>">Ver Mas</a>
+							<a href="<?php the_permalink(); ?>" class="more">Ver Mas</a></div>
 							</figure>
 						</div>
 					</div>
@@ -120,14 +132,14 @@ get_header();?>
 
 <!-- Impacto -->
 <section class="impacto d-flex h-100">
-	<div class="justify-content-center align-self-center">
-		<div class="row">
+	<div class="justify-content-center align-self-center items">
+		<div class="row ">
 			<div class="col-lg-12">
-				<h3>GENERAMOS IMPACTOS POSITIVOS</h3>
+				<h3 class="titulo">GENERAMOS IMPACTOS POSITIVOS</h3>
 			</div>
 		</div>
 
-		<div class="row items">
+		<div class="row ">
 			<?php
                 if( have_rows('numero_item' , 'option') ):
                 	while ( have_rows('numero_item' , 'option') ) : the_row();?>
@@ -152,7 +164,7 @@ get_header();?>
 	<div class="container justify-content-center align-self-center">
 		<div class="row">
 			<div class="col-lg-12">
-				<h3>PROYECTOS</h3>
+				<h3 class="titl">PROYECTOS</h3>
 			</div>
 		</div>
 		
@@ -200,7 +212,7 @@ get_header();?>
 <section class="team d-flex h-100">
 	<div class="container justify-content-center align-self-center">
 		<div class="row">
-			<h3>TEAM</h3>
+			<h3 class="titl">TEAM</h3>
 			<p class="team-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eius cumque quibusdam aliquam quas dolor possimus, cupiditate voluptate, nostrum excepturi vitae quidem architecto dicta laboriosam dolorum porro. Saepe, veniam, nobis?</p>
 
 			<?php
@@ -217,8 +229,8 @@ get_header();?>
 							<div class="equipo">
 								<?php $image = get_sub_field('foto'); ?>
 								<img src="<?php echo $image['url']; ?>" alt="">
-								<h3><?php the_sub_field('nombre'); ?></h3>
-								<h5><?php the_sub_field('cargo'); ?></h5>
+								<h3 class="name"><?php the_sub_field('nombre'); ?></h3>
+								<h5 class="job"><?php the_sub_field('cargo'); ?></h5>
 							</div>
 						</div>	
 				        
@@ -248,7 +260,7 @@ get_header();?>
 	<div class="container justify-content-center align-self-center">
 		<div class="row">
 			<div class="col-lg-12">
-				<h3>NUESTROS CLIENTES</h3>			
+				<h3 class="titl">NUESTROS CLIENTES</h3>			
 				<div class="slide__clientes">
 					<?php
 					$args = array( 'pagename' => 'clientes');
