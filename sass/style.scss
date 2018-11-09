@@ -135,8 +135,11 @@ header{
 	/*background-color: rgba(30, 30, 30, 0.5);*/
 	padding: 1rem 0;
 	color:$white;
-	position: relative;
+	position: absolute;
 	z-index: 2;
+	left: 0;
+    top: 0;
+    width: 100%;
 
 	img{
 		height: 35px;
@@ -368,6 +371,9 @@ video{
 		  height: 100%;
 		  margin:0;
 		  display: block;
+		  background-size: cover;
+		  background-repeat: no-repeat;
+		  background-position: center;
 		  
 		  -webkit-backface-visibility: hidden;
 		    -moz-backface-visibility: hidden;
