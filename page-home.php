@@ -12,10 +12,10 @@
 get_header();?>
 
 <!-- _e()($variable , 'urban&value') -->
-
+<div class="main">
 <div class="videoWrapper">
 	<div class="overlay"></div>
-    <iframe width="auto" height="auto" src="https://www.youtube.com/embed/<?php the_field('videohome') ?>?autoplay=1&rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&loop=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="auto" height="auto" src="https://www.youtube.com/embed/<?php the_field('videohome') ?>?autoplay=1&rel=0&modestbranding=0&autohide=0&showinfo=0&controls=0&loop=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <!-- <iframe src="https://player.vimeo.com/video/156270370?background=1&autoplay=1&loop=1&byline=0&title=0"
            frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
 
@@ -120,7 +120,7 @@ get_header();?>
 
 <!-- Impacto -->
 <section class="impacto">
-	<div class="container">
+	<div class="">
 		<div class="row">
 			<div class="col-lg-12">
 				<h3>GENERAMOS IMPACTOS POSITIVOS</h3>
@@ -280,8 +280,17 @@ get_header();?>
 		</div>
 	</div>
 </section>
-
-
+</div>
+<script>
+	  jQuery(document).ready(function(){
+      jQuery(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+		});
+		
+	</script>
 <?php
 
 get_footer();
