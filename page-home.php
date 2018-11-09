@@ -12,23 +12,23 @@
 get_header();?>
 
 <!-- _e()($variable , 'urban&value') -->
-
-<div class="videoWrapper">
+<div class="main">
+<section class="videoWrapper d-flex h-100">
 	<div class="overlay"></div>
-    <iframe width="auto" height="auto" src="https://www.youtube.com/embed/<?php the_field('videohome') ?>?autoplay=1&rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&loop=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="auto" height="auto" src="https://www.youtube.com/embed/<?php the_field('videohome') ?>?autoplay=1&rel=0&modestbranding=0&autohide=0&showinfo=0&controls=0&loop=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <!-- <iframe src="https://player.vimeo.com/video/156270370?background=1&autoplay=1&loop=1&byline=0&title=0"
            frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
 
-    <div class="video__info">
+    <div class="video__info justify-content-center align-self-center">
    		<h1><?php the_field( 'titulo_home' ); ?></h1>
     </div>
-</div>
+</section>
 
 
 <!-- claim -->
-<section class="claim">
-	<div class="container">
-		<div class="row">
+<section class="claim d-flex h-100" >
+	<div class="container justify-content-center align-self-center">
+		<div class="row ">
 			<div class="col-lg-12">
 				<h2>Applying digital knowledge and tools to Real Estate development.</h2>
 				<h3>We are a Real Estate development firm<br>
@@ -73,8 +73,8 @@ get_header();?>
 </section>
 
 <!-- Filosofia -->
-<section class="filosofia">
-	<div class="container">
+<section class="filosofia d-flex h-100">
+	<div class="container justify-content-center align-self-center">
 		<div class="row">
 			<div class="col-lg-12">
 				<h2>Por Delante de Nuestra Filosofia Empresarial esta la Pasion por desarrollar productos innovadores</h2>
@@ -119,15 +119,15 @@ get_header();?>
 </section>
 
 <!-- Impacto -->
-<section class="impacto">
-	<div class="container">
+<section class="impacto d-flex h-100">
+	<div class="justify-content-center align-self-center">
 		<div class="row">
 			<div class="col-lg-12">
 				<h3>GENERAMOS IMPACTOS POSITIVOS</h3>
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row items">
 			<?php
                 if( have_rows('numero_item' , 'option') ):
                 	while ( have_rows('numero_item' , 'option') ) : the_row();?>
@@ -148,8 +148,8 @@ get_header();?>
 </section>
 
 <!-- Proyectos -->
-<section class="proyectos">
-	<div class="container">
+<section class="proyectos d-flex h-100">
+	<div class="container justify-content-center align-self-center">
 		<div class="row">
 			<div class="col-lg-12">
 				<h3>PROYECTOS</h3>
@@ -197,11 +197,11 @@ get_header();?>
 </section>
 
 <!-- Team -->
-<section class="team">
-	<div class="container">
+<section class="team d-flex h-100">
+	<div class="container justify-content-center align-self-center">
 		<div class="row">
 			<h3>TEAM</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eius cumque quibusdam aliquam quas dolor possimus, cupiditate voluptate, nostrum excepturi vitae quidem architecto dicta laboriosam dolorum porro. Saepe, veniam, nobis?</p>
+			<p class="team-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eius cumque quibusdam aliquam quas dolor possimus, cupiditate voluptate, nostrum excepturi vitae quidem architecto dicta laboriosam dolorum porro. Saepe, veniam, nobis?</p>
 
 			<?php
 			$args = array( 'pagename' => 'team');
@@ -244,8 +244,8 @@ get_header();?>
 </section>
 
 <!-- Clientes -->
-<section class="clientes">
-	<div class="container">
+<section class="clientes d-flex h-100">
+	<div class="container justify-content-center align-self-center">
 		<div class="row">
 			<div class="col-lg-12">
 				<h3>NUESTROS CLIENTES</h3>			
@@ -282,6 +282,17 @@ get_header();?>
 </section>
 
 
+</div>
+<script>
+	  jQuery(document).ready(function(){
+      jQuery(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+		});
+		
+	</script>
 <?php
 
 get_footer();
