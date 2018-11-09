@@ -222,7 +222,7 @@ get_header();?>
 							</div>
 						</div>	
 				        
-				<?    endwhile;
+				<?php    endwhile;
 
 				else :
 
@@ -263,7 +263,7 @@ get_header();?>
 										<img src="<?php echo $image['url']; ?>" alt="">
 									</div>
 							        
-							<?  endwhile;
+							<?php  endwhile;
 						endif;
 					?>
 								
