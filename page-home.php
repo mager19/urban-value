@@ -39,6 +39,10 @@ get_header();?>
 				    while ( have_rows('items_bajo_video') ) : the_row();?>
 				    	<div class="col-lg-3">
 							<div class="box">
+								<div id="wrapper-postal">
+							<div id="postal">
+							
+								<figure>
 								<?php $image = get_sub_field('item_imagen'); ?>
 								<img src="<?php echo $image['url']; ?>" alt="">
 								<h3><?php 
@@ -46,12 +50,18 @@ get_header();?>
 								_e($item_titulo , 'urbanvalue');
 								?>
 								</h3>
+								</figure>
+								<figure class="back d-flex h-100">
 								<p>
 								<?php 
 								$item_texto = the_sub_field('item_texto'); 
 								_e($item_texto , 'urbanvalue');
 								?>
 								</p>
+								</figure>
+								
+							</div>
+						</div>
 							</div>
 						</div>					        
 					<?php  endwhile;

@@ -297,6 +297,7 @@ video{
 	color: $white2;
     text-align: center;
 
+
     h2{
     	margin-bottom: 15px;
     }
@@ -371,6 +372,11 @@ video{
 		  -webkit-backface-visibility: hidden;
 		    -moz-backface-visibility: hidden;
 		      backface-visibility: hidden;
+		       img{
+		      	width: 70px;
+		      	padding-top: 30px;
+		      }
+		      
 		}
 		figure.back {
 		  display: block;
@@ -463,6 +469,9 @@ video{
 		  -webkit-backface-visibility: hidden;
 		    -moz-backface-visibility: hidden;
 		      backface-visibility: hidden;
+		      img{
+		      	width: 70px;
+		      }
 		}
 		figure.back {
 		  display: block;
