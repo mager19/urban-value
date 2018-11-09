@@ -24,12 +24,20 @@
 
 <!-- Header -->
 <header>
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-9">
-				<img src="https://imgholder.ru/100x100/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-			</div>	
 			<div class="col-lg-3">
+				<?php 
+					$custom_logo_id = get_theme_mod( 'custom_logo' );
+					$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+					if ( has_custom_logo() ) {
+					        echo '<img src="'. esc_url( $logo[0] ) .'">';
+					} else {
+					        echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
+					}
+				?>
+			</div>	
+			<div class="col-lg-7 offset-lg-2">
 				<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'urbanvalue' ); ?></button>
 					<?php
