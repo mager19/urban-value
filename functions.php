@@ -140,6 +140,10 @@ function urbanvalue_scripts() {
 
 	wp_enqueue_script( 'slickjs', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), true );
 
+	wp_enqueue_script( 'waypointsjs', 'http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js', array('jquery'), true );
+
+	wp_enqueue_script( 'counterup', get_template_directory_uri() . '/js/jquery.counterup.min.js' );
+
 	wp_enqueue_script( 'urbanvalue-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	
   	wp_enqueue_script( 'onepage-scroll', get_template_directory_uri() . '/js/jquery.onepage-scroll.js' );

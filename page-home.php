@@ -24,51 +24,39 @@ get_header();?>
     </div>
 </section>
 
-<!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore itaque laborum odio, quod consequatur repudiandae necessitatibus autem soluta sequi dignissimos ea neque quae doloribus dolorum, quia delectus omnis excepturi officia! -->
-
 <!-- claim -->
 <section class="claim d-flex h-100" >
 	<div class="container justify-content-center align-self-center">
 		<div class="row ">
 			<div class="col-lg-12">
 				<h2>Applying digital knowledge and tools to Real Estate development.</h2>
-				<h3>We are a Real Estate development firm<br>
-				Desarrollando Real Estate aplicando la tecnología.</h3>
+				<h3>We are a Real Estate development firm</h3>
 			</div>
 
-			<div class="col-lg-3">
-				<div class="box">
-					<img src="https://imgholder.ru/100x100/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-					<h3>titulo</h3>
-					<h4>Subtitulo</h4>
-				</div>
-			</div>
-
-			<div class="col-lg-3">
-				<div class="box">
-					<img src="https://imgholder.ru/100x100/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-					<h3>titulo</h3>
-					<h4>Subtitulo</h4>
-				</div>
-			</div>
-
-			<div class="col-lg-3">
-				<div class="box">
-					<img src="https://imgholder.ru/100x100/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-					<h3>titulo</h3>
-					<h4>Subtitulo</h4>
-				</div>
-			</div>
-
-			<div class="col-lg-3">
-				<div class="box">
-					<img src="https://imgholder.ru/100x100/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-					<h3>titulo</h3>
-					<h4>Subtitulo</h4>
-				</div>
-			</div>
-
-			
+			<?php
+				if( have_rows('items_bajo_video') ):
+							
+				    while ( have_rows('items_bajo_video') ) : the_row();?>
+				    	<div class="col-lg-3">
+							<div class="box">
+								<?php $image = get_sub_field('item_imagen'); ?>
+								<img src="<?php echo $image['url']; ?>" alt="">
+								<h3><?php 
+								$item_titulo = the_sub_field('item_titulo'); 
+								_e($item_titulo , 'urbanvalue');
+								?>
+								</h3>
+								<p>
+								<?php 
+								$item_texto = the_sub_field('item_texto'); 
+								_e($item_texto , 'urbanvalue');
+								?>
+								</p>
+							</div>
+						</div>					        
+					<?php  endwhile;
+				endif;
+			?>
 		</div>
 	</div>
 </section>
@@ -134,7 +122,7 @@ get_header();?>
                 	while ( have_rows('numero_item' , 'option') ) : the_row();?>
 	                   <div class="col-lg-3">
 	                   		<div class="numero__item">
-	                   			<h3><?php the_sub_field('numero'); ?></h3>
+	                   			<h3 class="counter"><?php the_sub_field('numero'); ?></h3>
 	                   			<p><?php 
 	                   				$titulo_numero = the_sub_field('titulo_numero'); 
 	                   				_e($titulo_numero, 'urbanvalue');
@@ -223,7 +211,7 @@ get_header();?>
 							</div>
 						</div>	
 				        
-				<?    endwhile;
+				<?php    endwhile;
 
 				else :
 
@@ -264,7 +252,7 @@ get_header();?>
 										<img src="<?php echo $image['url']; ?>" alt="">
 									</div>
 							        
-							<?  endwhile;
+							<?php  endwhile;
 						endif;
 					?>
 								
