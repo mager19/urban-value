@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 
-/*	document.getElementsByTagName('iframe')[0].contentWindow.getElementsByClassName('ytp-watch-later-button')[0].style.display = 'none';*/
+	// document.getElementsByTagName('iframe')[0].contentWindow.getElementsByClassName('ytp-watch-later-button')[0].style.display = 'none';
  		
 		$('.slide__principal').slick({
   				autoplay: false,

@@ -398,7 +398,7 @@ h2 { font-family: 'Noto Serif', serif !important; }
 
 p, a { font-family: Arial; }
 
-header { /*background-color: $vlack;*/ /*background-color: rgba(30, 30, 30, 0.5);*/ padding: 1rem 0; color: #fff; position: relative; z-index: 2; }
+header { /*background-color: $vlack;*/ /*background-color: rgba(30, 30, 30, 0.5);*/ padding: 1rem 0; color: #fff; position: absolute; z-index: 2; left: 0; top: 0; width: 100%; }
 
 header img { height: 35px; }
 
@@ -416,11 +416,11 @@ iframe { width: 100%; height: 80vh; }
 
 .ytp-title { opacity: 0 !important; }
 
-.videoWrapper { /**position: relative;*/ /* padding-bottom: 56.25%; /* 16:9 */ /**padding-top: 0;*/ /**height: calc( 100vh - 92px );  /* tamaño total del viewport - header*/ /*margin-top: -4em;*/ /**z-index: 1;*/ /* position: relative; padding-bottom: 56.25%; /* 16:9 */ /*padding-top: 0; height: 0; margin-top: -4em; z-index: 1;*/ position: relative; padding-bottom: 49.25%; padding-top: 0; height: 0; margin-top: -4em; z-index: 1; overflow: hidden; }
+.videoWrapper { /**position: relative;*/ /* padding-bottom: 56.25%; /* 16:9 */ /**padding-top: 0;*/ /**height: calc( 100vh - 92px );  /* tamaño total del viewport - header*/ /*margin-top: -4em;*/ /**z-index: 1;*/ /* position: relative; padding-bottom: 56.25%; /* 16:9 */ /*padding-top: 0; height: 0; margin-top: -4em; z-index: 1;*/ position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0; margin-top: -4em; z-index: 1; overflow: hidden; }
 
 .videoWrapper .overlay { background: rgba(0, 0, 0, 0.6); position: absolute; z-index: 3; height: 100%; width: 100%; }
 
-.videoWrapper .video__info { position: absolute; z-index: 4; top: 30%; text-align: center; margin-left: auto; margin-right: auto; left: 0; right: 0; width: 65%; }
+.videoWrapper .video__info { position: absolute; z-index: 4; top: 34%; text-align: center; margin-left: auto; margin-right: auto; left: 0; right: 0; width: 65%; }
 
 .videoWrapper .video__info h1 { /*border:8px solid #fff;*/ color: #fff; /*font-size: 4em;*/ font-size: 2.8em; padding: 1em; /*width: 50%; margin-left: 25%;*/ text-transform: uppercase; }
 
@@ -454,16 +454,38 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .filosofia #postal .vehiculo__item h3 { padding-top: 33%; color: #fff; }
 
-.filosofia #postal figure { position: absolute; width: 100%; height: 100%; margin: 0; display: block; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; }
+.filosofia #postal figure { position: absolute; width: 100%; height: 100%; margin: 0; display: block; background-size: cover; background-repeat: no-repeat; background-position: center; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; }
 
 .filosofia #postal figure.back { display: block; padding: 10px 0 0 0; color: #fff; background: #1E1E1E; -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); ms-transform: rotateY(180deg); -o-transform: rotateY(180deg); transform: rotateY(180deg); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 15px; }
 
 .filosofia #postal figure.back p { font-size: 0.9rem; }
 
-.impacto { background-color: #191919; color: #999; text-align: center; }
+.proyectos { background-color: #1E1E1E; color: #999; text-align: center; }
+
+.proyectos h3 { margin-bottom: 2em; }
+
+.proyectos ul { list-style: none; margin-top: 15px; margin-left: 0; padding: 0px 20px; }
+
+.proyectos ul li:first-child { text-transform: uppercase; font-weight: 600; font-size: 1.2rem; }
+
+.impacto { background-color: #1E1E1E; color: #999; text-align: center; }
+
+.impacto .items { background-color: #191919; }
 
 .impacto .numero__item { margin: 50px 25px 25px; }
 
 .impacto .numero__item h3 { color: #fff; font-size: 2.5rem; }
 
-.team { background-color: #f9f9f9; text-align: center; }
+.team { background-color: #1E1E1E; color: #999; text-align: center; }
+
+.team p.team-text { margin-bottom: 3em; }
+
+.team h3 { margin: 0 auto 2em; }
+
+.team h3.name { font-size: 1.2rem; margin-top: 15px; color: #fff; margin-bottom: 2px; }
+
+.team h5.job { font-size: 1rem; }
+
+.clientes { background-color: #1E1E1E; color: #999; text-align: center; }
+
+.clientes h3 { margin-bottom: 2em; }
