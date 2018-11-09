@@ -300,8 +300,18 @@ get_header();?>
 <section class="cta d-flex h-100">
 	<div class="container justify-content-center align-self-center">
 		<div class="offset-lg-2 col-lg-8">
+			<div class="cta-txt">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<a class="cta-btn" >Contacto</a></div>
 			<?php //echo do_shortcode( '[contact-form-7 id="139" title="CTA"]' );?>
+			<div class="form">
 			<?php echo do_shortcode( '[contact-form-7 id="153" title="cta"]' );?>
+			</div>
 			
 		</div>
 	</div>

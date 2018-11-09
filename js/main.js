@@ -80,10 +80,16 @@ jQuery( ".titl" ).mouseleave(function() {
 		});
 
 
-		$('.counter').counterUp({
+		/*$('.counter').counterUp({
     delay: 500,
     time: 5000
-});
+});*/
+
+		$(".cta .cta-btn").on( "click", function() {	 
+	        $('.cta .form').toggle("fast");
+			$('.cta .cta-txt').toggle("fast");
+		});
+
 
 		var timeoutId;
 var $videoBgAspect = $(".videobg-aspect");
