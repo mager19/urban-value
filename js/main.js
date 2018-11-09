@@ -80,10 +80,10 @@ jQuery( ".titl" ).mouseleave(function() {
 		});
 
 
-		$('.counter').counterUp({
+		/*$('.counter').counterUp({
     delay: 500,
     time: 5000
-});
+});*/
 
 		var timeoutId;
 var $videoBgAspect = $(".videobg-aspect");
