@@ -469,7 +469,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .claim #postal figure img { width: 70px; padding-top: 30px; }
 
-.claim #postal figure.back { display: block; padding: 10px 0 0 0; color: #fff; background: #1E1E1E; -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); ms-transform: rotateY(180deg); -o-transform: rotateY(180deg); transform: rotateY(180deg); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 15px; text-transform: none; }
+.claim #postal figure.back { display: block; padding: 10px 0 0 0; color: #fff; /*background: $vlack;*/ -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); ms-transform: rotateY(180deg); -o-transform: rotateY(180deg); transform: rotateY(180deg); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 15px; text-transform: none; }
 
 .claim #postal figure.back p { font-size: 0.9rem; }
 
@@ -491,7 +491,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .filosofia #postal figure img { width: 70px; }
 
-.filosofia #postal figure.back { display: block; padding: 10px 0 0 0; color: #fff; background: #1E1E1E; -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); ms-transform: rotateY(180deg); -o-transform: rotateY(180deg); transform: rotateY(180deg); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 15px; }
+.filosofia #postal figure.back { display: block; padding: 10px 0 0 0; color: #fff; /*background: $vlack;*/ -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); ms-transform: rotateY(180deg); -o-transform: rotateY(180deg); transform: rotateY(180deg); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 15px; }
 
 .filosofia #postal figure.back p { font-size: 0.9rem; }
 
