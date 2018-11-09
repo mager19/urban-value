@@ -11,11 +11,11 @@
 
 ?>
 
-	</div><!-- #content -->
+	<!--</div> #content -->
 
-<section>
-	<footer>
-		<div class="container">
+<section class="footer d-flex h-100">
+	
+		<div class="container justify-content-center align-self-center">
 			<div class="row">
 				<div class="col-lg-3">
 					<?php 
@@ -48,9 +48,9 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	
 </section>
-
+</div> <!-- Close Main -->
 <?php wp_footer(); ?>
 
 </body>

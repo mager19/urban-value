@@ -279,12 +279,12 @@ get_header();?>
 			</div>			
 		</div>
 	</div>
-	<?php get_footer();?>
+	
 
 </section>
 
 
-</div>
+ <!-- </div>  -->
 <script>
 	  jQuery(document).ready(function(){
       jQuery(".main").onepage_scroll({
