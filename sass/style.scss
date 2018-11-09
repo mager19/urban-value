@@ -199,7 +199,7 @@ iframe{
     z-index: 1;*/
 
     position: relative;
-    padding-bottom: 49.25%;
+    padding-bottom: 56.25%;
     padding-top: 0;
     height: 0;
     margin-top: -4em;
@@ -217,7 +217,7 @@ iframe{
     .video__info{
     	position: absolute;
 	    z-index: 4;
-	    top: 30%;
+	    top: 34%;
 	    text-align: center;
 	    margin-left: auto;
 	    margin-right: auto;
@@ -252,6 +252,7 @@ iframe{
     left: 0;
     width: 100%;
     height: 115%;
+
 }
 
 section{
@@ -395,11 +396,38 @@ video{
 	
 }
 
-.impacto{
-	background-color: $vlack3;
+.proyectos{
+	background-color: $vlack;
 	color: $white2;
 	text-align: center;
 
+	h3{
+		
+		margin-bottom: 2em;
+	}
+	ul {
+	    list-style: none;
+	    margin-top: 15px;
+	    margin-left: 0;
+    	padding: 0px 20px;
+
+	    li{
+	    	&:first-child {
+			    text-transform: uppercase;
+			    font-weight: 600;
+			    font-size: 1.2rem;
+			}
+		}
+	}
+}
+
+.impacto{
+	background-color: $vlack;
+	color: $white2;
+	text-align: center;
+	.items{
+		background-color: $vlack3;
+	}
 	.numero__item {
 	    margin: 50px 25px 25px;
 
@@ -411,6 +439,32 @@ video{
 }
 
 .team{
-	background-color: #f9f9f9;
+	background-color: $vlack;
+	color: $white2;
 	text-align: center;
+
+	p.team-text {
+	    margin-bottom: 3em;
+	}
+	h3{margin:0 auto 2em;}
+	h3.name {
+	    font-size: 1.2rem;
+	    margin-top: 15px;
+	    color: #fff;
+	    margin-bottom: 2px;
+
+	}
+	h5.job {
+	    font-size: 1rem;
+	}
+}
+
+.clientes{
+	background-color: $vlack;
+	color: $white2;
+	text-align: center;
+
+	h3{
+		margin-bottom: 2em;
+	}
 }
