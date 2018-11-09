@@ -24,61 +24,39 @@ get_header();?>
     </div>
 </section>
 
-
 <!-- claim -->
 <section class="claim d-flex h-100" >
 	<div class="container justify-content-center align-self-center">
 		<div class="row ">
 			<div class="col-lg-12">
 				<h2>Applying digital knowledge and tools to Real Estate development.</h2>
-				<h3>We are a Real Estate development firm<br>
-				Desarrollando Real Estate aplicando la tecnología.</h3>
+				<h3>We are a Real Estate development firm</h3>
 			</div>
 
-			<div class="col-lg-3">
-				<div class="box">
-					<div id="wrapper-postal">
-							<div id="postal">
+			<?php
+				if( have_rows('items_bajo_video') ):
 							
-								<figure>
-									<img src="https://imgholder.ru/100x100/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-									<h3>titulo</h3>
-									<h4>Subtitulo</h4>
-								</figure>
-								<figure class="back d-flex h-100">
-									<p>Evolution
-Our goal is to create a new Urban existence whereby sustainable and intelligent buildings are established as locomotive in the change of the urban landscape.</p>
-								</figure>
+				    while ( have_rows('items_bajo_video') ) : the_row();?>
+				    	<div class="col-lg-3">
+							<div class="box">
+								<?php $image = get_sub_field('item_imagen'); ?>
+								<img src="<?php echo $image['url']; ?>" alt="">
+								<h3><?php 
+								$item_titulo = the_sub_field('item_titulo'); 
+								_e($item_titulo , 'urbanvalue');
+								?>
+								</h3>
+								<p>
+								<?php 
+								$item_texto = the_sub_field('item_texto'); 
+								_e($item_texto , 'urbanvalue');
+								?>
+								</p>
 							</div>
-						</div>
-				</div>
-			</div>
-
-			<div class="col-lg-3">
-				<div class="box">
-					<img src="https://imgholder.ru/100x100/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-					<h3>titulo</h3>
-					<h4>Subtitulo</h4>
-				</div>
-			</div>
-
-			<div class="col-lg-3">
-				<div class="box">
-					<img src="https://imgholder.ru/100x100/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-					<h3>titulo</h3>
-					<h4>Subtitulo</h4>
-				</div>
-			</div>
-
-			<div class="col-lg-3">
-				<div class="box">
-					<img src="https://imgholder.ru/100x100/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
-					<h3>titulo</h3>
-					<h4>Subtitulo</h4>
-				</div>
-			</div>
-
-			
+						</div>					        
+					<?php  endwhile;
+				endif;
+			?>
 		</div>
 	</div>
 </section>
@@ -145,7 +123,7 @@ Our goal is to create a new Urban existence whereby sustainable and intelligent 
                 	while ( have_rows('numero_item' , 'option') ) : the_row();?>
 	                   <div class="col-lg-3">
 	                   		<div class="numero__item">
-	                   			<h3><?php the_sub_field('numero'); ?></h3>
+	                   			<h3 class="counter"><?php the_sub_field('numero'); ?></h3>
 	                   			<p><?php 
 	                   				$titulo_numero = the_sub_field('titulo_numero'); 
 	                   				_e($titulo_numero, 'urbanvalue');
@@ -291,6 +269,8 @@ Our goal is to create a new Urban existence whereby sustainable and intelligent 
 			</div>			
 		</div>
 	</div>
+	<?php get_footer();?>
+
 </section>
 
 
@@ -309,5 +289,3 @@ Our goal is to create a new Urban existence whereby sustainable and intelligent 
 
 get_footer();
 
-
-// hola wilman2
