@@ -1,5 +1,12 @@
 jQuery(document).ready(function($){
 
+jQuery( ".titl" ).mouseenter(function() {
+	$(this).toggleClass('specialtxt');
+  
+});
+jQuery( ".titl" ).mouseleave(function() {
+  $(this).toggleClass('specialtxt');
+});
 	// document.getElementsByTagName('iframe')[0].contentWindow.getElementsByClassName('ytp-watch-later-button')[0].style.display = 'none';
  		
 		$('.slide__principal').slick({
@@ -33,6 +40,13 @@ jQuery(document).ready(function($){
 		    },
 		    	]
 		});		
+		$('.quote-slider').slick({
+		  dots: true,
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 1,
+		  adaptiveHeight: true
+		});
 		
 		$('.slide__clientes').slick({
   				autoplay: true,

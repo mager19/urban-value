@@ -196,6 +196,20 @@ get_header();?>
 	</div>
 </section>
 
+<!-- Quotes -->
+<section class="quote d-flex h-100">
+	<div class="container justify-content-center align-self-center">
+		<div class="row">
+			<div class="offset-lg-1 col-lg-10 ">
+				<div class="quote-slider">
+				    <div><p>“Real estate cannot be lost or stolen, nor can it be carried away. Purchased with common sense, paid for in full, and managed with reasonable care, it is about the safest investment in the world.”</p> <h6>Franklin D. Roosevelt</h6></div>
+				    <div><p>“This is a real-estate-driven economy from top to bottom.”</p><h6>Christopher Thornberg</h6></div>
+				    <div><p>“Real estate is an imperishable asset, ever increasing in value. It is the most solid security that human ingenuity has devised. It is the basis of all security and about the only indestructible security.”</p> <h6>Russell Sage, American Financier and Politician</h6></div>
+				 </div>
+		   </div>
+		</div>
+	</div>
+</section>
 <!-- Team -->
 <section class="team d-flex h-100">
 	<div class="container justify-content-center align-self-center">

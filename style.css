@@ -42,15 +42,24 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
-@font-face { font-family: 'Avenir'; src: url("fonts/Avenir-Medium.eot"); src: url("fonts/Avenir-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/Avenir-Medium.woff2") format("woff2"), url("fonts/Avenir-Medium.woff") format("woff"), url("fonts/Avenir-Medium.svg#Avenir-Medium") format("svg"); font-weight: 500; font-style: normal; }
-
+/*@font-face {
+    font-family: 'Avenir';
+    src: url('fonts/Avenir-Medium.eot');
+    src: url('fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Avenir-Medium.woff2') format('woff2'),
+        url('fonts/Avenir-Medium.woff') format('woff'),
+        url('fonts/Avenir-Medium.svg#Avenir-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+} */
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document ========================================================================== */
 /** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 html { line-height: 1.15; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ }
 
 /* Sections ========================================================================== */
@@ -388,15 +397,19 @@ embed, iframe, object { max-width: 100%; }
 .gallery-caption { display: block; }
 
 /* estilos propios/*/
+/*@import url('https://fonts.googleapis.com/css?family=Noto+Serif');*/
 .onepage-pagination li a:before { background: rgba(255, 255, 255, 0.85) !important; }
 
 body { overflow-x: hidden; }
 
-h1 { font-family: 'Avenir' !important; }
+/*h1{ font-family: 'Avenir' !important;}
+h2{font-family: 'Noto Serif', serif !important;}
+p, a{font-family: Arial;}*/
+h1 { font-family: 'Lato', sans-serif; }
 
-h2 { font-family: 'Noto Serif', serif !important; }
+h2 { font-family: 'Lato', sans-serif; }
 
-p, a { font-family: Arial; }
+p, a { font-family: 'Montserrat', sans-serif; }
 
 header { /*background-color: $vlack;*/ /*background-color: rgba(30, 30, 30, 0.5);*/ padding: 1rem 0; color: #fff; position: absolute; z-index: 2; left: 0; top: 0; width: 100%; }
 
@@ -506,6 +519,16 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .impacto .numero__item h3 { color: #fff; font-size: 2.5rem; }
 
+.quote { background-color: #1E1E1E; background-image: url(img/quotes-bg.jpg); background-size: cover; color: #999; text-align: center; }
+
+.quote .slick-slide { padding-right: 2em; padding-left: 2em; }
+
+.quote .slick-slide p { font-size: 1.3rem; }
+
+.quote .slick-slide h6 { color: #fff; }
+
+.quote .slick-dots li button:before { color: #fff; }
+
 .team { background-color: #1E1E1E; color: #999; text-align: center; }
 
 .team p.team-text { margin-bottom: 3em; }
@@ -529,3 +552,9 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 .footer p, .footer a { font-size: 0.8rem; margin-bottom: 2px; }
 
 .footer a { color: #fff; }
+
+.titl { position: relative; padding-bottom: 10px; }
+
+.titl:after { position: absolute; bottom: 0; left: 0; right: 0; margin: 0 auto; width: 60px; height: 2px; background: #999; content: ""; -webkit-transition: all ease .3s; -ms-transition: all ease .3s; transition: all ease .3s; z-index: 1; }
+
+.titl.specialtxt:after { width: 80px; }
