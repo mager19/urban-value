@@ -65,6 +65,12 @@ jQuery(document).ready(function($){
 		    	]
 		});
 
+
+		$('.counter').counterUp({
+    delay: 500,
+    time: 5000
+});
+
 		var timeoutId;
 var $videoBgAspect = $(".videobg-aspect");
 var $videoBgWidth = $(".videobg-width");

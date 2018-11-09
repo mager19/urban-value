@@ -113,6 +113,36 @@ function urbanvalue_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Column 1', 'urbanvalue' ),
+		'id'            => 'footercol1',
+		'description'   => esc_html__( 'Add widgets here.', 'urbanvalue' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Column 2', 'urbanvalue' ),
+		'id'            => 'footercol2',
+		'description'   => esc_html__( 'Add widgets here.', 'urbanvalue' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Column 3', 'urbanvalue' ),
+		'id'            => 'footercol3',
+		'description'   => esc_html__( 'Add widgets here.', 'urbanvalue' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'urbanvalue_widgets_init' );
 
@@ -139,6 +169,10 @@ function urbanvalue_scripts() {
 	wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/js/main.js' );
 
 	wp_enqueue_script( 'slickjs', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), true );
+
+	wp_enqueue_script( 'waypointsjs', 'http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js', array('jquery'), true );
+
+	wp_enqueue_script( 'counterup', get_template_directory_uri() . '/js/jquery.counterup.min.js' );
 
 	wp_enqueue_script( 'urbanvalue-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	
