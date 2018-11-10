@@ -565,7 +565,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .cta .form { display: none; }
 
-.footer { background-color: #1E1E1E; color: #999; }
+.footer { background-color: #191919; color: #999; }
 
 .footer h2.widget-title { font-size: 0.9rem; font-weight: 600; text-transform: uppercase; margin-bottom: 20px; }
 
