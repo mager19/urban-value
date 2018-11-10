@@ -59,7 +59,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Document ========================================================================== */
 /** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
 @import url("https://fonts.googleapis.com/css?family=Lato");
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300");
 html { line-height: 1.15; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ }
 
 /* Sections ========================================================================== */
@@ -477,15 +477,15 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .filosofia { background-color: #1E1E1E; color: #999; text-align: center; }
 
-.filosofia h2 { margin-bottom: 2em; }
+.filosofia h2 { margin-bottom: 1em; }
 
-.filosofia div#wrapper-postal { width: 320px; height: 260px; margin: 0 auto; position: relative; /*border: 1px solid #888;*/ -webkit-perspective: 700px; -moz-perspective: 700px; perspective: 700px; }
+.filosofia div#wrapper-postal { width: 320px; height: 200px; margin: 0 auto; position: relative; /*border: 1px solid #888;*/ -webkit-perspective: 700px; -moz-perspective: 700px; perspective: 700px; }
 
 .filosofia div#wrapper-postal:hover #postal { -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); ms-transform: rotateY(180deg); -o-transform: rotateY(180deg); transform: rotateY(180deg); }
 
 .filosofia #postal { width: 100%; height: 100%; position: absolute; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-transition: transform 500ms ease-in-out; -moz-transition: transform 500ms ease-in-out; -o-transition: transform 500ms ease-in-out; transition: transform 500ms ease-in-out; }
 
-.filosofia #postal .vehiculo__item h3 { padding-top: 54%; color: #fff; font-size: 1.2rem; }
+.filosofia #postal .vehiculo__item h3 { padding-top: 46%; /*color: #fff;*/ font-size: 1.2rem; }
 
 .filosofia #postal figure { position: absolute; width: 100%; height: 100%; margin: 0; display: block; background-size: cover; background-repeat: no-repeat; background-position: center; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; }
 
@@ -509,9 +509,9 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .impacto { background-color: #1E1E1E; color: #999; text-align: center; }
 
-.impacto .items { background-color: #191919; padding: 2em 1em; }
+.impacto .items { background-color: #191919; padding: 1em 1em; }
 
-.impacto .items h3.titulo { margin-bottom: 1em; }
+.impacto .items h3.titulo { margin-bottom: 1em; font-size: 1.4rem; }
 
 .impacto .items .col-lg-3 { border-left: 1px solid #313131; }
 
@@ -519,13 +519,15 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .impacto .numero__item { padding: 0 25px; }
 
-.impacto .numero__item h3 { color: #fff; font-size: 2.5rem; }
+.impacto .numero__item h3 { color: #fff; font-size: 2rem; }
+
+.impacto .numero__item p { font-size: 0.9rem; }
 
 .quote { background-color: #1E1E1E; background-image: url(img/quotes-bg.jpg); background-size: cover; color: #999; text-align: center; }
 
 .quote .slick-slide { padding-right: 2em; padding-left: 2em; }
 
-.quote .slick-slide p { font-size: 1.3rem; }
+.quote .slick-slide p { font-size: 1rem; }
 
 .quote .slick-slide h6 { color: #fff; }
 
@@ -533,9 +535,9 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .team { background-color: #1E1E1E; color: #999; text-align: center; }
 
-.team p.team-text { margin-bottom: 3em; }
+.team p.team-text { margin-bottom: 1em; text-align: center; width: 100%; }
 
-.team h3 { margin: 0 auto 2em; }
+.team h3 { margin: 0 auto 1em; width: 100%; }
 
 .team h3.name { font-size: 1.2rem; margin-top: 15px; color: #fff; margin-bottom: 2px; }
 

@@ -121,7 +121,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
 
 
 .onepage-pagination li a:before{
@@ -428,12 +428,12 @@ video{
     text-align: center;
 
     h2{
-    	margin-bottom:2em;
+    	margin-bottom:1em;
     }
 
     div#wrapper-postal {
 	    width: 320px;
-	    height: 260px;
+	    height: 200px;
 	    margin: 0 auto;
 	    position: relative;
 	    /*border: 1px solid #888;*/
@@ -463,8 +463,8 @@ video{
 
 	        .vehiculo__item {
 	        	h3 {
-				    padding-top: 54%;
-				    color: #fff;
+				    padding-top: 46%;
+				   /*color: #fff;*/
 				        font-size: 1.2rem;
 				}
 			}
@@ -549,10 +549,11 @@ video{
 	text-align: center;
 	.items{
 		background-color: $vlack3;
-		padding: 2em 1em;
+		padding: 1em 1em;
 
 		h3.titulo {
 		    margin-bottom: 1em;
+		    font-size: 1.4rem;
 		}
 
 		.col-lg-3 {
@@ -567,7 +568,10 @@ video{
 
 	    h3{
 	    	color: #fff;
-	    	font-size: 2.5rem;
+	    	font-size: 2rem;
+	    }
+	    p{
+	    	font-size: 0.9rem;
 	    }
 	}
 }
@@ -582,7 +586,7 @@ video{
 		padding-right: 2em;
 		padding-left:2em;
 		p {
-		    font-size: 1.3rem;
+		    font-size: 1rem;
 		}
 		h6{color: #fff;}
 	}
@@ -597,9 +601,14 @@ video{
 	text-align: center;
 
 	p.team-text {
-	    margin-bottom: 3em;
+	    margin-bottom: 1em;
+    	text-align: center;
+    	width: 100%;
 	}
-	h3{margin:0 auto 2em;}
+	h3{
+		margin:0 auto 1em;
+		width: 100%;
+	}
 	h3.name {
 	    font-size: 1.2rem;
 	    margin-top: 15px;

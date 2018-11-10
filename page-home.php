@@ -72,7 +72,7 @@ get_header();?>
 </section>
 
 <!-- Filosofia -->
-<section class="filosofia d-flex h-100">
+<section class="filosofia d-flex flex-column h-100">
 	<div class="container justify-content-center align-self-center">
 		<div class="row">
 			<div class="col-lg-12">
@@ -115,11 +115,11 @@ get_header();?>
 
 	
 		</div>
+		
 	</div>
-</section>
 
 <!-- Impacto -->
-<section class="impacto d-flex h-100">
+<div class="impacto d-flex flex-column mt-5">
 	<div class="justify-content-center align-self-center items">
 		<div class="row ">
 			<div class="col-lg-12">
@@ -145,6 +145,8 @@ get_header();?>
                 	wp_reset_postdata();?>
 		</div>
 	</div>
+</div>
+
 </section>
 
 <!-- Proyectos -->
@@ -196,8 +198,10 @@ get_header();?>
 	</div>
 </section>
 
+
+
 <!-- Quotes -->
-<section class="quote d-flex h-100">
+<section class="quote d-flex flex-column">
 	<div class="container justify-content-center align-self-center">
 		<div class="row">
 			<div class="offset-lg-1 col-lg-10 ">
@@ -209,13 +213,13 @@ get_header();?>
 		   </div>
 		</div>
 	</div>
-</section>
+
 <!-- Team -->
-<section class="team d-flex h-100">
+<div class="team flex-column pt-4 pb-3">
 	<div class="container justify-content-center align-self-center">
 		<div class="row">
 			<h3 class="titl">TEAM</h3>
-			<p class="team-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eius cumque quibusdam aliquam quas dolor possimus, cupiditate voluptate, nostrum excepturi vitae quidem architecto dicta laboriosam dolorum porro. Saepe, veniam, nobis?</p>
+			<p class="team-text">Conformamos un equipo multidisplinario con amplia experiencia y expertise en cada una de las áreas de desarrollo</p>
 
 			<?php
 			$args = array( 'pagename' => 'team');
@@ -255,7 +259,56 @@ get_header();?>
 			?>
 		</div>
 	</div>
+</div>
+
 </section>
+
+<!-- Team -->
+<div class="team d-flex h-100">
+	<div class="container justify-content-center align-self-center">
+		<div class="row">
+			<h3 class="titl">TEAM</h3>
+			<p class="team-text">Conformamos un equipo multidisplinario con amplia experiencia y expertise en cada una de las áreas de desarrollo</p>
+
+			<?php
+			$args = array( 'pagename' => 'team');
+			$loop = new WP_Query( $args );
+			if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); 
+
+				if( have_rows('equipo') ):
+
+				 	// loop through the rows of data
+				    while ( have_rows('equipo') ) : the_row();?>
+						
+						<div class="col-lg-3">
+							<div class="equipo">
+								<?php $image = get_sub_field('foto'); ?>
+								<img src="<?php echo $image['url']; ?>" alt="">
+								<h3 class="name"><?php the_sub_field('nombre'); ?></h3>
+								<h5 class="job"><?php the_sub_field('cargo'); ?></h5>
+							</div>
+						</div>	
+				        
+				<?php    endwhile;
+
+				else :
+
+				    // no rows found
+
+				endif;
+			?>
+							
+			<!-- post -->
+			<?php endwhile; ?>
+			<!-- post navigation -->
+			<?php else: ?>
+			<!-- no posts found -->
+			<?php endif; 
+				wp_reset_postdata();
+			?>
+		</div>
+	</div>
+</div>
 
 <!-- Clientes -->
 <section class="clientes d-flex h-100">
@@ -301,12 +354,7 @@ get_header();?>
 	<div class="container justify-content-center align-self-center">
 		<div class="offset-lg-2 col-lg-8">
 			<div class="cta-txt">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Nos encantaría conocer más propuestas de valor, contáctanos.</p>
 			<a class="cta-btn" >Contacto</a></div>
 			<?php //echo do_shortcode( '[contact-form-7 id="139" title="CTA"]' );?>
 			<div class="form">
@@ -321,12 +369,13 @@ get_header();?>
 	  jQuery(document).ready(function(){
       jQuery(".main").onepage_scroll({
         sectionContainer: "section",
-        responsiveFallback: 600,
+        responsiveFallback: 1023,
         loop: true
       });
 		});
 		
 	</script>
+	
 <?php
 
 get_footer();
