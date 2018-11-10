@@ -176,6 +176,7 @@ function urbanvalue_scripts() {
 
 	wp_enqueue_script( 'urbanvalue-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	
+	
   	wp_enqueue_script( 'onepage-scroll', get_template_directory_uri() . '/js/jquery.onepage-scroll.js' );
   	wp_enqueue_style( 'onepage-scroll', get_template_directory_uri() . '/css/onepage-scroll.css' );
 
