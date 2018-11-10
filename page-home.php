@@ -350,7 +350,6 @@ get_header();?>
 
 </section>
 
-<!-- CTA  
 <section class="cta d-flex h-100">
 	<div class="container justify-content-center align-self-center">
 		<div class="offset-lg-2 col-lg-8">
@@ -364,7 +363,7 @@ get_header();?>
 			
 		</div>
 	</div>
-</section>-->
+</section>
  <!-- </div>  -->
 <script>
 	  jQuery(document).ready(function(){
