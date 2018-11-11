@@ -118,8 +118,8 @@ function urbanvalue_widgets_init() {
 		'name'          => esc_html__( 'Footer Column 1', 'urbanvalue' ),
 		'id'            => 'footercol1',
 		'description'   => esc_html__( 'Add widgets here.', 'urbanvalue' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
@@ -128,8 +128,8 @@ function urbanvalue_widgets_init() {
 		'name'          => esc_html__( 'Footer Column 2', 'urbanvalue' ),
 		'id'            => 'footercol2',
 		'description'   => esc_html__( 'Add widgets here.', 'urbanvalue' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
@@ -138,8 +138,8 @@ function urbanvalue_widgets_init() {
 		'name'          => esc_html__( 'Footer Column 3', 'urbanvalue' ),
 		'id'            => 'footercol3',
 		'description'   => esc_html__( 'Add widgets here.', 'urbanvalue' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
@@ -175,6 +175,7 @@ function urbanvalue_scripts() {
 	wp_enqueue_script( 'counterup', get_template_directory_uri() . '/js/jquery.counterup.min.js' );
 
 	wp_enqueue_script( 'urbanvalue-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	
 	
   	wp_enqueue_script( 'onepage-scroll', get_template_directory_uri() . '/js/jquery.onepage-scroll.js' );
   	wp_enqueue_style( 'onepage-scroll', get_template_directory_uri() . '/css/onepage-scroll.css' );

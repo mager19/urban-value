@@ -39,6 +39,10 @@ get_header();?>
 				    while ( have_rows('items_bajo_video') ) : the_row();?>
 				    	<div class="col-lg-3">
 							<div class="box">
+								<div id="wrapper-postal">
+							<div id="postal">
+							
+								<figure>
 								<?php $image = get_sub_field('item_imagen'); ?>
 								<img src="<?php echo $image['url']; ?>" alt="">
 								<h3><?php 
@@ -46,12 +50,18 @@ get_header();?>
 								_e($item_titulo , 'urbanvalue');
 								?>
 								</h3>
+								</figure>
+								<figure class="back d-flex h-100">
 								<p>
 								<?php 
 								$item_texto = the_sub_field('item_texto'); 
 								_e($item_texto , 'urbanvalue');
 								?>
 								</p>
+								</figure>
+								
+							</div>
+						</div>
 							</div>
 						</div>					        
 					<?php  endwhile;
@@ -62,7 +72,7 @@ get_header();?>
 </section>
 
 <!-- Filosofia -->
-<section class="filosofia d-flex h-100">
+<section class="filosofia d-flex flex-column h-100">
 	<div class="container justify-content-center align-self-center">
 		<div class="row">
 			<div class="col-lg-12">
@@ -87,9 +97,10 @@ get_header();?>
 							?>
 							</h3></div>
 							</figure>
-							<figure class="back">
+							<figure class="back d-flex h-100">
+								<div class="justify-content-center align-self-center" >
 							<?php the_content(); ?>
-							<a href="<?php the_permalink(); ?>">Ver Mas</a>
+							<a href="<?php the_permalink(); ?>" class="more">Ver Mas</a></div>
 							</figure>
 						</div>
 					</div>
@@ -104,19 +115,19 @@ get_header();?>
 
 	
 		</div>
+		
 	</div>
-</section>
 
 <!-- Impacto -->
-<section class="impacto d-flex h-100">
-	<div class="justify-content-center align-self-center">
-		<div class="row">
+<div class="impacto d-flex flex-column mt-5">
+	<div class="justify-content-center align-self-center items">
+		<div class="row ">
 			<div class="col-lg-12">
-				<h3>GENERAMOS IMPACTOS POSITIVOS</h3>
+				<h3 class="titulo">GENERAMOS IMPACTOS POSITIVOS</h3>
 			</div>
 		</div>
 
-		<div class="row items">
+		<div class="row ">
 			<?php
                 if( have_rows('numero_item' , 'option') ):
                 	while ( have_rows('numero_item' , 'option') ) : the_row();?>
@@ -134,6 +145,8 @@ get_header();?>
                 	wp_reset_postdata();?>
 		</div>
 	</div>
+</div>
+
 </section>
 
 <!-- Proyectos -->
@@ -141,7 +154,7 @@ get_header();?>
 	<div class="container justify-content-center align-self-center">
 		<div class="row">
 			<div class="col-lg-12">
-				<h3>PROYECTOS</h3>
+				<h3 class="titl">PROYECTOS</h3>
 			</div>
 		</div>
 		
@@ -185,12 +198,28 @@ get_header();?>
 	</div>
 </section>
 
-<!-- Team -->
-<section class="team d-flex h-100">
+
+
+<!-- Quotes -->
+<section class="quote d-flex flex-column">
 	<div class="container justify-content-center align-self-center">
 		<div class="row">
-			<h3>TEAM</h3>
-			<p class="team-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eius cumque quibusdam aliquam quas dolor possimus, cupiditate voluptate, nostrum excepturi vitae quidem architecto dicta laboriosam dolorum porro. Saepe, veniam, nobis?</p>
+			<div class="offset-lg-1 col-lg-10 ">
+				<div class="quote-slider">
+				    <div><p>“Real estate cannot be lost or stolen, nor can it be carried away. Purchased with common sense, paid for in full, and managed with reasonable care, it is about the safest investment in the world.”</p> <h6>Franklin D. Roosevelt</h6></div>
+				    <div><p>“This is a real-estate-driven economy from top to bottom.”</p><h6>Christopher Thornberg</h6></div>
+				    <div><p>“Real estate is an imperishable asset, ever increasing in value. It is the most solid security that human ingenuity has devised. It is the basis of all security and about the only indestructible security.”</p> <h6>Russell Sage, American Financier and Politician</h6></div>
+				 </div>
+		   </div>
+		</div>
+	</div>
+
+<!-- Team -->
+<div class="team flex-column pt-4 pb-3">
+	<div class="container justify-content-center align-self-center">
+		<div class="row">
+			<h3 class="titl">TEAM</h3>
+			<p class="team-text">Conformamos un equipo multidisplinario con amplia experiencia y expertise en cada una de las áreas de desarrollo</p>
 
 			<?php
 			$args = array( 'pagename' => 'team');
@@ -206,8 +235,8 @@ get_header();?>
 							<div class="equipo">
 								<?php $image = get_sub_field('foto'); ?>
 								<img src="<?php echo $image['url']; ?>" alt="">
-								<h3><?php the_sub_field('nombre'); ?></h3>
-								<h5><?php the_sub_field('cargo'); ?></h5>
+								<h3 class="name"><?php the_sub_field('nombre'); ?></h3>
+								<h5 class="job"><?php the_sub_field('cargo'); ?></h5>
 							</div>
 						</div>	
 				        
@@ -230,14 +259,63 @@ get_header();?>
 			?>
 		</div>
 	</div>
+</div>
+
 </section>
+
+<!-- Team -->
+<div class="team d-flex h-100">
+	<div class="container justify-content-center align-self-center">
+		<div class="row">
+			<h3 class="titl">TEAM</h3>
+			<p class="team-text">Conformamos un equipo multidisplinario con amplia experiencia y expertise en cada una de las áreas de desarrollo</p>
+
+			<?php
+			$args = array( 'pagename' => 'team');
+			$loop = new WP_Query( $args );
+			if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); 
+
+				if( have_rows('equipo') ):
+
+				 	// loop through the rows of data
+				    while ( have_rows('equipo') ) : the_row();?>
+						
+						<div class="col-lg-3">
+							<div class="equipo">
+								<?php $image = get_sub_field('foto'); ?>
+								<img src="<?php echo $image['url']; ?>" alt="">
+								<h3 class="name"><?php the_sub_field('nombre'); ?></h3>
+								<h5 class="job"><?php the_sub_field('cargo'); ?></h5>
+							</div>
+						</div>	
+				        
+				<?php    endwhile;
+
+				else :
+
+				    // no rows found
+
+				endif;
+			?>
+							
+			<!-- post -->
+			<?php endwhile; ?>
+			<!-- post navigation -->
+			<?php else: ?>
+			<!-- no posts found -->
+			<?php endif; 
+				wp_reset_postdata();
+			?>
+		</div>
+	</div>
+</div>
 
 <!-- Clientes -->
 <section class="clientes d-flex h-100">
 	<div class="container justify-content-center align-self-center">
 		<div class="row">
 			<div class="col-lg-12">
-				<h3>NUESTROS CLIENTES</h3>			
+				<h3 class="titl">NUESTROS CLIENTES</h3>			
 				<div class="slide__clientes">
 					<?php
 					$args = array( 'pagename' => 'clientes');
@@ -268,22 +346,37 @@ get_header();?>
 			</div>			
 		</div>
 	</div>
-	<?php get_footer();?>
+	
 
 </section>
 
-
-</div>
+<!-- CTA  
+<section class="cta d-flex h-100">
+	<div class="container justify-content-center align-self-center">
+		<div class="offset-lg-2 col-lg-8">
+			<div class="cta-txt">
+			<p>Nos encantaría conocer más propuestas de valor, contáctanos.</p>
+			<a class="cta-btn" >Contacto</a></div>
+			<?php //echo do_shortcode( '[contact-form-7 id="139" title="CTA"]' );?>
+			<div class="form">
+			<?php echo do_shortcode( '[contact-form-7 id="153" title="cta"]' );?>
+			</div>
+			
+		</div>
+	</div>
+</section>-->
+ <!-- </div>  -->
 <script>
 	  jQuery(document).ready(function(){
       jQuery(".main").onepage_scroll({
         sectionContainer: "section",
-        responsiveFallback: 600,
+        responsiveFallback: 1023,
         loop: true
       });
 		});
 		
 	</script>
+	
 <?php
 
 get_footer();
