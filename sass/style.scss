@@ -477,7 +477,6 @@ video{
     text-align: center;
 	padding-top: 8em;
 
-
     h2{
     	margin-bottom:1em;
     }
@@ -803,11 +802,11 @@ video{
 }
 
 
-@media only screen and (min-width: 1440px) {
+@media screen and (min-width: 1439px) {
 	.filosofia{
 		.container{
-			padding-top: 4em;
-			padding-bottom: 4em;
+			padding-top: 2em;
+			padding-bottom: 0em;
 		}
 		.impacto{
 			    padding-top: 2em;
