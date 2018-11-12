@@ -683,9 +683,13 @@ video{
 	}
 }
 .footer{
-	background-color: $vlack;
-	color: $white2;
-
+	/*background-color: $vlack;*/
+	background-color: #ececec ;
+	/*color: $white2;*/
+	color: $vlack;
+	.clientes{
+		background-color: #ececec ;
+	}
 	h2.widget-title {
 	    font-size: 0.9rem;
 	    font-weight: 600;
@@ -698,7 +702,11 @@ video{
 	    margin-bottom: 2px;
 	}
 	a{
-		color: #fff;
+		/*color: #fff;*/
+		color: #000;
+		&:hover{
+			a {color:$vlack !important;}
+		}
 	}
 }
 .titl{

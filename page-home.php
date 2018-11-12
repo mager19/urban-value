@@ -13,7 +13,7 @@ get_header();?>
 
 <!-- _e()($variable , 'urban&value') -->
 <div class="main">
-<section class="videoWrapper d-flex h-100">
+<section class="videoWrapper d-md-block d-lg-flex h-100">
 	<div class="overlay"></div>
     <iframe width="auto" height="auto" src="https://www.youtube.com/embed/<?php the_field('videohome') ?>?autoplay=1&rel=0&modestbranding=0&autohide=0&showinfo=0&controls=0&loop=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <!-- <iframe src="https://player.vimeo.com/video/156270370?background=1&autoplay=1&loop=1&byline=0&title=0"
@@ -25,8 +25,8 @@ get_header();?>
 </section>
 
 <!-- claim -->
-<section class="claim d-flex h-100" >
-	<div class="container justify-content-center align-self-center">
+<section class="claim d-md-block d-lg-flex h-100 pb-md-5" >
+	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row ">
 			<div class="col-lg-12">
 				<h2>Applying digital knowledge and tools to Real Estate development.</h2>
@@ -72,8 +72,8 @@ get_header();?>
 </section>
 
 <!-- Filosofia -->
-<section class="filosofia d-flex flex-column h-100">
-	<div class="container justify-content-center align-self-center">
+<section class="filosofia d-md-block d-lg-flex flex-lg-column h-100 pb-md-5">
+	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
 			<div class="col-lg-12">
 				<h2>Por Delante de Nuestra Filosofia Empresarial esta la Pasion por desarrollar productos innovadores</h2>
@@ -119,8 +119,8 @@ get_header();?>
 	</div>
 
 <!-- Impacto -->
-<div class="impacto d-flex flex-column mt-5">
-	<div class="justify-content-center align-self-center items">
+<div class="impacto d-lg-flex flex-lg-column mt-5">
+	<div class="justify-content-lg-center align-self-lg-center items">
 		<div class="row ">
 			<div class="col-lg-12">
 				<h3 class="titulo">GENERAMOS IMPACTOS POSITIVOS</h3>
@@ -150,8 +150,8 @@ get_header();?>
 </section>
 
 <!-- Proyectos -->
-<section class="proyectos d-flex h-100">
-	<div class="container justify-content-center align-self-center">
+<section class="proyectos d-lg-flex h-100 pb-md-5">
+	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
 			<div class="col-lg-12">
 				<h3 class="titl">PROYECTOS</h3>
@@ -201,8 +201,8 @@ get_header();?>
 
 
 <!-- Quotes -->
-<section class="quote d-flex flex-column">
-	<div class="container justify-content-center align-self-center">
+<section class="quote d-lg-flex flex-lg-column pb-md-5">
+	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
 			<div class="offset-lg-1 col-lg-10 ">
 				<div class="quote-slider">
@@ -215,8 +215,8 @@ get_header();?>
 	</div>
 
 <!-- Team -->
-<div class="team flex-column pt-4 pb-3">
-	<div class="container justify-content-center align-self-center">
+<div class="team flex-lg-column pt-4 pb-3">
+	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
 			<h3 class="titl">TEAM</h3>
 			<p class="team-text">Conformamos un equipo multidisplinario con amplia experiencia y expertise en cada una de las áreas de desarrollo</p>
@@ -264,8 +264,8 @@ get_header();?>
 </section>
 
 <!-- Team -->
-<div class="team d-flex h-100">
-	<div class="container justify-content-center align-self-center">
+<div class="team d-lg-flex h-100">
+	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
 			<h3 class="titl">TEAM</h3>
 			<p class="team-text">Conformamos un equipo multidisplinario con amplia experiencia y expertise en cada una de las áreas de desarrollo</p>
@@ -311,13 +311,13 @@ get_header();?>
 </div>
 
 <!-- Clientes -->
-<section class="clientes d-flex h-100">
-	<div class="container justify-content-center align-self-center">
+<!--- <section class="clientes d-lg-flex h-100 pb-md-5">
+	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
 			<div class="col-lg-12">
 				<h3 class="titl">NUESTROS CLIENTES</h3>			
 				<div class="slide__clientes">
-					<?php
+					<?php /*
 					$args = array( 'pagename' => 'clientes');
 					$loop = new WP_Query( $args );
 						if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
@@ -331,33 +331,37 @@ get_header();?>
 									</div>
 							        
 							<?php  endwhile;
-						endif;
+						endif;*/
 					?>
-								
+							-->	
 				<!-- post -->
-				<?php endwhile; ?>
+				<?php /*endwhile;*/ ?>
 				<!-- post navigation -->
-				<?php else: ?>
+				<?php /*else:*/ ?>
 				<!-- no posts found -->
-				<?php endif; 
-					wp_reset_postdata();
+				<?php /*endif; 
+					wp_reset_postdata();*/
 				?>
-				</div>
+			<!--	</div>
 			</div>			
 		</div>
 	</div>
 	
 
-</section>
+</section> -->
 
-<section class="cta d-flex h-100">
-	<div class="container justify-content-center align-self-center">
+<section class="cta d-lg-flex h-100 pb-md-5">
+	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="offset-lg-2 col-lg-8">
 			<div class="cta-txt">
+
 			<p>Nos encantaría conocer más propuestas de valor, contáctanos.</p>
 			<a class="cta-btn" >Contacto</a></div>
 			<?php //echo do_shortcode( '[contact-form-7 id="139" title="CTA"]' );?>
 			<div class="form">
+				<button type="button" class="close" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>
 			<?php echo do_shortcode( '[contact-form-7 id="153" title="cta"]' );?>
 			</div>
 			
@@ -369,7 +373,7 @@ get_header();?>
 	  jQuery(document).ready(function(){
       jQuery(".main").onepage_scroll({
         sectionContainer: "section",
-        responsiveFallback: 1023,
+        responsiveFallback: 769,
         loop: true
       });
 		});

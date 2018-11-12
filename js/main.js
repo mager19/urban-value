@@ -89,6 +89,10 @@ jQuery( ".titl" ).mouseleave(function() {
 	        $('.cta .form').toggle("fast");
 			$('.cta .cta-txt').toggle("fast");
 		});
+		$(".cta .close").on( "click", function() {	 
+	        $('.cta .form').toggle("fast");
+			$('.cta .cta-txt').toggle("fast");
+		});
 
 
 		var timeoutId;
