@@ -583,15 +583,15 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .cta .form { display: none; }
 
-.footer { /*background-color: $vlack;*/ background-color: #ececec; /*color: $white2;*/ color: #1E1E1E; }
+.footer { background-color: #1E1E1E; /*color: $white2;*/ color: #999; }
 
-.footer .clientes { background-color: #ececec; }
+.footer .clientes { background-color: #1E1E1E; }
 
 .footer h2.widget-title { font-size: 0.9rem; font-weight: 600; text-transform: uppercase; margin-bottom: 20px; }
 
 .footer p, .footer a { font-size: 0.8rem; margin-bottom: 2px; }
 
-.footer a { /*color: #fff;*/ color: #000; }
+.footer a { color: #fff; }
 
 .footer a:hover a { color: #1E1E1E !important; }
 
