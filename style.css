@@ -573,7 +573,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .footer .clientes { background-color: #1E1E1E; }
 
-.footer h2.widget-title { font-size: 0.9rem; font-weight: 600; text-transform: uppercase; margin-bottom: 20px; }
+.footer h2.widget-title { font-size: 0.9rem !important; font-weight: 600; text-transform: uppercase; margin-bottom: 20px; }
 
 .footer p, .footer a { font-size: 0.8rem; margin-bottom: 2px; }
 
