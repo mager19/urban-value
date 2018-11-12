@@ -15,11 +15,11 @@
 
 <!-- Clientes -->
 <?php if (is_front_page()){ ?>
-<section class="footer d-flex h-100 flex-column">
-<div class="clientes d-flex  mt-5 mb-5">
-	<div class="container justify-content-center align-self-center">
+<section class="footer d-lg-flex h-100 flex-lg-column">
+<div class="clientes d-lg-flex  mt-lg-5 mb-lg-5">
+	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
-			<div class="col-lg-12 mt-5">
+			<div class="col-lg-12 mt-lg-5">
 				<h3 class="titl">NUESTROS CLIENTES</h3>			
 				<div class="slide__clientes">
 					<?php
@@ -54,7 +54,7 @@
 	
 
 </div>
-		<div class="container justify-content-center align-self-center mt-5">
+		<div class="container justify-content-lg-center align-self-lg-center mt-5">
 			<div class="row">
 				<div class="col-lg-3 ">
 					<?php 
@@ -91,9 +91,9 @@
 </section>
 
 <?php }  else {?>
-<section class="footer d-flex h-100 ">
+<section class="footer d-lg-flex h-100 ">
 		
-		<div class="container justify-content-center align-self-center mt-5">
+		<div class="container justify-content-lg-center align-self-lg-center mt-5">
 			<div class="row">
 				<div class="col-lg-3">
 					<?php 
