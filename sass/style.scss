@@ -811,7 +811,7 @@ video{
 	    
 	}
 }
-
+.activebg { background-color: $vlack}
 
 @media screen and (min-width: 1439px) {
 	.filosofia{
@@ -847,7 +847,10 @@ video{
 		}
 		.impacto{
 			position: absolute;
-    		bottom: 5px;
+    		/*bottom: 5px;*/
+    		bottom: 3vh;
+		    margin: 0 auto;
+		    width: 100%;
 		}
 	}
 	.quote{

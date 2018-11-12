@@ -589,6 +589,8 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .titl.specialtxt:after { width: 80px; }
 
+.activebg { background-color: #1E1E1E; }
+
 @media screen and (min-width: 1439px) { .filosofia { padding-top: 4em; }
   .filosofia .container { padding-top: 2em; padding-bottom: 0em; }
   .filosofia .impacto { padding-top: 2em; }
@@ -597,7 +599,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 @media screen and (min-width: 1450px) { .filosofia { padding-top: 4em; }
   .filosofia .container { padding-top: 18vh; }
-  .filosofia .impacto { position: absolute; bottom: 5px; }
+  .filosofia .impacto { position: absolute; /*bottom: 5px;*/ bottom: 3vh; margin: 0 auto; width: 100%; }
   .quote .container { padding-top: 13vh; /*padding-bottom: 2em;*/ }
   .footer .clientes { padding-top: 13vh; }
   .footer .last-footer { position: absolute; bottom: 30px; } }

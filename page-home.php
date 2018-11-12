@@ -29,8 +29,8 @@ get_header();?>
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row ">
 			<div class="col-lg-12">
-				<h2>La filosofía de la empresa se ve reflejada en cuatro momentos clave que hacen la propuesta de valor única en el sector.</h2>
-				<h3>We are a Real Estate development firm</h3>
+				<h2>Applying digital knowledge and tools to Real Estate development.</h2>
+				<h3>La filosofía de la empresa se ve reflejada en cuatro momentos clave que hacen la propuesta de valor única en el sector.</h3>
 			</div>
 
 			<?php
