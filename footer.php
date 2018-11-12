@@ -20,7 +20,7 @@
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
 			<div class="col-lg-12 mt-lg-5">
-				<h3 class="titl">NUESTROS CLIENTES</h3>			
+				<h3 class="titl">PARTNERS</h3>			
 				<div class="slide__clientes">
 					<?php
 					$args = array( 'pagename' => 'clientes');

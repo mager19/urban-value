@@ -144,47 +144,47 @@ a:hover{color: #999;}
 
 header{
 	
-	.flecha.onepage-pagination li a {
-		    width: 0px!important;
-		    height: 0px!important;
+	// .flecha.onepage-pagination li a {
+	// 	    width: 0px!important;
+	// 	    height: 0px!important;
 
-		    &::before{
-	    	    width: 0px!important;
-		    	height: 0px!important;
-		    }
+	// 	    &::before{
+	//     	    width: 0px!important;
+	// 	    	height: 0px!important;
+	// 	    }
 
-		    &:focus {outline:0;}
-		}
+	// 	    &:focus {outline:0;}
+	// 	}
 
-	.flecha{
-		position: relative;
-		height: 100vh;
-		left: 49%;
+	// .flecha{
+	// 	position: relative;
+	// 	height: 100vh;
+	// 	left: 49%;
 
 		
 
-		li{
-			list-style: none;
+	// 	li{
+	// 		list-style: none;
 	
-		}
+	// 	}
 
-		a{
-			position: absolute;
+	// 	a{
+	// 		position: absolute;
 			
-			bottom: 15%;
-			i{
-				color:rgba(255,255,255, 0.4);
-				font-size: 3rem;
+	// 		bottom: 15%;
+	// 		i{
+	// 			color:rgba(255,255,255, 0.4);
+	// 			font-size: 3rem;
 
-				transition: .2s linear all;
+	// 			transition: .2s linear all;
 				
-			}
+	// 		}
 
-			&:hover i{
-				font-size: 3.5em;
-			}
-		}
-	}
+	// 		&:hover i{
+	// 			font-size: 3.5em;
+	// 		}
+	// 	}
+	// }
 
 	/*background-color: $vlack;*/
 	/*background-color: rgba(30, 30, 30, 0.5);*/
@@ -605,6 +605,7 @@ video{
 		h3.titulo {
 		    margin-bottom: 1em;
 		    font-size: 1.4rem;
+		    color:#fff;
 		}
 
 		.col-lg-3 {

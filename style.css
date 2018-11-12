@@ -417,22 +417,6 @@ a:hover { color: #999; }
 
 header { /*background-color: $vlack;*/ /*background-color: rgba(30, 30, 30, 0.5);*/ padding: 1rem 0; color: #fff; position: absolute; z-index: 2; left: 0; top: 0; width: 100%; }
 
-header .flecha.onepage-pagination li a { width: 0px !important; height: 0px !important; }
-
-header .flecha.onepage-pagination li a::before { width: 0px !important; height: 0px !important; }
-
-header .flecha.onepage-pagination li a:focus { outline: 0; }
-
-header .flecha { position: relative; height: 100vh; left: 49%; }
-
-header .flecha li { list-style: none; }
-
-header .flecha a { position: absolute; bottom: 15%; }
-
-header .flecha a i { color: rgba(255, 255, 255, 0.4); font-size: 3rem; transition: .2s linear all; }
-
-header .flecha a:hover i { font-size: 3.5em; }
-
 header img { height: 35px; }
 
 header .main-navigation { height: 100%; display: flex; justify-content: space-between; align-items: center; }
@@ -529,7 +513,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .impacto .items { background-color: #191919; padding: 1em 1em; }
 
-.impacto .items h3.titulo { margin-bottom: 1em; font-size: 1.4rem; }
+.impacto .items h3.titulo { margin-bottom: 1em; font-size: 1.4rem; color: #fff; }
 
 .impacto .items .col-lg-3 { border-left: 1px solid #313131; }
 
