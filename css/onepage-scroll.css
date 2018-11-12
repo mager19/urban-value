@@ -76,7 +76,7 @@ body, .onepage-wrapper, html {
   position: relative !important;
   top: auto !important;
   left: auto !important;
-  /*position: initial !important;*/
+  height: auto !important;
 }
 .disabled-onepage-scroll .onepage-wrapper {
   -webkit-transform: none !important;
