@@ -144,47 +144,47 @@ a:hover{color: #999;}
 
 header{
 	
-	.flecha.onepage-pagination li a {
-		    width: 0px!important;
-		    height: 0px!important;
+	// .flecha.onepage-pagination li a {
+	// 	    width: 0px!important;
+	// 	    height: 0px!important;
 
-		    &::before{
-	    	    width: 0px!important;
-		    	height: 0px!important;
-		    }
+	// 	    &::before{
+	//     	    width: 0px!important;
+	// 	    	height: 0px!important;
+	// 	    }
 
-		    &:focus {outline:0;}
-		}
+	// 	    &:focus {outline:0;}
+	// 	}
 
-	.flecha{
-		position: relative;
-		height: 100vh;
-		left: 49%;
+	// .flecha{
+	// 	position: relative;
+	// 	height: 100vh;
+	// 	left: 49%;
 
 		
 
-		li{
-			list-style: none;
+	// 	li{
+	// 		list-style: none;
 	
-		}
+	// 	}
 
-		a{
-			position: absolute;
+	// 	a{
+	// 		position: absolute;
 			
-			bottom: 15%;
-			i{
-				color:rgba(255,255,255, 0.4);
-				font-size: 3rem;
+	// 		bottom: 15%;
+	// 		i{
+	// 			color:rgba(255,255,255, 0.4);
+	// 			font-size: 3rem;
 
-				transition: .2s linear all;
+	// 			transition: .2s linear all;
 				
-			}
+	// 		}
 
-			&:hover i{
-				font-size: 3.5em;
-			}
-		}
-	}
+	// 		&:hover i{
+	// 			font-size: 3.5em;
+	// 		}
+	// 	}
+	// }
 
 	/*background-color: $vlack;*/
 	/*background-color: rgba(30, 30, 30, 0.5);*/
@@ -373,7 +373,7 @@ video{
     	}
     	h4{
     		font-size: 0.9rem;
-    		margin-top: -4px;
+    		margin-top: 4px;
     		    text-transform: initial;
     	}
 
@@ -472,6 +472,8 @@ video{
 	background-color: $vlack;
 	color: $white2;
     text-align: center;
+	padding-top: 8em;
+
 
     h2{
     	margin-bottom:1em;
@@ -510,10 +512,11 @@ video{
 	        transition: transform 500ms ease-in-out;
 
 	        .vehiculo__item {
-	        	h3 {
+	        	h4 {
 				    padding-top: 60%;
 				   /*color: #fff;*/
-				        font-size: 1.2rem!important;
+				        font-size: 0.9rem!important;
+				        margin-top: 4px;
 				}
 			}
 		figure {
@@ -605,6 +608,7 @@ video{
 		h3.titulo {
 		    margin-bottom: 1em;
 		    font-size: 1.4rem;
+		    color:#fff;
 		}
 
 		.col-lg-3 {
@@ -633,6 +637,8 @@ video{
 	background-size: cover;
 	color: $white2;
 	text-align: center;
+	padding-top: 8em;
+
 	.slick-slide{
 		padding-right: 2em;
 		padding-left:2em;
@@ -688,9 +694,13 @@ video{
 }
 
 .cta{
-	background-color: $vlack;
-	color: $white2;
+	background-color: #f5f5f5;
+	color: #000;
 	text-align: center;
+
+	p{
+		font-weight: 800;
+	}
 
 	label, input{
 		width: 100%;
@@ -721,8 +731,8 @@ video{
 	    margin-top: 3px;
 	}
 	a.cta-btn {
-	    background-color: #fff;
-	    color: #000 !important;
+	    background-color: $vlack;
+	    color: #fff !important;
 	    border-radius: 50px;
 	    text-transform: uppercase;
 	    margin-top: 3px;

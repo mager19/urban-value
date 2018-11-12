@@ -45,11 +45,11 @@ get_header();?>
 								<figure>
 								<?php $image = get_sub_field('item_imagen'); ?>
 								<img src="<?php echo $image['url']; ?>" alt="">
-								<h3><?php 
+								<h4><?php 
 								$item_titulo = the_sub_field('item_titulo'); 
 								_e($item_titulo , 'urbanvalue');
 								?>
-								</h3>
+								</h4>
 								</figure>
 								<figure class="back d-flex h-100">
 								<p>
@@ -91,11 +91,11 @@ get_header();?>
 						<div id="postal">
 							<figure style="background-image:url(<?php the_post_thumbnail_url(); ?>); ">
 						<div class="vehiculo__item" >
-							<h3><?php 
+							<h4><?php 
 							$title_vehiculo = the_title(); 
 							_e($title_vehiculo , 'urbanvalue');
 							?>
-							</h3></div>
+							</h4></div>
 							</figure>
 							<figure class="back d-flex h-100">
 								<div class="justify-content-center align-self-center" >
@@ -263,52 +263,7 @@ get_header();?>
 
 </section>
 
-<!-- Team -->
-<div class="team d-lg-flex h-100">
-	<div class="container justify-content-lg-center align-self-lg-center">
-		<div class="row">
-			<h3 class="titl">TEAM</h3>
-			<p class="team-text">Conformamos un equipo multidisplinario con amplia experiencia y expertise en cada una de las áreas de desarrollo</p>
 
-			<?php
-			$args = array( 'pagename' => 'team');
-			$loop = new WP_Query( $args );
-			if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); 
-
-				if( have_rows('equipo') ):
-
-				 	// loop through the rows of data
-				    while ( have_rows('equipo') ) : the_row();?>
-						
-						<div class="col-lg-3">
-							<div class="equipo">
-								<?php $image = get_sub_field('foto'); ?>
-								<img src="<?php echo $image['url']; ?>" alt="">
-								<h3 class="name"><?php the_sub_field('nombre'); ?></h3>
-								<h5 class="job"><?php the_sub_field('cargo'); ?></h5>
-							</div>
-						</div>	
-				        
-				<?php    endwhile;
-
-				else :
-
-				    // no rows found
-
-				endif;
-			?>
-							
-			<!-- post -->
-			<?php endwhile; ?>
-			<!-- post navigation -->
-			<?php else: ?>
-			<!-- no posts found -->
-			<?php endif; 
-				wp_reset_postdata();
-			?>
-		</div>
-	</div>
-</div>
 
 <!-- Clientes -->
 <!--- <section class="clientes d-lg-flex h-100 pb-md-5">
