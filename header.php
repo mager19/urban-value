@@ -50,11 +50,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="flecha onepage-pagination">
+<!-- 	<div class="flecha onepage-pagination">
 		<li><a data-index="2" href="#2"><i class="fas fa-arrow-circle-down"></i></a></li>
 	</div>
+ -->
 
-	<ul class="onepage-pagination"><li><a data-index="1" href="#1" class="active"></a></li><li><a data-index="2" href="#2" class=""></a></li><li><a data-index="3" href="#3" class=""></a></li><li><a data-index="4" href="#4"></a></li><li><a data-index="5" href="#5"></a></li><li><a data-index="6" href="#6"></a></li></ul>
 </header>
 
 
