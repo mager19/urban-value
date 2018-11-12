@@ -374,7 +374,7 @@ video{
     	h4{
     		font-size: 0.9rem;
     		margin-top: 4px;
-    		    text-transform: initial;
+    		/*    text-transform: initial;*/
     	}
 
     }
@@ -433,6 +433,7 @@ video{
 		       img{
 		      	width: 70px;
 		      	padding-top: 40px;
+		      	    filter: opacity(0.6);
 		      }
 		      
 		}
@@ -455,6 +456,7 @@ video{
 
 		      p{
 		      	font-size: 0.9rem;
+		      	margin:	auto;
 		      }
 		      .more{
 		      	color: #1e1e1e;
@@ -639,7 +641,7 @@ video{
 	background-size: cover;
 	color: $white2;
 	text-align: center;
-	padding-top: 8em;
+	padding-top: 6em;
 
 	.slick-slide{
 		padding-right: 2em;
@@ -813,8 +815,8 @@ video{
 	}
 	.quote{
 		.container{
-			padding-top: 4em;
-			padding-bottom: 2em;
+			padding-top: 0em;
+			/*padding-bottom: 2em;*/
 		}
 	}
 	.footer{
