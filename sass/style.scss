@@ -501,7 +501,7 @@ video{
 		}
 	}
 	#postal {
-	  background: #252525;
+	  /*background: #252525;*/
 	  width: 100%;
 	  height: 100%;
 	  position: absolute;
@@ -522,9 +522,12 @@ video{
 				}
 			}
 		figure {
+		 background-color: #252525;
 		  position: absolute;
-		  width: 90%;
-		  height: 90%;
+		  /*width: 90%;
+		  height: 90%;*/
+		  width: 100%;
+		  height: 100%;
 		  margin:0;
 		  display: block;
 		  /*background-size: cover;*/
