@@ -50,6 +50,11 @@
 			</div>
 		</div>
 	</div>
+<!-- 	<div class="flecha onepage-pagination">
+		<li><a data-index="2" href="#2"><i class="fas fa-arrow-circle-down"></i></a></li>
+	</div>
+ -->
+
 </header>
 
 

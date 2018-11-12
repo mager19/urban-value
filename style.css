@@ -407,7 +407,9 @@ h2{font-family: 'Noto Serif', serif !important;}
 p, a{font-family: Arial;}*/
 h1 { font-family: 'Lato', sans-serif; }
 
-h2 { font-family: 'Lato', sans-serif; }
+h2 { font-family: 'Lato', sans-serif; font-size: 1.7rem !important; }
+
+h3 { font-size: 1.5rem !important; }
 
 p, a { font-family: 'Montserrat', sans-serif; }
 
@@ -433,7 +435,7 @@ iframe { width: 100%; height: 80vh; }
 
 .videoWrapper { /**position: relative;*/ /* padding-bottom: 56.25%; /* 16:9 */ /**padding-top: 0;*/ /**height: calc( 100vh - 92px );  /* tamaño total del viewport - header*/ /*margin-top: -4em;*/ /**z-index: 1;*/ /* position: relative; padding-bottom: 56.25%; /* 16:9 */ /*padding-top: 0; height: 0; margin-top: -4em; z-index: 1;*/ position: relative; /*padding-bottom: 56.25%;*/ padding-top: 0; height: 0; /*margin-top: -4em;*/ z-index: 1; overflow: hidden; }
 
-.videoWrapper .overlay { background: rgba(0, 0, 0, 0.6); position: absolute; z-index: 3; height: 100%; width: 100%; }
+.videoWrapper .overlay { background: rgba(0, 0, 0, 0.4); position: absolute; z-index: 3; height: 100%; width: 100%; }
 
 .videoWrapper .video__info { position: absolute; z-index: 4; top: 34%; text-align: center; margin-left: auto; margin-right: auto; left: 0; right: 0; width: 65%; }
 
@@ -451,11 +453,11 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .claim h2 { margin-bottom: 15px; }
 
-.claim .box { background-color: #252525; margin-top: 3em; padding: 58px 15px; text-transform: uppercase; }
+.claim .box { background-color: #252525; margin-top: 3em; padding: 58px 15px; text-transform: uppercase; min-height: 17rem; }
 
-.claim .box h3 { font-size: 1.2rem; margin-top: 10px; }
+.claim .box h3 { font-size: 1.2rem !important; margin-top: 10px; }
 
-.claim .box h4 { font-size: 0.9rem; margin-top: -4px; text-transform: initial; }
+.claim .box h4 { font-size: 0.9rem; margin-top: 4px; text-transform: initial; }
 
 .claim div#wrapper-postal { /* width: 320px;*/ height: 161px; margin: 0 auto; position: relative; /*border: 1px solid #888;*/ -webkit-perspective: 700px; -moz-perspective: 700px; perspective: 700px; }
 
@@ -463,7 +465,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .claim #postal { width: 100%; height: 100%; position: absolute; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-transition: transform 500ms ease-in-out; -moz-transition: transform 500ms ease-in-out; -o-transition: transform 500ms ease-in-out; transition: transform 500ms ease-in-out; }
 
-.claim #postal .vehiculo__item h3 { padding-top: 33%; color: #fff; }
+.claim #postal .vehiculo__item h3 { padding-top: 33%; color: #fff; font-size: 1.2rem !important; }
 
 .claim #postal figure { position: absolute; width: 100%; height: 100%; margin: 0; display: block; background-size: cover; background-repeat: no-repeat; background-position: center; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; }
 
@@ -475,19 +477,19 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .claim #postal figure.back .more { color: #1e1e1e; background: #999; padding: 7px 12px; border-radius: 50px; font-size: 0.7rem; text-transform: uppercase; font-weight: 600; }
 
-.filosofia { background-color: #1E1E1E; color: #999; text-align: center; }
+.filosofia { background-color: #1E1E1E; color: #999; text-align: center; padding-top: 8em; }
 
 .filosofia h2 { margin-bottom: 1em; }
 
-.filosofia div#wrapper-postal { width: 320px; height: 200px; margin: 0 auto; position: relative; /*border: 1px solid #888;*/ -webkit-perspective: 700px; -moz-perspective: 700px; perspective: 700px; }
+.filosofia div#wrapper-postal { width: 320px; height: 200px; margin: 0 auto; position: relative; /*border: 1px solid #888;*/ -webkit-perspective: 700px; -moz-perspective: 700px; perspective: 700px; min-height: 17rem; }
 
 .filosofia div#wrapper-postal:hover #postal { -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); ms-transform: rotateY(180deg); -o-transform: rotateY(180deg); transform: rotateY(180deg); }
 
-.filosofia #postal { width: 100%; height: 100%; position: absolute; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-transition: transform 500ms ease-in-out; -moz-transition: transform 500ms ease-in-out; -o-transition: transform 500ms ease-in-out; transition: transform 500ms ease-in-out; }
+.filosofia #postal { background: #252525; width: 100%; height: 100%; position: absolute; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-transition: transform 500ms ease-in-out; -moz-transition: transform 500ms ease-in-out; -o-transition: transform 500ms ease-in-out; transition: transform 500ms ease-in-out; }
 
-.filosofia #postal .vehiculo__item h3 { padding-top: 46%; /*color: #fff;*/ font-size: 1.2rem; }
+.filosofia #postal .vehiculo__item h4 { padding-top: 60%; /*color: #fff;*/ font-size: 0.9rem !important; margin-top: 4px; }
 
-.filosofia #postal figure { position: absolute; width: 100%; height: 100%; margin: 0; display: block; background-size: cover; background-repeat: no-repeat; background-position: center; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; }
+.filosofia #postal figure { position: absolute; width: 90%; height: 90%; margin: 0; display: block; background-size: cover; background-repeat: no-repeat; background-position: center; margin-left: 5%; margin-top: 5%; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; }
 
 .filosofia #postal figure img { width: 70px; }
 
@@ -511,7 +513,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .impacto .items { background-color: #191919; padding: 1em 1em; }
 
-.impacto .items h3.titulo { margin-bottom: 1em; font-size: 1.4rem; }
+.impacto .items h3.titulo { margin-bottom: 1em; font-size: 1.4rem; color: #fff; }
 
 .impacto .items .col-lg-3 { border-left: 1px solid #313131; }
 
@@ -523,7 +525,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .impacto .numero__item p { font-size: 0.9rem; }
 
-.quote { background-color: #1E1E1E; background-image: url(img/quotes-bg.jpg); background-size: cover; color: #999; text-align: center; }
+.quote { background-color: #1E1E1E; background-image: url(img/quotes-bg.jpg); background-size: cover; color: #999; text-align: center; padding-top: 8em; }
 
 .quote .slick-slide { padding-right: 2em; padding-left: 2em; }
 
@@ -533,7 +535,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .quote .slick-dots li button:before { color: #fff; }
 
-.team { background-color: #1E1E1E; color: #999; text-align: center; }
+.team { color: #999; text-align: center; }
 
 .team p.team-text { margin-bottom: 1em; text-align: center; width: 100%; }
 
@@ -549,7 +551,9 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .clientes .cliente.slick-slide { padding: 3em 0; border: 1px solid #3a3a3a; }
 
-.cta { background-color: #1E1E1E; color: #999; text-align: center; }
+.cta { background-color: #f5f5f5; color: #000; text-align: center; }
+
+.cta p { font-weight: 800; }
 
 .cta label, .cta input { width: 100%; /*margin-top: 1em;*/ }
 
@@ -561,19 +565,19 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .cta input.wpcf7-submit { background-color: #fff; color: #000 !important; border-radius: 50px; text-transform: uppercase; margin-top: 3px; }
 
-.cta a.cta-btn { background-color: #fff; color: #000 !important; border-radius: 50px; text-transform: uppercase; margin-top: 3px; padding: 12px 40px; text-decoration: none; }
+.cta a.cta-btn { background-color: #1E1E1E; color: #fff !important; border-radius: 50px; text-transform: uppercase; margin-top: 3px; padding: 12px 40px; text-decoration: none; }
 
 .cta .form { display: none; }
 
-.footer { /*background-color: $vlack;*/ background-color: #ececec; /*color: $white2;*/ color: #1E1E1E; }
+.footer { background-color: #1E1E1E; /*color: $white2;*/ color: #999; }
 
-.footer .clientes { background-color: #ececec; }
+.footer .clientes { background-color: #1E1E1E; }
 
 .footer h2.widget-title { font-size: 0.9rem; font-weight: 600; text-transform: uppercase; margin-bottom: 20px; }
 
 .footer p, .footer a { font-size: 0.8rem; margin-bottom: 2px; }
 
-.footer a { /*color: #fff;*/ color: #000; }
+.footer a { color: #fff; }
 
 .footer a:hover a { color: #1E1E1E !important; }
 

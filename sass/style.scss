@@ -137,11 +137,55 @@ h2{font-family: 'Noto Serif', serif !important;}
 p, a{font-family: Arial;}*/
 
 h1{ font-family: 'Lato', sans-serif;}
-h2{font-family: 'Lato', sans-serif;}
+h2{font-family: 'Lato', sans-serif; font-size: 1.7rem!important;}
+h3 {font-size: 1.5rem!important;}
 p, a{font-family: 'Montserrat', sans-serif;}
 a:hover{color: #999;}
 
 header{
+	
+	// .flecha.onepage-pagination li a {
+	// 	    width: 0px!important;
+	// 	    height: 0px!important;
+
+	// 	    &::before{
+	//     	    width: 0px!important;
+	// 	    	height: 0px!important;
+	// 	    }
+
+	// 	    &:focus {outline:0;}
+	// 	}
+
+	// .flecha{
+	// 	position: relative;
+	// 	height: 100vh;
+	// 	left: 49%;
+
+		
+
+	// 	li{
+	// 		list-style: none;
+	
+	// 	}
+
+	// 	a{
+	// 		position: absolute;
+			
+	// 		bottom: 15%;
+	// 		i{
+	// 			color:rgba(255,255,255, 0.4);
+	// 			font-size: 3rem;
+
+	// 			transition: .2s linear all;
+				
+	// 		}
+
+	// 		&:hover i{
+	// 			font-size: 3.5em;
+	// 		}
+	// 	}
+	// }
+
 	/*background-color: $vlack;*/
 	/*background-color: rgba(30, 30, 30, 0.5);*/
 	padding: 1rem 0;
@@ -221,7 +265,7 @@ iframe{
     overflow: hidden;
 
     .overlay{
-        background: rgba(0,0,0, 0.6);
+        background: rgba(0,0,0, 0.4);
 	    position: absolute;
 	    z-index: 3;
 	    height: 100%;
@@ -320,15 +364,16 @@ video{
     	margin-top: 3em;
     	padding: 58px 15px;
     	text-transform: uppercase;
+    	min-height: 17rem;
 
     	h3{
-    	    font-size: 1.2rem;
+    	    font-size: 1.2rem!important;
 		    margin-top: 10px;
 
     	}
     	h4{
     		font-size: 0.9rem;
-    		margin-top: -4px;
+    		margin-top: 4px;
     		    text-transform: initial;
     	}
 
@@ -368,6 +413,7 @@ video{
 	        	h3 {
 				    padding-top: 33%;
 				    color: #fff;
+				    font-size: 1.2rem!important;
 				}
 			}
 		figure {
@@ -426,6 +472,8 @@ video{
 	background-color: $vlack;
 	color: $white2;
     text-align: center;
+	padding-top: 8em;
+
 
     h2{
     	margin-bottom:1em;
@@ -440,6 +488,7 @@ video{
 	    -webkit-perspective: 700px;
 	    -moz-perspective: 700px;
 	    perspective: 700px;
+	    min-height: 17rem;
 
 	    &:hover #postal {
 		  -webkit-transform: rotateY(180deg);
@@ -450,6 +499,7 @@ video{
 		}
 	}
 	#postal {
+	  background: #252525;
 	  width: 100%;
 	  height: 100%;
 	  position: absolute;
@@ -462,21 +512,25 @@ video{
 	        transition: transform 500ms ease-in-out;
 
 	        .vehiculo__item {
-	        	h3 {
-				    padding-top: 46%;
+	        	h4 {
+				    padding-top: 60%;
 				   /*color: #fff;*/
-				        font-size: 1.2rem;
+				        font-size: 0.9rem!important;
+				        margin-top: 4px;
 				}
 			}
 		figure {
 		  position: absolute;
-		  width: 100%;
-		  height: 100%;
+		  width: 90%;
+		  height: 90%;
 		  margin:0;
 		  display: block;
 		  background-size: cover;
 		  background-repeat: no-repeat;
 		  background-position: center;
+
+		  margin-left: 5%;
+    	  margin-top: 5%;
 		  
 		  -webkit-backface-visibility: hidden;
 		    -moz-backface-visibility: hidden;
@@ -554,6 +608,7 @@ video{
 		h3.titulo {
 		    margin-bottom: 1em;
 		    font-size: 1.4rem;
+		    color:#fff;
 		}
 
 		.col-lg-3 {
@@ -582,6 +637,8 @@ video{
 	background-size: cover;
 	color: $white2;
 	text-align: center;
+	padding-top: 8em;
+
 	.slick-slide{
 		padding-right: 2em;
 		padding-left:2em;
@@ -596,7 +653,7 @@ video{
 }
 
 .team{
-	background-color: $vlack;
+	// background-color: $vlack;
 	color: $white2;
 	text-align: center;
 
@@ -637,9 +694,13 @@ video{
 }
 
 .cta{
-	background-color: $vlack;
-	color: $white2;
+	background-color: #f5f5f5;
+	color: #000;
 	text-align: center;
+
+	p{
+		font-weight: 800;
+	}
 
 	label, input{
 		width: 100%;
@@ -670,8 +731,8 @@ video{
 	    margin-top: 3px;
 	}
 	a.cta-btn {
-	    background-color: #fff;
-	    color: #000 !important;
+	    background-color: $vlack;
+	    color: #fff !important;
 	    border-radius: 50px;
 	    text-transform: uppercase;
 	    margin-top: 3px;
@@ -683,12 +744,12 @@ video{
 	}
 }
 .footer{
-	/*background-color: $vlack;*/
-	background-color: #ececec ;
+	background-color: $vlack;
+	
 	/*color: $white2;*/
-	color: $vlack;
+	color: $white2;
 	.clientes{
-		background-color: #ececec ;
+		background-color: $vlack ;
 	}
 	h2.widget-title {
 	    font-size: 0.9rem;
@@ -702,8 +763,8 @@ video{
 	    margin-bottom: 2px;
 	}
 	a{
-		/*color: #fff;*/
-		color: #000;
+		color: #fff;
+		
 		&:hover{
 			a {color:$vlack !important;}
 		}
