@@ -29,7 +29,7 @@ gulp.task('serve', function () {
     // Serve files from the root of this project
     browserSync.init(files, {
       
-             proxy: "http://urban.dev.cc",
+             proxy: "http://urbanvalue.local",
        
     });
 
