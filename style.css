@@ -453,7 +453,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .claim h2 { margin-bottom: 15px; }
 
-.claim .box { background-color: #252525; margin-top: 3em; padding: 58px 15px; text-transform: uppercase; min-height: 17rem; }
+.claim .box { /*background-color: $vlack2;*/ margin-top: 3em; /*padding: 58px 15px;*/ text-transform: uppercase; min-height: 17rem; }
 
 .claim .box h3 { font-size: 1.2rem !important; margin-top: 10px; }
 
@@ -467,9 +467,9 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .claim #postal .vehiculo__item h3 { padding-top: 33%; color: #fff; font-size: 1.2rem !important; }
 
-.claim #postal figure { position: absolute; width: 100%; height: 100%; margin: 0; display: block; background-size: cover; background-repeat: no-repeat; background-position: center; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; }
+.claim #postal figure { background-color: #252525; position: absolute; width: 100%; height: 100%; margin: 0; display: block; background-size: cover; background-repeat: no-repeat; background-position: center; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; }
 
-.claim #postal figure img { width: 70px; padding-top: 30px; }
+.claim #postal figure img { width: 70px; padding-top: 40px; }
 
 .claim #postal figure.back { display: block; padding: 10px 0 0 0; color: #fff; /*background: $vlack;*/ -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); ms-transform: rotateY(180deg); -o-transform: rotateY(180deg); transform: rotateY(180deg); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 15px; text-transform: none; }
 
@@ -487,9 +487,9 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .filosofia #postal { background: #252525; width: 100%; height: 100%; position: absolute; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-transition: transform 500ms ease-in-out; -moz-transition: transform 500ms ease-in-out; -o-transition: transform 500ms ease-in-out; transition: transform 500ms ease-in-out; }
 
-.filosofia #postal .vehiculo__item h4 { padding-top: 60%; /*color: #fff;*/ font-size: 0.9rem !important; margin-top: 4px; }
+.filosofia #postal .vehiculo__item h4 { padding-top: 50%; /*color: #fff;*/ font-size: 0.9rem !important; margin-top: 4px; }
 
-.filosofia #postal figure { position: absolute; width: 90%; height: 90%; margin: 0; display: block; background-size: cover; background-repeat: no-repeat; background-position: center; margin-left: 5%; margin-top: 5%; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; }
+.filosofia #postal figure { position: absolute; width: 90%; height: 90%; margin: 0; display: block; /*background-size: cover;*/ background-size: 60%; background-repeat: no-repeat; /*background-position: center;*/ background-position: 50% 40%; margin-left: 5%; margin-top: 5%; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; }
 
 .filosofia #postal figure img { width: 70px; }
 
@@ -586,3 +586,8 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 .titl:after { position: absolute; bottom: 0; left: 0; right: 0; margin: 0 auto; width: 60px; height: 2px; background: #999; content: ""; -webkit-transition: all ease .3s; -ms-transition: all ease .3s; transition: all ease .3s; z-index: 1; }
 
 .titl.specialtxt:after { width: 80px; }
+
+@media only screen and (min-width: 1440px) { .filosofia .container { padding-top: 4em; padding-bottom: 4em; }
+  .filosofia .impacto { padding-top: 2em; }
+  .quote .container { padding-top: 4em; padding-bottom: 2em; }
+  .footer .clientes { padding: 4em 0 5em; } }
