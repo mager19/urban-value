@@ -381,7 +381,8 @@ video{
 
     div#wrapper-postal {
 	   /* width: 320px;*/
-	    height: 161px;
+	    /*height: 161px;*/
+	      height: 230px;
 	    margin: 0 auto;
 	    position: relative;
 	    /*border: 1px solid #888;*/
@@ -432,7 +433,7 @@ video{
 		      backface-visibility: hidden;
 		       img{
 		      	width: 70px;
-		      	padding-top: 40px;
+		      	padding-top: 65px;
 		      	    filter: opacity(0.6);
 		      }
 		      
@@ -535,7 +536,7 @@ video{
 		  background-repeat: no-repeat;
 		  /*background-position: center;*/
 		      background-position: 50% 40%;
-		  margin-left: 5%;
+		  /*margin-left: 5%;*/
     	  margin-top: 5%;
 		  
 		  -webkit-backface-visibility: hidden;
