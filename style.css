@@ -427,7 +427,7 @@ header .flecha { position: relative; height: 100vh; left: 49%; }
 
 header .flecha li { list-style: none; }
 
-header .flecha a { position: absolute; bottom: 10%; }
+header .flecha a { position: absolute; bottom: 15%; }
 
 header .flecha a i { color: rgba(255, 255, 255, 0.4); font-size: 3rem; transition: .2s linear all; }
 
