@@ -355,10 +355,14 @@ get_header();?>
 	<div class="container justify-content-center align-self-center">
 		<div class="offset-lg-2 col-lg-8">
 			<div class="cta-txt">
+
 			<p>Nos encantaría conocer más propuestas de valor, contáctanos.</p>
 			<a class="cta-btn" >Contacto</a></div>
 			<?php //echo do_shortcode( '[contact-form-7 id="139" title="CTA"]' );?>
 			<div class="form">
+				<button type="button" class="close" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>
 			<?php echo do_shortcode( '[contact-form-7 id="153" title="cta"]' );?>
 			</div>
 			
