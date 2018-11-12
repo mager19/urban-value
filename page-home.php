@@ -29,7 +29,7 @@ get_header();?>
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row ">
 			<div class="col-lg-12">
-				<h2>Applying digital knowledge and tools to Real Estate development.</h2>
+				<h2>La filosofía de la empresa se ve reflejada en cuatro momentos clave que hacen la propuesta de valor única en el sector.</h2>
 				<h3>We are a Real Estate development firm</h3>
 			</div>
 
@@ -43,6 +43,7 @@ get_header();?>
 							<div id="postal">
 							
 								<figure>
+									<div class="informacion"><i class="fas fa-info-circle"></i></div>
 								<?php $image = get_sub_field('item_imagen'); ?>
 								<img src="<?php echo $image['url']; ?>" alt="">
 								<h4><?php 

@@ -54,7 +54,7 @@
 	
 
 </div>
-		<div class="container justify-content-lg-center align-self-lg-center mt-5">
+		<div class="last-footer container justify-content-lg-center align-self-lg-center mt-5">
 			<div class="row">
 				<div class="col-lg-3 ">
 					<?php 
