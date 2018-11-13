@@ -850,7 +850,7 @@ video{
 }
 
 
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1440px) {
 	.filosofia{
 		padding-top: 4em;
 		.container{
@@ -859,7 +859,7 @@ video{
 		.impacto{
 			position: absolute;
     		/*bottom: 5px;*/
-    		bottom: 3vh;
+    		bottom: 1%;
 		    margin: 0 auto;
 		    width: 100%;
 		}
