@@ -537,7 +537,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .quote .slick-dots li button:before { color: #fff; }
 
-.team { color: #999; text-align: center; }
+.team { background-color: #1E1E1E; color: #999; text-align: center; }
 
 .team p.team-text { margin-bottom: 1em; text-align: center; width: 100%; }
 
@@ -553,7 +553,11 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .clientes .cliente.slick-slide { padding: 3em 0; border: 1px solid #3a3a3a; }
 
-.cta { background-color: #f5f5f5; color: #000; text-align: center; }
+.cta { background-color: #f5f5f5; color: #000; text-align: center; padding-top: 0px; }
+
+.cta .cta-container { padding-top: 20%; }
+
+.cta .form { margin-top: -10%; }
 
 .cta p { font-weight: 800; }
 
