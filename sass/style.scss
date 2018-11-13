@@ -832,7 +832,12 @@ video{
 			padding-bottom: 0em;
 		}
 		.impacto{
-			    padding-top: 2em;
+			    /*padding-top: 2em;*/
+			    position: absolute;
+    		/*bottom: 5px;*/
+    		bottom: 1%;
+		    margin: 0 auto;
+		    width: 100%;
 		}
 	}
 	.quote{
@@ -850,7 +855,7 @@ video{
 }
 
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1450px) {
 	.filosofia{
 		padding-top: 4em;
 		.container{
@@ -859,7 +864,7 @@ video{
 		.impacto{
 			position: absolute;
     		/*bottom: 5px;*/
-    		bottom: 1%;
+    		bottom: 3%;
 		    margin: 0 auto;
 		    width: 100%;
 		}
