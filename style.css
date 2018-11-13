@@ -597,7 +597,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 @media screen and (min-width: 1439px) { .filosofia { padding-top: 4em; }
   .filosofia .container { padding-top: 2em; padding-bottom: 0em; }
-  .filosofia .impacto { /*padding-top: 2em;*/ position: absolute; /*bottom: 5px;*/ bottom: 1%; margin: 0 auto; width: 100%; }
+  .filosofia .impacto { /*padding-top: 2em;*/ position: absolute; /*bottom: 5px;*/ bottom: 2%; margin: 0 auto; width: 100%; }
   .quote .container { padding-top: 0em; /*padding-bottom: 2em;*/ }
   .footer .clientes { padding: 4em 0 6em; margin-bottom: 2em; } }
 
