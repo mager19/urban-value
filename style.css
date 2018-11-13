@@ -601,9 +601,9 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
   .quote .container { padding-top: 0em; /*padding-bottom: 2em;*/ }
   .footer .clientes { padding: 4em 0 6em; margin-bottom: 2em; } }
 
-@media screen and (min-width: 1450px) { .filosofia { padding-top: 4em; }
+@media screen and (min-width: 1440px) { .filosofia { padding-top: 4em; }
   .filosofia .container { padding-top: 18vh; }
-  .filosofia .impacto { position: absolute; /*bottom: 5px;*/ bottom: 3vh; margin: 0 auto; width: 100%; }
+  .filosofia .impacto { position: absolute; /*bottom: 5px;*/ bottom: 1%; margin: 0 auto; width: 100%; }
   .quote .container { padding-top: 13vh; /*padding-bottom: 2em;*/ }
   .footer .clientes { padding-top: 13vh; }
   .footer .last-footer { position: absolute; bottom: 30px; } }
