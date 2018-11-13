@@ -647,7 +647,7 @@ video{
 
 .quote{
 	background-color: $vlack;
-	background-image: url(img/quotes-bg.jpg);
+	/*background-image: url(img/quotes-bg.jpg);*/
 	background-size: cover;
 	color: $white2;
 	text-align: center;
@@ -668,6 +668,8 @@ video{
 
 .team{
 	background-color: $vlack;
+	background-image: url(img/quotes-bg.jpg);
+	background-size: cover;
 	color: $white2;
 	text-align: center;
 
@@ -718,7 +720,7 @@ video{
 	    padding-top: 20%;
 	}
 	.form {
-	    margin-top: -10%;
+	    margin-top: -20%;
 	}
 
 	p{
@@ -741,7 +743,7 @@ video{
     background-color: transparent;
     color: #fff !important;
     padding-left: 10px;
-    height: 8em;
+    height: 5em;
 	}
 	input[type="checkbox"] {
 	    height: 17px;

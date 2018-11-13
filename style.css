@@ -527,7 +527,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .impacto .numero__item p { font-size: 0.9rem; }
 
-.quote { background-color: #1E1E1E; background-image: url(img/quotes-bg.jpg); background-size: cover; color: #999; text-align: center; padding-top: 6em; }
+.quote { background-color: #1E1E1E; /*background-image: url(img/quotes-bg.jpg);*/ background-size: cover; color: #999; text-align: center; padding-top: 6em; }
 
 .quote .slick-slide { padding-right: 2em; padding-left: 2em; }
 
@@ -537,7 +537,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .quote .slick-dots li button:before { color: #fff; }
 
-.team { background-color: #1E1E1E; color: #999; text-align: center; }
+.team { background-color: #1E1E1E; background-image: url(img/quotes-bg.jpg); background-size: cover; color: #999; text-align: center; }
 
 .team p.team-text { margin-bottom: 1em; text-align: center; width: 100%; }
 
@@ -557,7 +557,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .cta .cta-container { padding-top: 20%; }
 
-.cta .form { margin-top: -10%; }
+.cta .form { margin-top: -20%; }
 
 .cta p { font-weight: 800; }
 
@@ -565,7 +565,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .cta input { height: 40px; border: 1px solid #333; background-color: transparent; color: #fff !important; padding-left: 10px; }
 
-.cta textarea { border: 1px solid #333; background-color: transparent; color: #fff !important; padding-left: 10px; height: 8em; }
+.cta textarea { border: 1px solid #333; background-color: transparent; color: #fff !important; padding-left: 10px; height: 5em; }
 
 .cta input[type="checkbox"] { height: 17px; }
 
