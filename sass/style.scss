@@ -381,7 +381,8 @@ video{
 
     div#wrapper-postal {
 	   /* width: 320px;*/
-	    height: 161px;
+	    /*height: 161px;*/
+	      height: 230px;
 	    margin: 0 auto;
 	    position: relative;
 	    /*border: 1px solid #888;*/
@@ -432,9 +433,16 @@ video{
 		      backface-visibility: hidden;
 		       img{
 		      	width: 70px;
-		      	padding-top: 40px;
+		      	padding-top: 65px;
 		      	    filter: opacity(0.6);
 		      }
+
+		      .informacion {
+				    position: absolute;
+				    right: 30px;
+				    top: 18px;
+				    width: 10px;
+				}
 		      
 		}
 		figure.back {
@@ -501,7 +509,7 @@ video{
 		}
 	}
 	#postal {
-	  background: #252525;
+	  /*background: #252525;*/
 	  width: 100%;
 	  height: 100%;
 	  position: absolute;
@@ -522,9 +530,12 @@ video{
 				}
 			}
 		figure {
+		 background-color: #252525;
 		  position: absolute;
-		  width: 90%;
-		  height: 90%;
+		  /*width: 90%;
+		  height: 90%;*/
+		  width: 100%;
+		  height: 100%;
 		  margin:0;
 		  display: block;
 		  /*background-size: cover;*/
@@ -532,7 +543,7 @@ video{
 		  background-repeat: no-repeat;
 		  /*background-position: center;*/
 		      background-position: 50% 40%;
-		  margin-left: 5%;
+		  /*margin-left: 5%;*/
     	  margin-top: 5%;
 		  
 		  -webkit-backface-visibility: hidden;
@@ -755,7 +766,7 @@ video{
 		background-color: $vlack ;
 	}
 	h2.widget-title {
-	    font-size: 0.9rem;
+	    font-size: 0.9rem !important;
 	    font-weight: 600;
 	    text-transform: uppercase;
 	    margin-bottom: 20px;
@@ -800,7 +811,7 @@ video{
 	    
 	}
 }
-
+.activebg { background-color: $vlack}
 
 @media screen and (min-width: 1439px) {
 	.filosofia{
@@ -821,7 +832,41 @@ video{
 	}
 	.footer{
 		.clientes{
-			padding: 4em 0 6.5em;
+			padding: 4em 0 6em;
+			margin-bottom: 2em;
 		}
 	}
+}
+
+
+@media screen and (min-width: 1450px) {
+	.filosofia{
+		padding-top: 4em;
+		.container{
+			padding-top: 18vh;
+		}
+		.impacto{
+			position: absolute;
+    		/*bottom: 5px;*/
+    		bottom: 3vh;
+		    margin: 0 auto;
+		    width: 100%;
+		}
+	}
+	.quote{
+		.container{
+			padding-top: 13vh;
+			/*padding-bottom: 2em;*/
+		}
+	}
+	.footer{
+		.clientes{
+			padding-top: 13vh;
+		}
+		.last-footer {
+			position: absolute;
+			bottom: 30px;
+		}
+	}
+
 }

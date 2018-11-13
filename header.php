@@ -37,8 +37,8 @@
 					}
 				?>
 			</div>	
-			<div class="col-lg-7 offset-lg-2">
-				<nav id="site-navigation" class="main-navigation">
+			<div class="col-lg-9">
+				<nav id="site-navigation" class="main-navigation justify-content-end">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'urbanvalue' ); ?></button>
 					<?php
 					wp_nav_menu( array(

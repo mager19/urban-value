@@ -459,7 +459,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .claim .box h4 { font-size: 0.9rem; margin-top: 4px; /*    text-transform: initial;*/ }
 
-.claim div#wrapper-postal { /* width: 320px;*/ height: 161px; margin: 0 auto; position: relative; /*border: 1px solid #888;*/ -webkit-perspective: 700px; -moz-perspective: 700px; perspective: 700px; }
+.claim div#wrapper-postal { /* width: 320px;*/ /*height: 161px;*/ height: 230px; margin: 0 auto; position: relative; /*border: 1px solid #888;*/ -webkit-perspective: 700px; -moz-perspective: 700px; perspective: 700px; }
 
 .claim div#wrapper-postal:hover #postal { -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); ms-transform: rotateY(180deg); -o-transform: rotateY(180deg); transform: rotateY(180deg); }
 
@@ -469,7 +469,9 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .claim #postal figure { background-color: #252525; position: absolute; width: 100%; height: 100%; margin: 0; display: block; background-size: cover; background-repeat: no-repeat; background-position: center; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; }
 
-.claim #postal figure img { width: 70px; padding-top: 40px; filter: opacity(0.6); }
+.claim #postal figure img { width: 70px; padding-top: 65px; filter: opacity(0.6); }
+
+.claim #postal figure .informacion { position: absolute; right: 30px; top: 18px; width: 10px; }
 
 .claim #postal figure.back { display: block; padding: 10px 0 0 0; color: #fff; /*background: $vlack;*/ -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); ms-transform: rotateY(180deg); -o-transform: rotateY(180deg); transform: rotateY(180deg); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 15px; text-transform: none; }
 
@@ -485,11 +487,11 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .filosofia div#wrapper-postal:hover #postal { -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); ms-transform: rotateY(180deg); -o-transform: rotateY(180deg); transform: rotateY(180deg); }
 
-.filosofia #postal { background: #252525; width: 100%; height: 100%; position: absolute; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-transition: transform 500ms ease-in-out; -moz-transition: transform 500ms ease-in-out; -o-transition: transform 500ms ease-in-out; transition: transform 500ms ease-in-out; }
+.filosofia #postal { /*background: #252525;*/ width: 100%; height: 100%; position: absolute; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-transition: transform 500ms ease-in-out; -moz-transition: transform 500ms ease-in-out; -o-transition: transform 500ms ease-in-out; transition: transform 500ms ease-in-out; }
 
 .filosofia #postal .vehiculo__item h4 { padding-top: 50%; /*color: #fff;*/ font-size: 0.9rem !important; margin-top: 4px; }
 
-.filosofia #postal figure { position: absolute; width: 90%; height: 90%; margin: 0; display: block; /*background-size: cover;*/ background-size: 60%; background-repeat: no-repeat; /*background-position: center;*/ background-position: 50% 40%; margin-left: 5%; margin-top: 5%; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; }
+.filosofia #postal figure { background-color: #252525; position: absolute; /*width: 90%; height: 90%;*/ width: 100%; height: 100%; margin: 0; display: block; /*background-size: cover;*/ background-size: 60%; background-repeat: no-repeat; /*background-position: center;*/ background-position: 50% 40%; /*margin-left: 5%;*/ margin-top: 5%; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; }
 
 .filosofia #postal figure img { width: 70px; }
 
@@ -573,7 +575,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .footer .clientes { background-color: #1E1E1E; }
 
-.footer h2.widget-title { font-size: 0.9rem; font-weight: 600; text-transform: uppercase; margin-bottom: 20px; }
+.footer h2.widget-title { font-size: 0.9rem !important; font-weight: 600; text-transform: uppercase; margin-bottom: 20px; }
 
 .footer p, .footer a { font-size: 0.8rem; margin-bottom: 2px; }
 
@@ -587,8 +589,17 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .titl.specialtxt:after { width: 80px; }
 
+.activebg { background-color: #1E1E1E; }
+
 @media screen and (min-width: 1439px) { .filosofia { padding-top: 4em; }
   .filosofia .container { padding-top: 2em; padding-bottom: 0em; }
   .filosofia .impacto { padding-top: 2em; }
   .quote .container { padding-top: 0em; /*padding-bottom: 2em;*/ }
-  .footer .clientes { padding: 4em 0 6.5em; } }
+  .footer .clientes { padding: 4em 0 6em; margin-bottom: 2em; } }
+
+@media screen and (min-width: 1450px) { .filosofia { padding-top: 4em; }
+  .filosofia .container { padding-top: 18vh; }
+  .filosofia .impacto { position: absolute; /*bottom: 5px;*/ bottom: 3vh; margin: 0 auto; width: 100%; }
+  .quote .container { padding-top: 13vh; /*padding-bottom: 2em;*/ }
+  .footer .clientes { padding-top: 13vh; }
+  .footer .last-footer { position: absolute; bottom: 30px; } }
