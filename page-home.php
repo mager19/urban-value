@@ -74,6 +74,105 @@ get_header();?>
 		</div>
 	</div>
 </section>
+
+<!-- tabbs -->
+<section class="tabbs d-md-block d-lg-flex h-100 pb-md-5" >
+	<div class="container justify-content-lg-center align-self-lg-center">
+		<div class="row ">
+			<div class="col-lg-12 text-center">
+				<h2 class="mb-3"><b>PROCESO DE INVERSIÓN</b></h2>
+				<h4 class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				</h4>
+				
+			</div>
+		</div>
+		<div class="row mt-5">
+			<div class="row">
+			<div class="nav flex-column nav-pills col-lg-3 offset-lg-1" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+			  <a class="nav-link active tt1" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+			  	<span class="wrap-icon"><i class="fas fa-map-marker-alt tab-icon"></i></span><span class="tab-text"><b>Localización</b></span></a>
+			  <a class="nav-link tt2" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span class="wrap-icon"><i class="fas fa-search tab-icon"></i></span><span class="tab-text"><b>Análisis</b></span></a>
+			  <a class="nav-link tt3" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><span class="wrap-icon"><i class="fas fa-cog tab-icon"></i></span><span class="tab-text"><b>Estructuración</b></span></a>
+			  <a class="nav-link tt4" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><span class="wrap-icon"><i class="fas fa-file-signature tab-icon"></i></span><span class="tab-text"><b>Gestión</b></span></a>
+			   <a class="nav-link tt5" id="v-pills-settings2-tab" data-toggle="pill" href="#v-pills-settings2" role="tab" aria-controls="v-pills-settings2" aria-selected="false"><span class="wrap-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-urban-value-tab.png" class="tab-icon"></span><span class="tab-text"><b>Retornos</b></span></a>
+			</div>
+			<div class="tab-content col-lg-7 circle" id="v-pills-tabContent">
+			  <div class="tab-pane fade show active text-center" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"><p>Descripcion1: Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+
+				<p>Detalles: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+
+				<p>Partner o Tecnologia: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. </p>
+
+				<p>Con la aportacion de: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+
+				<p>Tecnologias y Partners que validan:</p>
+				<div class="text-center"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech"></div>
+			</div>
+			  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"><p>Descripcion2: Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+
+				<p>Detalles: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+
+				<p>Partner o Tecnologia: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. </p>
+
+				<p>Con la aportacion de: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+
+				<p>Tecnologias y Partners que validan:</p>
+				<div class="text-center techs"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech"></div></div>
+			  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"><p>Descripcion3: Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+
+				<p>Detalles: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+
+				<p>Partner o Tecnologia: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. </p>
+
+				<p>Con la aportacion de: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+
+				<p>Tecnologias y Partners que validan:</p>
+				<div class="text-center techs"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech"></div></div>
+			  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"><p>Descripcion4: Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+
+				<p>Detalles: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+
+				<p>Partner o Tecnologia: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. </p>
+
+				<p>Con la aportacion de: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+
+				<p>Tecnologias y Partners que validan:</p>
+				<div class="text-center techs"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech"></div></div>
+			  <div class="tab-pane fade" id="v-pills-settings2" role="tabpanel" aria-labelledby="v-pills-settings-tab2"><p>Descripcion5: Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+
+				<p>Detalles: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+
+				<p>Partner o Tecnologia: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. </p>
+
+				<p>Con la aportacion de: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+
+				<p>Tecnologias y Partners que validan:</p>
+				<div class="text-center techs"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech"></div></div>
+			</div>
+		</div>
+		</div>
+	</div>
+</section>
 <!-- claim -->
 <section class="claim d-md-block d-lg-flex h-100 pb-md-5" >
 	<div class="container justify-content-lg-center align-self-lg-center">

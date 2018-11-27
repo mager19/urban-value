@@ -354,6 +354,208 @@ video{
 		}
 	}
 }
+
+.tabbs{
+	.nav-pills .nav-link.active{
+		
+		background-color: transparent;
+
+		
+	}
+	span.wrap-icon{
+		
+		    border: 2px dotted;
+		    border-radius: 50%;
+		    display: inline-block;
+		    padding: 4px;
+		    text-align: center;
+		
+		img.tab-icon {
+		    height: 60px;
+   			width: 60px;
+		    /*margin: 10px;*/
+		    /*background-color: red;*/
+		    border-radius: 50%;
+		    padding: 12px;
+		    /*filter: invert(1);*/
+		}
+		i.tab-icon {
+		    height: 60px;
+   			width: 60px;
+		    /*margin: 10px;*/
+		    /*background-color: red;*/
+		    border-radius: 50%;
+		    padding: 14px 12px 12px 13px;
+    		font-size: 2em;
+		}
+		
+	}
+	span.tab-text {
+		    border-bottom: 2px dotted;
+		      text-align: center;
+		    width: 169px;
+		    display: inline-block;
+		    top: -11px;
+		    position: relative;
+		}
+	.tt1{
+		span.wrap-icon{
+			color: #88bd54;
+			i.tab-icon{
+				/*background-color: #88bd54;*/
+			}
+		}
+		span.tab-text {color: #88bd54;}
+	}
+	.tt1.active{
+		span.wrap-icon{
+			color: #88bd54;
+			i.tab-icon{
+				color: #fff;
+				background-color: #88bd54;
+			}
+		}
+		span.tab-text {color: #88bd54;}
+	}
+	a.tt1:after {
+	    content: "";
+	    width: 2px;
+	    height: 19px;
+	    background-color: #88bd54;
+	    position: absolute;
+	    top: 78px;
+	    left: 51px;
+	}
+	
+	.tt2{
+		span.wrap-icon{
+			color: #06a685;
+			img.tab-icon{
+				/*background-color: #06a685;*/
+			}
+		}
+		span.tab-text {color: #06a685;}
+	}	
+	.tt2.active{
+		span.wrap-icon{
+			color: #06a685;
+			i.tab-icon{
+				background-color: #06a685;
+				color: #fff;
+			}
+		}
+		span.tab-text {color: #06a685;}
+	}
+	a.tt2:after {
+	    content: "";
+	    width: 2px;
+	    height: 19px;
+	    background-color: #06a685;
+	    position: absolute;
+	    top: 166px;
+	    left: 51px;
+	}
+	.tt3{
+		span.wrap-icon{
+			color: #66c3cd;
+			i.tab-icon{
+				/*background-color: #66c3cd;*/
+			}
+		}
+		span.tab-text {color: #66c3cd;}
+	}
+	.tt3.active{
+		span.wrap-icon{
+			color: #66c3cd;
+			i.tab-icon{
+				background-color: #66c3cd;
+				color: #fff;
+			}
+		}
+		span.tab-text {color: #66c3cd;}
+	}
+	a.tt3:after {
+	    content: "";
+	    width: 2px;
+	    height: 19px;
+	    background-color: #66c3cd;
+	    position: absolute;
+	    top: 254px;
+	    left: 51px;
+	}
+	.tt4{
+		span.wrap-icon{
+			color: #4b56a2;
+			i.tab-icon{
+				/*background-color: #4b56a2;*/
+			}
+		}
+		span.tab-text {color: #4b56a2;}
+	}
+	.tt4.active{
+		span.wrap-icon{
+			color: #4b56a2;
+			i.tab-icon{
+				background-color: #4b56a2;
+				color: #fff;
+			}
+		}
+		span.tab-text {color: #4b56a2;}
+	}
+	a.tt4:after {
+	    content: "\2193";
+	    width: 2px;
+	    height: 19px;
+	    /* background-color: #4b56a2; */
+	    position: absolute;
+	    top: 333px;
+	    left: 48px;
+	    color: #4b56a2;
+	    font-size: 1.2em;
+	}
+	.tt5{
+		span.wrap-icon{
+			color: #a0a3a4;
+			i.tab-icon{
+				/*background-color: #a0a3a4;*/
+			}
+		}
+		span.tab-text {color: #a0a3a4;}
+	}
+	.tt5.active{
+		span.wrap-icon{
+			color: #a0a3a4;
+			i.tab-icon{
+				background-color: #fff;
+			}
+		}
+		span.tab-text {color: #a0a3a4;}
+	}
+	/*a.tt5:after {
+	    content: "";
+	    width: 2px;
+	    height: 19px;
+	    background-color: #a0a3a4;
+	    position: absolute;
+	    top: 78px;
+	    left: 51px;
+	}*/
+	.tt1,.tt2,.tt3,.tt4,.tt5{
+			span.wrap-icon{
+			/*color: #000;*/
+			i.tab-icon{
+				/*background-color: #c3c3c3;*/
+			}
+		}
+		/*span.tab-text {color: #000;}*/
+		}
+		div#v-pills-tabContent {
+		    background-image: url(http://localhost:3000/wp-content/themes/urban-value/img/elipse.png);
+		    background-size: contain;
+		    background-repeat: no-repeat;
+		}
+
+}
 .claim{
 	background-color: $vlack;
 	color: $white2;
