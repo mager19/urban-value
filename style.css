@@ -449,6 +449,8 @@ section { padding: 4em 0; }
 
 video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: 0; -ms-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
 
+.desarrollo #postal img { height: 60px; margin-bottom: 25px; }
+
 .claim { background-color: #1E1E1E; color: #999; text-align: center; }
 
 .claim h2 { margin-bottom: 15px; }
@@ -594,6 +596,8 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 .titl.specialtxt:after { width: 80px; }
 
 .activebg { background-color: #1E1E1E; }
+
+hr.colorbar { height: 12px; }
 
 @media screen and (min-width: 1439px) { .filosofia { padding-top: 4em; }
   .filosofia .container { padding-top: 2em; padding-bottom: 0em; }

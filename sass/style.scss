@@ -346,7 +346,14 @@ video{
   transform: translateX(-50%) translateY(-50%);
 }
 
-
+.desarrollo{
+	#postal{
+		img{
+			height: 60px;
+    		margin-bottom: 25px;
+		}
+	}
+}
 .claim{
 	background-color: $vlack;
 	color: $white2;
@@ -823,7 +830,9 @@ video{
 	}
 }
 .activebg { background-color: $vlack}
-
+hr.colorbar {
+    height: 12px;
+}
 @media screen and (min-width: 1439px) {
 	.filosofia{
 		padding-top: 4em;
