@@ -699,3 +699,8 @@ hr.colorbar { height: 12px; }
   .quote .container { padding-top: 13vh; /*padding-bottom: 2em;*/ }
   .footer .clientes { padding-top: 13vh; }
   .footer .last-footer { position: absolute; bottom: 30px; } }
+
+@media screen and (max-width: 768px) { section.videoWrapper { min-height: 100vh; background-image: url(img/trianglify.png); background-size: cover; }
+  section.videoWrapper iframe { display: none; }
+  section.videoWrapper .videoWrapper .video__info h1 { font-size: 1.8em; }
+  button.menu-toggle { background: rgba(230, 230, 230, 0.24); } }

@@ -1097,3 +1097,17 @@ hr.colorbar {
 	}
 
 }
+@media screen and (max-width: 768px) {
+	section.videoWrapper {
+	    min-height: 100vh;
+	    background-image: url(img/trianglify.png);
+	    background-size: cover;
+	    iframe {
+		    display: none;
+		}
+		.videoWrapper .video__info h1 {font-size: 1.8em;}
+	}
+	button.menu-toggle {
+	    background: rgba(230, 230, 230, 0.24);
+	}
+}

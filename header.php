@@ -26,7 +26,7 @@
 <header>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-5">
 				<?php 
 					$custom_logo_id = get_theme_mod( 'custom_logo' );
 					$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
@@ -37,9 +37,9 @@
 					}
 				?>
 			</div>	
-			<div class="col-lg-9">
+			<div class="col-lg-9 col-7">
 				<nav id="site-navigation" class="main-navigation justify-content-end">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'urbanvalue' ); ?></button>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
 					<?php
 					wp_nav_menu( array(
 						'theme_location' => 'menu-1',

@@ -74,7 +74,58 @@ get_header();?>
 		</div>
 	</div>
 </section>
-
+<!-- desarrollo -->
+<section class="desarrollo d-md-block d-lg-flex h-100 pb-md-5" >
+	<div class="container justify-content-lg-center align-self-lg-center">
+		<div class="row ">
+			<div class="col-lg-12 text-center">
+				<h2 class="mb-3"><b>U&V DESARROLLA PROYECTOS INMOBILIARIOS INNOVADORES</b></h2>
+				<h4 class="mb-3">Creamos valos a nuestros inversores a través de una gestión efectiva, fuerte y sostenible con una base tecnológica integrada.</h4>
+				<h3 class="mb-3"><b>Una propuesta de valor única en el sector.</b></h3>
+			</div>
+		</div>
+		
+		<div class="row mt-5 dess">
+			<?php
+				if( have_rows('items_bajo_video') ):
+							
+				    while ( have_rows('items_bajo_video') ) : the_row();?>
+				    	<div class="col px-0 text-center">
+							<div class="box h-100 px-3 text-center ">
+								<div id="wrapper-postal">
+							<div id="postal">
+							
+								
+									
+								<?php $image = get_sub_field('item_imagen'); ?>
+								<img src="<?php echo $image['url']; ?>" alt="" class="mx-auto">
+								<h4><?php 
+								$item_titulo = the_sub_field('item_titulo'); 
+								_e($item_titulo , 'urbanvalue');
+								?>
+								</h4>
+								
+								
+								<p>
+								<?php 
+								$item_texto = the_sub_field('item_texto'); 
+								_e($item_texto , 'urbanvalue');
+								?>
+								</p>
+								
+								
+							</div>
+						</div>
+							</div>
+							<?php $color = get_sub_field('barra_color'); ?>
+							<hr class="colorbar m-0" style="background-color: <?php echo $color; ?>">
+						</div>					        
+					<?php  endwhile;
+				endif;
+			?>
+		</div>
+	</div>
+</section>
 <!-- tabbs -->
 <section class="tabbs d-md-block d-lg-flex h-100 pb-md-5" >
 	<div class="container justify-content-lg-center align-self-lg-center">
