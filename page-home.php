@@ -306,21 +306,26 @@ get_header();?>
 </section>
 
 <!-- Impacto -->
-<section class="impacto d-lg-flex flex-lg-column">
-	<div class="justify-content-lg-center align-self-lg-center items">
+<section class="impacto d-md-block d-lg-flex h-100">
+	<div class="justify-content-lg-center align-self-lg-center ">
 		<div class="row ">
 			<div class="col-lg-12">
-				<h3 class="titulo">GENERAMOS IMPACTOS POSITIVOS</h3>
+				<h2 class="titulo">GENERAMOS IMPACTOS POSITIVOS</h3>
+				<h4>Combinamos activos iconicos con tecnologia digital</h4>
+				
 			</div>
 		</div>
 
-		<div class="row ">
+		<div class="row numberss items mt-5">
 			<?php
                 if( have_rows('numero_item' , 'option') ):
                 	while ( have_rows('numero_item' , 'option') ) : the_row();?>
 	                   <div class="col-lg-3">
 	                   		<div class="numero__item">
-	                   			<h3 class="counter"><?php the_sub_field('numero'); ?></h3>
+	                   			<?php $liveicons = get_sub_field('livicon'); 
+	                   				echo do_shortcode($liveicons);
+	                   			?>
+	                   			<h4 class="counter" style="color:<?php the_sub_field('color_numero'); ?>"><?php the_sub_field('numero'); ?></h4>
 	                   			<p><?php 
 	                   				$titulo_numero = the_sub_field('titulo_numero'); 
 	                   				_e($titulo_numero, 'urbanvalue');
@@ -340,6 +345,7 @@ get_header();?>
 		<div class="row">
 			<div class="col-lg-12">
 				<h3 class="titl">PROYECTOS</h3>
+				<p>Desbloqueamos el potencial de los edificios impulsando retornos a través de formatos sostenibles.</p>
 			</div>
 		</div>
 		
@@ -350,24 +356,61 @@ get_header();?>
 			if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 				<div class="col-lg-4">
 					<div class="proyectos__item">
-						<img src="<?php the_post_thumbnail_url(); ?>" alt="">
-
+						<div class="proyecto-img" style="background-image: url(<?php the_post_thumbnail_url(); ?>);">
+							<?php $image_logo = get_field('logo_proyecto'); ?>
+							<img class="proyecto-logo"	src="<?php echo $image_logo['url']; ?>" alt="">
+						</div>
+						<div class="proyecto-header">
+							<h2>
+							<?php $nombrevehiculo = the_field('nombre'); 
+								 _e($nombrevehiculo, 'urbanvalue'); ?>
+							</h2>
+							<p>
+							<?php $subtitulovehiculo = the_field('subtitulo'); 
+									_e($subtitulovehiculo, 'urbanvalue'); ?>
+							</p>			
+						</div>
 						<div class="proyectos__item__content">
-							<ul>
-								<li><?php 
-									$nombrevehiculo = the_field('nombre'); 
-									_e($nombrevehiculo, 'urbanvalue');
-								?></li>
-								<li><?php 
-									$ubicacionvehiculo = the_field('ubicacion'); 
-									_e($ubicacionvehiculo, 'urbanvalue');
-								?></li>
-								<li><?php 
-									$concepto = the_field('concepto');
-									_e($concepto, 'urbanvalue'); 
-								?></li>
-								
-							</ul>						
+							<div class="row">
+								<div class="col-6">
+									<div class="row">
+										<div class="col-4 text-right pr-0">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/ubicacion.png">
+										</div>
+										<div class="col-8 bloke">
+											<p class="item">UBICACIÓN</p>
+											<p class="item-info"><?php the_field('ubicacion'); ?></p>
+										</div>
+										<div class="col-4 text-right pr-0">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/retorno.png">
+										</div>
+										<div class="col-8 bloke">
+											<p class="item">RETORNO</p>
+											<p class="item-info"><?php the_field('retorno'); ?></p>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="row">
+										<div class="col-4 text-right pr-0">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/calendar.png">
+										</div>
+										<div class="col-8 bloke">
+											<p class="item">TIEMPO</p>
+											<p class="item-info"><?php the_field('tiempo'); ?></p>
+										</div>
+										<div class="col-4 text-right pr-0">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/status.png">
+										</div>
+										<div class="col-8 bloke">
+											<p class="item">STATUS</p>
+											<p class="item-info"><?php the_field('status'); ?></p>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+												
 						</div>
 					</div>
 				</div>
