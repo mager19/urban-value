@@ -694,11 +694,42 @@ video{
 }
 
 .filosofia{
-	background-color: $vlack;
+	/*background-color: $vlack;*/
 	color: $white2;
     text-align: center;
 	padding-top: 8em;
 
+	.vehiculos-container{
+		padding:25px;
+		background-size: cover;
+
+		p{
+			color: #fff;
+			text-align: left;
+			display: table;
+		}
+		.img-logo{
+			img{
+				width: 55%;
+    			padding: 10px 0 30px;
+    		}
+		}
+		span{display: flex;}
+		span.ic{
+			float: left;
+			display: block;
+    		margin-right: 12px;
+
+			i{
+				width: 39px;
+				font-size: 1.8em;
+    			margin-top: 5px;
+			}
+		}
+	}
+
+
+/*********************************************/
     h2{
     	margin-bottom:1em;
     }
@@ -1103,6 +1134,7 @@ hr.colorbar {
 
 }
 @media screen and (max-width: 768px) {
+
 	section.videoWrapper {
 	    min-height: 100vh;
 	    background-image: url(img/trianglify.png);

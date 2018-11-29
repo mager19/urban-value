@@ -273,54 +273,6 @@ get_header();?>
 	</div>
 </section>
 
-<!-- claim -->
-<section class="claim d-md-block d-lg-flex h-100 pb-md-5" >
-	<div class="container justify-content-lg-center align-self-lg-center">
-		<div class="row ">
-			<div class="col-lg-12">
-				<h2>Applying digital knowledge and tools to Real Estate development.</h2>
-				<h3>La filosofía de la empresa se ve reflejada en cuatro momentos clave que hacen la propuesta de valor única en el sector.</h3>
-			</div>
-
-			<?php
-				if( have_rows('items_bajo_video') ):
-							
-				    while ( have_rows('items_bajo_video') ) : the_row();?>
-				    	<div class="col-lg-3">
-							<div class="box">
-								<div id="wrapper-postal">
-							<div id="postal">
-							
-								<figure>
-									<div class="informacion"><i class="fas fa-info-circle"></i></div>
-								<?php $image = get_sub_field('item_imagen'); ?>
-								<img src="<?php echo $image['url']; ?>" alt="">
-								<h4><?php 
-								$item_titulo = the_sub_field('item_titulo'); 
-								_e($item_titulo , 'urbanvalue');
-								?>
-								</h4>
-								</figure>
-								<figure class="back d-flex h-100">
-								<p>
-								<?php 
-								$item_texto = the_sub_field('item_texto'); 
-								_e($item_texto , 'urbanvalue');
-								?>
-								</p>
-								</figure>
-								
-							</div>
-						</div>
-							</div>
-						</div>					        
-					<?php  endwhile;
-				endif;
-			?>
-		</div>
-	</div>
-</section>
-
 <!-- Filosofia -->
 <section class="filosofia d-md-block d-lg-flex flex-lg-column h-100 pb-md-5">
 	<div class="container justify-content-lg-center align-self-lg-center">
@@ -337,23 +289,25 @@ get_header();?>
 
 			if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 				<div class="col-lg-4">
-					<div id="wrapper-postal">
-						<div id="postal">
-							<figure style="background-image:url(<?php the_post_thumbnail_url(); ?>); ">
-						<div class="vehiculo__item" >
-							<h4><?php 
-							$title_vehiculo = the_title(); 
-							_e($title_vehiculo , 'urbanvalue');
-							?>
-							</h4></div>
-							</figure>
-							<figure class="back d-flex h-100">
-								<div class="justify-content-center align-self-center" >
-							<?php the_content(); ?>
-							<a href="<?php the_permalink(); ?>" class="more">Ver Mas</a></div>
-							</figure>
+					<?php $fondov = get_field('fondo'); ?>
+					<div class="vehiculos-container h-100" style="background-image:url(<?php echo $fondov; ?>); " >
+						<div class="img-logo">
+							<img src="<?php the_field('logo'); ?>" alt="" class="mx-auto"/>
 						</div>
+						<p><span class="ic"><i class="fas fa-city"></i></span><span><?php the_field('texto1'); ?></span></p>
+						<p><span class="ic"><i class="fas fa-chart-line"></i></span><span><?php the_field('texto2'); ?></span></p>
+						<p><?php if( get_field('texto3') ): ?><span class="ic"><i class="fas fa-chart-line"></i></span><span><?php the_field('texto3'); ?><?php endif; ?></span></p>
+						<p><span class="ic"><i class="fas fa-coins"></i></span><span><?php the_field('texto4'); ?></span></p>
 					</div>
+
+
+
+
+
+
+
+
+					
 				</div>
 				
 			<!-- post -->

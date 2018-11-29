@@ -569,7 +569,19 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .claim #postal figure.back .more { color: #1e1e1e; background: #999; padding: 7px 12px; border-radius: 50px; font-size: 0.7rem; text-transform: uppercase; font-weight: 600; }
 
-.filosofia { background-color: #1E1E1E; color: #999; text-align: center; padding-top: 8em; }
+.filosofia { /*background-color: $vlack;*/ color: #999; text-align: center; padding-top: 8em; /*********************************************/ }
+
+.filosofia .vehiculos-container { padding: 25px; background-size: cover; }
+
+.filosofia .vehiculos-container p { color: #fff; text-align: left; display: table; }
+
+.filosofia .vehiculos-container .img-logo img { width: 55%; padding: 10px 0 30px; }
+
+.filosofia .vehiculos-container span { display: flex; }
+
+.filosofia .vehiculos-container span.ic { float: left; display: block; margin-right: 12px; }
+
+.filosofia .vehiculos-container span.ic i { width: 39px; font-size: 1.8em; margin-top: 5px; }
 
 .filosofia h2 { margin-bottom: 1em; }
 
