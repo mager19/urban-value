@@ -451,7 +451,11 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .desarrollo #postal img { height: 60px; margin-bottom: 25px; }
 
+.desarrollo .dess { display: none; }
+
 .tabbs { /*a.tt5:after { content: ""; width: 2px; height: 19px; background-color: #a0a3a4; position: absolute; top: 78px; left: 51px; }*/ }
+
+.tabbs .mov-il { display: none; }
 
 .tabbs .nav-pills .nav-link.active { background-color: transparent; }
 
@@ -613,7 +617,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .proyectos ul li:first-child { text-transform: uppercase; font-weight: 600; font-size: 1.2rem; }
 
-.impacto { background-color: #1E1E1E; color: #999; text-align: center; }
+.impacto { background-color: #1E1E1E; background-image: url(http://localhost:3000/wp-content/themes/urban-value/img/impacto-bg.jpg); background-size: contain; color: #999; text-align: center; }
 
 .impacto .items { background-color: #191919; padding: 1em 1em; }
 
@@ -712,7 +716,11 @@ hr.colorbar { height: 12px; }
   .footer .clientes { padding-top: 13vh; }
   .footer .last-footer { position: absolute; bottom: 30px; } }
 
-@media screen and (max-width: 768px) { section.videoWrapper { min-height: 100vh; background-image: url(img/trianglify.png); background-size: cover; }
+@media screen and (max-width: 768px) { .desarrollo .dess { display: block; }
+  .desarrollo .desk-top { display: none; }
+  .tabbs .desk-top { display: none; }
+  .tabbs .mov-il { display: block; }
+  section.videoWrapper { min-height: 100vh; background-image: url(img/trianglify.png); background-size: cover; }
   section.videoWrapper iframe { display: none; }
-  section.videoWrapper .videoWrapper .video__info h1 { font-size: 1.8em; }
+  section.videoWrapper .video__info h1 { font-size: 1.8em; }
   button.menu-toggle { background: rgba(230, 230, 230, 0.24); } }

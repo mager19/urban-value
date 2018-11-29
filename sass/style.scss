@@ -353,9 +353,17 @@ video{
     		margin-bottom: 25px;
 		}
 	}
+	.dess{
+		display: none;
+	}
 }
 
 .tabbs{
+
+	.mov-il{
+			display: none;
+	}
+
 	.nav-pills .nav-link.active{
 		
 		background-color: transparent;
@@ -858,6 +866,8 @@ video{
 
 .impacto{
 	background-color: $vlack;
+	background-image: url(http://localhost:3000/wp-content/themes/urban-value/img/impacto-bg.jpg);
+	background-size: contain;
 	color: $white2;
 	text-align: center;
 	.items{
@@ -1135,6 +1145,24 @@ hr.colorbar {
 }
 @media screen and (max-width: 768px) {
 
+	.desarrollo{
+		.dess{
+			display: block;
+		}
+		.desk-top{
+			display: none;
+		}
+	}
+
+	.tabbs{
+		.desk-top{
+			display: none;
+		}
+		.mov-il{
+			display: block;
+		}
+	}
+
 	section.videoWrapper {
 	    min-height: 100vh;
 	    background-image: url(img/trianglify.png);
@@ -1142,7 +1170,7 @@ hr.colorbar {
 	    iframe {
 		    display: none;
 		}
-		.videoWrapper .video__info h1 {font-size: 1.8em;}
+		.video__info h1 {font-size: 1.8em;}
 	}
 	button.menu-toggle {
 	    background: rgba(230, 230, 230, 0.24);
