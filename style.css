@@ -774,9 +774,18 @@ hr.colorbar { height: 12px; }
 
 @media screen and (max-width: 768px) { .desarrollo .dess { display: block; }
   .desarrollo .desk-top { display: none; }
+  .clientes ul li.cliente { width: 86%; }
   .tabbs .desk-top { display: none; }
   .tabbs .mov-il { display: block; }
+  .tabbs .mov-il button.btn.btn-link { color: #000; }
+  .tabbs .mov-il button.btn.btn-link i { font-size: 1.5em; margin-right: 10px; }
+  .tabbs .mov-il button.btn.btn-link img { width: 25px; }
+  .tabbs .mov-il .techs { margin-top: 10px; }
+  .cta .footer { position: initial; margin-top: 5em; padding-top: 9px; }
+  .cta .footer .footerCol { margin-top: 16px; }
   section.videoWrapper { min-height: 100vh; background-image: url(img/trianglify.png); background-size: cover; }
   section.videoWrapper iframe { display: none; }
   section.videoWrapper .video__info h1 { font-size: 1.8em; }
-  button.menu-toggle { background: rgba(230, 230, 230, 0.24); } }
+  button.menu-toggle { background: rgba(230, 230, 230, 0.24); }
+  .menu-menu-1-container #primary-menu { position: absolute; top: 43px; right: 1px; width: 280px; background-color: #000; padding: 30px 20px; }
+  .menu-menu-1-container #primary-menu li a { font-size: 1em; padding: 5px 0; display: block; } }
