@@ -47,6 +47,13 @@ jQuery( ".titl" ).mouseleave(function() {
 		  slidesToShow: 1,
 		  adaptiveHeight: false
 		});
+		$('.dess').slick({
+  dots: true,
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 1,
+		  adaptiveHeight: false
+});
 		
 		$('.slide__clientes').slick({
   				autoplay: true,
