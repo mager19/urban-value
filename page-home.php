@@ -430,8 +430,11 @@ get_header();?>
 <section class="team d-flex pt-4 pb-3">
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
-			<h3 class="titl">TEAM</h3>
-			<p class="team-text">Conformamos un equipo multidisplinario con amplia experiencia y expertise en cada una de las áreas de desarrollo</p>
+			<h3 class="titl">EQUIPO</h3>
+			<p class="team-text">Conformamos un equipo multidisciplinario con amplia experiencia y expertise en cada una de las áreas de desarrollo.</p>
+
+<div class="col-lg-10 offset-lg-1">
+	<div class="row">
 
 			<?php
 			$args = array( 'pagename' => 'team');
@@ -443,12 +446,18 @@ get_header();?>
 				 	// loop through the rows of data
 				    while ( have_rows('equipo') ) : the_row();?>
 						
-						<div class="col-lg-3">
-							<div class="equipo">
-								<?php $image = get_sub_field('foto'); ?>
-								<img src="<?php echo $image['url']; ?>" alt="">
-								<h3 class="name"><?php the_sub_field('nombre'); ?></h3>
-								<h5 class="job"><?php the_sub_field('cargo'); ?></h5>
+						<div class="col-lg-6">
+							<div class="equipo row">
+								<div class="col-6 p-3">
+									<h3 class="name"><?php the_sub_field('nombre'); ?></h3>
+									<h5 class="job"><?php the_sub_field('cargo'); ?></h5>
+									<div class="linkedin"><a href="<?php the_sub_field('linkedin'); ?>"><i class="fab fa-linkedin-in"></i></a></div>
+								</div>
+								<div class="col-6 p-0">
+									<?php $image = get_sub_field('foto'); ?>
+									<img src="<?php echo $image['url']; ?>" alt="">
+								</div>
+								
 							</div>
 						</div>	
 				        
@@ -469,6 +478,11 @@ get_header();?>
 			<?php endif; 
 				wp_reset_postdata();
 			?>
+	</div>		
+</div>
+
+
+
 		</div>
 	</div>
 </section>
@@ -477,13 +491,13 @@ get_header();?>
 
 
 <!-- Clientes -->
-<!--- <section class="clientes d-lg-flex h-100 pb-md-5">
+ <section class="clientes d-lg-flex h-100 pb-md-5">
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
 			<div class="col-lg-12">
 				<h3 class="titl">NUESTROS CLIENTES</h3>			
 				<div class="slide__clientes">
-					<?php /*
+					<?php 
 					$args = array( 'pagename' => 'clientes');
 					$loop = new WP_Query( $args );
 						if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
@@ -497,24 +511,24 @@ get_header();?>
 									</div>
 							        
 							<?php  endwhile;
-						endif;*/
+						endif;
 					?>
-							-->	
+							
 				<!-- post -->
-				<?php /*endwhile;*/ ?>
+				<?php endwhile; ?>
 				<!-- post navigation -->
-				<?php /*else:*/ ?>
+				<?php else: ?>
 				<!-- no posts found -->
-				<?php /*endif; 
-					wp_reset_postdata();*/
+				<?php endif; 
+					wp_reset_postdata();
 				?>
-			<!--	</div>
+				</div>
 			</div>			
 		</div>
 	</div>
 	
 
-</section> -->
+</section> 
 
 <section class="cta d-lg-flex flex-lg-column h-100 pb-md-5">
 <!-- Quotes -->
@@ -548,6 +562,41 @@ get_header();?>
 			
 		</div>
 	</div>
+<div class="footer">
+<div class=" last-footer container justify-content-lg-center align-self-lg-center mt-2">
+			<div class="row">
+				<div class="col-lg-3 ">
+					<?php 
+						$custom_logo_id = get_theme_mod( 'custom_logo' );
+						$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+						if ( has_custom_logo() ) {
+						        echo '<img src="'. esc_url( $logo[0] ) .'">';
+						} else {
+						        echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
+						}
+					?>
+				</div>
+				<div class="col-lg-3">					
+					<div id="footerCol-1" class="footerCol widget-area" role="complementary">
+						<?php dynamic_sidebar( 'footercol1' ); ?>
+					</div>
+					
+				</div>
+
+				<div class="col-lg-3">
+					<div id="footerCol-2" class="footerCol widget-area" role="complementary">
+						<?php dynamic_sidebar( 'footercol2' ); ?>
+					</div>					
+				</div>
+
+				<div class="col-lg-3">
+					<div id="footerCol-3" class="footerCol widget-area" role="complementary">
+						<?php dynamic_sidebar( 'footercol3' ); ?>
+					</div>					
+				</div>
+			</div>
+		</div>
+</div>
 </section>
  <!-- </div>  -->
 <script>

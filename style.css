@@ -657,7 +657,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .impacto .numero__item p { font-size: 0.9rem; }
 
-.quote { background-color: #1E1E1E; /*background-image: url(img/quotes-bg.jpg);*/ background-size: cover; color: #999; text-align: center; padding-top: 6em; }
+.quote { /*background-color: $vlack;*/ /*background-image: url(img/quotes-bg.jpg);*/ background-size: cover; color: #999; text-align: center; padding-top: 2.3em; }
 
 .quote .slick-slide { padding-right: 2em; padding-left: 2em; }
 
@@ -667,15 +667,29 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .quote .slick-dots li button:before { color: #fff; }
 
-.team { background-color: #1E1E1E; background-image: url(img/quotes-bg.jpg); background-size: cover; color: #999; text-align: center; }
+.team { /*background-color: $vlack; background-image: url(img/quotes-bg.jpg); background-size: cover; color: $white2;*/ color: #000; text-align: center; }
+
+.team .equipo { background-color: #d6d6d6; }
+
+.team .equipo img { filter: grayscale(1); }
+
+.team .equipo .linkedin { position: absolute; bottom: 10px; font-size: 1.3em; }
+
+.team .equipo .linkedin a { color: #ebebeb; }
+
+.team .equipo:hover { background-color: #ebebeb; }
+
+.team .equipo:hover .linkedin a { color: #d6d6d6; }
+
+.team .equipo:hover img { filter: grayscale(0); }
 
 .team p.team-text { margin-bottom: 1em; text-align: center; width: 100%; }
 
 .team h3 { margin: 0 auto 1em; width: 100%; }
 
-.team h3.name { font-size: 1.2rem; margin-top: 15px; color: #fff; margin-bottom: 2px; }
+.team h3.name { font-size: 1.2rem !important; /*margin-top: 10px;*/ /*color: #fff;*/ margin-bottom: 2px; text-align: left; }
 
-.team h5.job { font-size: 1rem; }
+.team h5.job { font-size: 1rem !important; text-align: left; }
 
 .clientes { background-color: #1E1E1E; color: #999; text-align: center; }
 
@@ -683,9 +697,9 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .clientes .cliente.slick-slide { padding: 3em 0; border: 1px solid #3a3a3a; }
 
-.cta { background-color: #f5f5f5; color: #000; text-align: center; padding-top: 0px; }
+.cta { background-color: #f5f5f5; background-image: url(img/contact-bg.jpg); background-size: cover; color: #fff; text-align: center; padding-top: 0px; }
 
-.cta .cta-container { padding-top: 20%; }
+.cta .cta-container { padding-top: 10%; }
 
 .cta .form { margin-top: -20%; }
 
@@ -693,17 +707,25 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .cta label, .cta input { width: 100%; /*margin-top: 1em;*/ }
 
-.cta input { height: 40px; border: 1px solid #333; background-color: transparent; color: #fff !important; padding-left: 10px; }
+.cta input { height: 40px; border: 1px solid #fff; background-color: transparent; color: #fff !important; padding-left: 10px; }
 
-.cta textarea { border: 1px solid #333; background-color: transparent; color: #fff !important; padding-left: 10px; height: 5em; }
+.cta textarea { border: 1px solid #fff; background-color: transparent; color: #fff !important; padding-left: 10px; height: 5em; }
 
 .cta input[type="checkbox"] { height: 17px; }
 
 .cta input.wpcf7-submit { background-color: #fff; color: #000 !important; border-radius: 50px; text-transform: uppercase; margin-top: 3px; }
 
-.cta a.cta-btn { background-color: #1E1E1E; color: #fff !important; border-radius: 50px; text-transform: uppercase; margin-top: 3px; padding: 12px 40px; text-decoration: none; }
+.cta a.cta-btn { background-color: #bbbbbb; color: #000 !important; font-weight: 800; border-radius: 50px; text-transform: uppercase; margin-top: 3px; padding: 12px 40px; text-decoration: none; }
 
 .cta .form { display: none; }
+
+.cta .form button.close { color: #fff; text-shadow: 0 2px 0 #000; }
+
+.cta .footer { background-color: #1E1E1E; color: #999; position: absolute; bottom: 31px; width: 100%; }
+
+.cta .footer .widget { text-align: left; }
+
+.cta .footer .widget .widget-title { margin-bottom: 7px; }
 
 .footer { background-color: #1E1E1E; /*color: $white2;*/ color: #999; }
 
