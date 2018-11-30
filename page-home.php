@@ -508,7 +508,7 @@ get_header();?>
 							if( have_rows('ingresar_cliente') ):
 							
 							    while ( have_rows('ingresar_cliente') ) : the_row();?>
-									<li class="cliente" style="margin-right: 1em;">
+									<li class="cliente">
 										<?php $image = get_sub_field('l_cliente'); ?>
 										<img src="<?php echo $image['url']; ?>" alt="">
 									</li>
@@ -531,8 +531,8 @@ get_header();?>
 
 
 
-				<div class="slide__clientes">
-					<?php 
+				<!--<div class="slide__clientes">
+					<?php /*
 					$args = array( 'pagename' => 'clientes');
 					$loop = new WP_Query( $args );
 						if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
@@ -555,9 +555,9 @@ get_header();?>
 				<?php else: ?>
 				<!-- no posts found -->
 				<?php endif; 
-					wp_reset_postdata();
+					wp_reset_postdata();*/
 				?>
-				</div>
+				</div>-->
 			</div>			
 		</div>
 	</div>

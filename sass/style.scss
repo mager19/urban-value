@@ -910,7 +910,7 @@ video{
 .impacto{
 	background-color: $vlack;
 	background-image: url(http://localhost:3000/wp-content/themes/urban-value/img/impacto-bg.jpg);
-	background-size: contain;
+	background-size: cover;
 	color: $white2;
 	text-align: center;
 	h2,h4{color: #fff;}
@@ -1044,6 +1044,15 @@ video{
 	.cliente.slick-slide {
 	    padding: 3em 0;
 	    border: 1px solid #3a3a3a;
+	}
+
+	ul{
+		margin:0 auto;
+		li.cliente{
+			width: 20%;
+			float:left;
+			list-style: none;
+		}
 	}
 }
 
