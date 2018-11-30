@@ -398,7 +398,7 @@ embed, iframe, object { max-width: 100%; }
 
 /* estilos propios/*/
 /*@import url('https://fonts.googleapis.com/css?family=Noto+Serif');*/
-.onepage-pagination li a:before { background: rgba(255, 255, 255, 0.85) !important; }
+.onepage-pagination li a:before { /*background: rgba(255, 255, 255, 0.85) !important;*/ }
 
 body { overflow-x: hidden; }
 
