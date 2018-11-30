@@ -281,7 +281,7 @@ iframe{
 	    margin-right: auto;
 	    left: 0;
 	    right: 0;
-	    width: 65%;
+	    width: 80%;
 
 	    h1{
 	    	/*border:8px solid #fff;*/
@@ -292,6 +292,10 @@ iframe{
 	    	/*width: 50%;
 	    	margin-left: 25%;*/
 	    	text-transform: uppercase;
+	    	span {
+			    font-weight: 300;
+			    display: block;
+			}
 	    }
 	}
 }
@@ -888,6 +892,9 @@ video{
 		    	font-size: 1.2em !important;
 		    	margin-bottom: 1px;
 		    }
+		    p {
+			    font-size: 0.85em;
+			}
 		}
 		.proyectos__item__content {
 		    padding: 35px 15px 10px 15px;
@@ -904,7 +911,7 @@ video{
 			    margin-bottom: 0px;
 			}
 			p.item-info {
-			    font-size: 0.85em;
+			    font-size: 0.75em;
 			}
 
 			.bloke {
@@ -1267,7 +1274,7 @@ hr.colorbar {
 		}
 		.last-footer {
 			position: absolute;
-			bottom: 30px;
+			bottom: 0px;
 		}
 	}
 

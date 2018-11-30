@@ -437,9 +437,11 @@ iframe { width: 100%; height: 80vh; }
 
 .videoWrapper .overlay { background: rgba(0, 0, 0, 0.4); position: absolute; z-index: 3; height: 100%; width: 100%; }
 
-.videoWrapper .video__info { position: absolute; z-index: 4; top: 34%; text-align: center; margin-left: auto; margin-right: auto; left: 0; right: 0; width: 65%; }
+.videoWrapper .video__info { position: absolute; z-index: 4; top: 34%; text-align: center; margin-left: auto; margin-right: auto; left: 0; right: 0; width: 80%; }
 
 .videoWrapper .video__info h1 { /*border:8px solid #fff;*/ color: #fff; /*font-size: 4em;*/ font-size: 2.8em; padding: 1em; /*width: 50%; margin-left: 25%;*/ text-transform: uppercase; }
+
+.videoWrapper .video__info h1 span { font-weight: 300; display: block; }
 
 .videoWrapper iframe { /*position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; width: auto; height: auto;*/ position: absolute; top: 0; left: 0; width: 100%; height: 115%; transform: scale(1.3); }
 
@@ -629,13 +631,15 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .proyectos .proyectos__item .proyecto-header h2 { font-size: 1.2em !important; margin-bottom: 1px; }
 
+.proyectos .proyectos__item .proyecto-header p { font-size: 0.85em; }
+
 .proyectos .proyectos__item .proyectos__item__content { padding: 35px 15px 10px 15px; color: #000; text-align: left; }
 
 .proyectos .proyectos__item .proyectos__item__content img { max-height: 33px; max-width: 30px; }
 
 .proyectos .proyectos__item .proyectos__item__content p.item { font-weight: 800; font-size: 0.9em; margin-bottom: 0px; }
 
-.proyectos .proyectos__item .proyectos__item__content p.item-info { font-size: 0.85em; }
+.proyectos .proyectos__item .proyectos__item__content p.item-info { font-size: 0.75em; }
 
 .proyectos .proyectos__item .proyectos__item__content .bloke { height: 75px; }
 
@@ -770,7 +774,7 @@ hr.colorbar { height: 12px; }
   .filosofia .impacto { position: absolute; /*bottom: 5px;*/ bottom: 3%; margin: 0 auto; width: 100%; }
   .quote .container { padding-top: 13vh; /*padding-bottom: 2em;*/ }
   .footer .clientes { padding-top: 13vh; }
-  .footer .last-footer { position: absolute; bottom: 30px; } }
+  .footer .last-footer { position: absolute; bottom: 0px; } }
 
 @media screen and (max-width: 768px) { .desarrollo .dess { display: block; }
   .desarrollo .desk-top { display: none; }

@@ -101,6 +101,45 @@ jQuery( ".titl" ).mouseleave(function() {
 			$('.cta .cta-txt').toggle("fast");
 		});
 
+/******* menu scroll **********/
+
+jQuery('li.uno a').on('click', function(e){
+    jQuery(".home").moveTo(1);
+    e.stopPropagation();
+});
+jQuery('li.dos a').on('click', function(e){
+    jQuery(".home").moveTo(2);
+    e.stopPropagation();
+});
+jQuery('li.tres a').on('click', function(e){
+    jQuery(".home").moveTo(3);
+    e.stopPropagation();
+});
+jQuery('li.cuartro a').on('click', function(e){
+    jQuery(".home").moveTo(4);
+    e.stopPropagation();
+});
+jQuery('li.cinco a').on('click', function(e){
+    jQuery(".home").moveTo(5);
+    e.stopPropagation();
+});
+jQuery('li.seis a').on('click', function(e){
+    jQuery(".home").moveTo(6);
+    e.stopPropagation();
+});
+jQuery('li.siete a').on('click', function(e){
+    jQuery(".home").moveTo(7);
+    e.stopPropagation();
+});
+jQuery('li.ocho a').on('click', function(e){
+    jQuery(".home").moveTo(8);
+    e.stopPropagation();
+});
+jQuery('li.nueve a').on('click', function(e){
+    jQuery(".home").moveTo(9);
+    e.stopPropagation();
+});
+
 
 		var timeoutId;
 var $videoBgAspect = $(".videobg-aspect");

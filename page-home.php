@@ -29,7 +29,7 @@ get_header();?>
 		<div class="row ">
 			<div class="col-lg-12 text-center">
 				<h2 class="mb-3"><b>U&V DESARROLLA PROYECTOS INMOBILIARIOS INNOVADORES</b></h2>
-				<h4 class="mb-3">Creamos valos a nuestros inversores a través de una gestión efectiva, fuerte y sostenible con una base tecnológica integrada.</h4>
+				<h4 class="mb-3">Creamos valor a nuestros inversores a través de una gestión efectiva, fuerte y sostenible con una base tecnológica integrada.</h4>
 				<h3 class="mb-3"><b>Una propuesta de valor única en el sector.</b></h3>
 			</div>
 		</div>
@@ -121,7 +121,7 @@ get_header();?>
 		<div class="row ">
 			<div class="col-lg-12 text-center">
 				<h2 class="mb-3"><b>PROCESO DE INVERSIÓN</b></h2>
-				<h4 class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<h4 class="mb-3">La propuesta de valor se ve reflejada en cada uno de los procesos de desarrollo.
 				</h4>
 				
 			</div>
@@ -374,17 +374,17 @@ get_header();?>
 							<div class="row">
 								<div class="col-6">
 									<div class="row">
-										<div class="col-4 text-right pr-0">
+										<div class="col-3 text-right pr-0">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/ubicacion.png">
 										</div>
-										<div class="col-8 bloke">
+										<div class="col-9 bloke">
 											<p class="item">UBICACIÓN</p>
 											<p class="item-info"><?php the_field('ubicacion'); ?></p>
 										</div>
-										<div class="col-4 text-right pr-0">
+										<div class="col-3 text-right pr-0">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/retorno.png">
 										</div>
-										<div class="col-8 bloke">
+										<div class="col-9 bloke">
 											<p class="item">RETORNO</p>
 											<p class="item-info"><?php the_field('retorno'); ?></p>
 										</div>
@@ -392,17 +392,17 @@ get_header();?>
 								</div>
 								<div class="col-6">
 									<div class="row">
-										<div class="col-4 text-right pr-0">
+										<div class="col-3 text-right pr-0">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/calendar.png">
 										</div>
-										<div class="col-8 bloke">
+										<div class="col-9 bloke">
 											<p class="item">TIEMPO</p>
 											<p class="item-info"><?php the_field('tiempo'); ?></p>
 										</div>
-										<div class="col-4 text-right pr-0">
+										<div class="col-3 text-right pr-0">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/status.png">
 										</div>
-										<div class="col-8 bloke">
+										<div class="col-9 bloke">
 											<p class="item">STATUS</p>
 											<p class="item-info"><?php the_field('status'); ?></p>
 										</div>
@@ -495,7 +495,8 @@ get_header();?>
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
 			<div class="col-lg-12">
-				<h3 class="titl">NUESTROS CLIENTES</h3>	
+				<h3 class="titl">NUESTROS PARTNERS</h3>	
+				<p>Los partners juegan un rol muy activo donde su expertise refuerza los verticales para consolidar toda la propuesta de valor en cada fase del desarrollo.</p>
 
 
 <div class="slide__clientes2">
@@ -567,7 +568,7 @@ get_header();?>
 
 <section class="cta d-lg-flex flex-lg-column h-100 pb-md-5">
 <!-- Quotes -->
-<div class="quote d-lg-flex flex-lg-column pb-md-5">
+<div class="quote d-lg-flex flex-lg-column pb-md-5 mt-3">
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
 			<div class="offset-lg-1 col-lg-10 ">
