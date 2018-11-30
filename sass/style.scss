@@ -519,15 +519,16 @@ video{
 		span.tab-text {color: #4b56a2;}
 	}
 	a.tt4:after {
-	    content: "\2193";
+	    content: "\003D";
 	    width: 2px;
 	    height: 19px;
 	    color: #4b56a2; 
 	    position: absolute;
 	    top: 333px;
-	    left: 48px;
+	    left: 56px;
 	    color: #4b56a2;
 	    font-size: 1.2em;
+	    transform: rotate(90deg);
 	}
 	.tt5{
 		span.wrap-icon{

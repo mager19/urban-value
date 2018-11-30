@@ -602,15 +602,21 @@ get_header();?>
 <div class=" last-footer container justify-content-lg-center align-self-lg-center mt-2">
 			<div class="row">
 				<div class="col-lg-3 ">
-					<?php 
+					<?php /*
 						$custom_logo_id = get_theme_mod( 'custom_logo' );
 						$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 						if ( has_custom_logo() ) {
-						        echo '<img src="'. esc_url( $logo[0] ) .'">';
+						        echo '<img class="logo-footer" src="'. esc_url( $logo[0] ) .'">';
 						} else {
 						        echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
-						}
-					?>
+						}*/
+					?><div id="footerCol-1" class="footerCol widget-area" role="complementary">
+						<?php dynamic_sidebar( 'footercol4' ); ?>
+					</div>
+					<ul>
+						<li><a href="">Aviso Legal</a></li>
+						<li><a href="">Política de Privacidad</a></li>
+					</ul>
 				</div>
 				<div class="col-lg-3">					
 					<div id="footerCol-1" class="footerCol widget-area" role="complementary">
