@@ -587,6 +587,8 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .filosofia .vehiculos-container span.ic i { width: 39px; font-size: 1.8em; margin-top: 5px; }
 
+.filosofia .vehiculos-container:hover span.ic { float: left; display: block; margin-right: 12px; color: #88bd54; }
+
 .filosofia h2 { margin-bottom: 1em; }
 
 .filosofia div#wrapper-postal { width: 320px; height: 200px; margin: 0 auto; position: relative; /*border: 1px solid #888;*/ -webkit-perspective: 700px; -moz-perspective: 700px; perspective: 700px; min-height: 17rem; }
