@@ -115,7 +115,7 @@ jQuery('li.tres a').on('click', function(e){
     jQuery(".home").moveTo(3);
     e.stopPropagation();
 });
-jQuery('li.cuartro a').on('click', function(e){
+jQuery('li.cuatro a').on('click', function(e){
     jQuery(".home").moveTo(4);
     e.stopPropagation();
 });
