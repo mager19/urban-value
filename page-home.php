@@ -512,6 +512,8 @@ get_header();?>
 									<li class="cliente">
 										<?php $image = get_sub_field('l_cliente'); ?>
 										<img src="<?php echo $image['url']; ?>" alt="">
+										<?php $n_cliente = get_sub_field('n_cliente'); ?>
+										<p class="n-cliente"><?php echo $n_cliente['url']; ?></p>
 									</li>
 							        
 							<?php  endwhile;
@@ -613,10 +615,7 @@ get_header();?>
 					?><div id="footerCol-1" class="footerCol widget-area" role="complementary">
 						<?php dynamic_sidebar( 'footercol4' ); ?>
 					</div>
-					<ul>
-						<li><a href="">Aviso Legal</a></li>
-						<li><a href="">Política de Privacidad</a></li>
-					</ul>
+					
 				</div>
 				<div class="col-lg-3">					
 					<div id="footerCol-1" class="footerCol widget-area" role="complementary">
