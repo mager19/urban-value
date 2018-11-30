@@ -1070,11 +1070,14 @@ video{
 			list-style: none;
 			height: 120px;
 		   
-		    padding: 38px 0 10px;
+		    padding: 32px 0 10px;
 		   
 
 		    &:nth-child(even) {background: #d6d6d6}
 		    &:nth-child(odd) {background: #ebebeb}
+		    p.n-cliente {
+			    font-size: 0.8em;
+			}
 		}
 	}
 }
