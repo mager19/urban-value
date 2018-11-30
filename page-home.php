@@ -512,8 +512,7 @@ get_header();?>
 									<li class="cliente">
 										<?php $image = get_sub_field('l_cliente'); ?>
 										<img src="<?php echo $image['url']; ?>" alt="">
-										<?php $n_cliente = get_sub_field('n_cliente'); ?>
-										<p class="n-cliente"><?php echo $n_cliente['url']; ?></p>
+										<p class="n-cliente"><?php the_sub_field('texto_cliente'); ?></p>
 									</li>
 							        
 							<?php  endwhile;
