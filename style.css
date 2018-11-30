@@ -699,7 +699,11 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .clientes ul { margin: 0 auto; }
 
-.clientes ul li.cliente { width: 20%; float: left; list-style: none; }
+.clientes ul li.cliente { width: 20%; float: left; list-style: none; height: 120px; padding: 38px 0 10px; border: 1px solid; }
+
+.clientes ul li.cliente:nth-child(even) { background: #d6d6d6; }
+
+.clientes ul li.cliente:nth-child(odd) { background: #ebebeb; }
 
 .cta { background-color: #f5f5f5; background-image: url(img/contact-bg.jpg); background-size: cover; color: #fff; text-align: center; padding-top: 0px; }
 

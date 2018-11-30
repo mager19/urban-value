@@ -1052,6 +1052,13 @@ video{
 			width: 20%;
 			float:left;
 			list-style: none;
+			height: 120px;
+		   
+		    padding: 38px 0 10px;
+		    border: 1px solid;
+
+		    &:nth-child(even) {background: #d6d6d6}
+		    &:nth-child(odd) {background: #ebebeb}
 		}
 	}
 }
