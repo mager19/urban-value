@@ -568,7 +568,7 @@ get_header();?>
 
 <section class="cta d-lg-flex flex-lg-column h-100 pb-md-5">
 <!-- Quotes -->
-<div class="quote d-lg-flex flex-lg-column pb-md-5 mt-3">
+<div class="quote d-lg-flex flex-lg-column pb-md-5 mt-4">
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
 			<div class="offset-lg-1 col-lg-10 ">
