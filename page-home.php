@@ -495,7 +495,42 @@ get_header();?>
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
 			<div class="col-lg-12">
-				<h3 class="titl">NUESTROS CLIENTES</h3>			
+				<h3 class="titl">NUESTROS CLIENTES</h3>	
+
+
+<div class="slide__clientes2">
+	<ul class="listado">
+					<?php 
+					$args = array( 'pagename' => 'clientes');
+					$loop = new WP_Query( $args );
+						if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
+
+							if( have_rows('ingresar_cliente') ):
+							
+							    while ( have_rows('ingresar_cliente') ) : the_row();?>
+									<li class="cliente" style="margin-right: 1em;">
+										<?php $image = get_sub_field('l_cliente'); ?>
+										<img src="<?php echo $image['url']; ?>" alt="">
+									</li>
+							        
+							<?php  endwhile;
+						endif;
+					?>
+							
+				<!-- post -->
+				<?php endwhile; ?>
+				<!-- post navigation -->
+				<?php else: ?>
+				<!-- no posts found -->
+				<?php endif; 
+					wp_reset_postdata();
+				?>
+	</ul>
+</div>
+
+
+
+
 				<div class="slide__clientes">
 					<?php 
 					$args = array( 'pagename' => 'clientes');
