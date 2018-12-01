@@ -427,8 +427,16 @@ header .main-navigation ul li a { /*color:$white; font-size: 1.2rem; text-transf
 
 header .main-navigation ul li a:visited { color: #fff; }
 
-iframe { width: 100%; height: 80vh; }
+.videoWrapper { background-image: url(img/urban-and-value-inversiones-inmobiliarias-fondo.jpg); background-size: cover; }
 
+.videoWrapper iframe { display: none; }
+
+/*iframe{
+	width: 100%;
+	height: 80vh;
+
+	
+}*/
 .ytp-chrome-top { display: none !important; }
 
 .ytp-title { opacity: 0 !important; }
@@ -791,7 +799,7 @@ hr.colorbar { height: 12px; }
   .tabbs .mov-il .techs { margin-top: 10px; }
   .cta .footer { position: initial; margin-top: 5em; padding-top: 9px; }
   .cta .footer .footerCol { margin-top: 16px; }
-  section.videoWrapper { min-height: 100vh; background-image: url(img/trianglify.png); background-size: cover; }
+  section.videoWrapper { min-height: 100vh; background-image: url(img/urban-and-value-inversiones-inmobiliarias-fondo.jpg); background-size: cover; }
   section.videoWrapper iframe { display: none; }
   section.videoWrapper .video__info h1 { font-size: 1.8em; }
   button.menu-toggle { background: rgba(230, 230, 230, 0.24); }
