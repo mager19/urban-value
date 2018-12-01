@@ -789,6 +789,7 @@ hr.colorbar { height: 12px; }
   .footer .last-footer { position: absolute; bottom: 0px; } }
 
 @media screen and (max-width: 768px) { header { background-color: transparent; }
+  header .main-navigation ul li { margin-left: 2rem; width: 100%; }
   .dess { width: 100%; margin: 0 auto !important; }
   .desarrollo .dess { display: block; }
   .desarrollo .desk-top { display: none; }
