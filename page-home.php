@@ -30,7 +30,7 @@ get_header();?>
 			<div class="col-lg-12 text-center">
 				<h2 class="mb-3"><b>U&V DESARROLLA PROYECTOS INMOBILIARIOS INNOVADORES</b></h2>
 				<h4 class="mb-3">Creamos valor a nuestros inversores a través de una gestión efectiva, fuerte y sostenible con una base tecnológica integrada.</h4>
-				<h3 class="mb-3"><b>Una propuesta de valor única en el sector.</b></h3>
+				<!-- <h3 class="mb-3"><b>Una propuesta de valor única en el sector.</b></h3> -->
 			</div>
 		</div>
 		<div class="row mt-5 desk-top">
@@ -137,25 +137,25 @@ get_header();?>
 			   <a class="nav-link tt5" id="v-pills-settings2-tab" data-toggle="pill" href="#v-pills-settings2" role="tab" aria-controls="v-pills-settings2" aria-selected="false"><span class="wrap-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-urban-value-tab.png" class="tab-icon"></span><span class="tab-text"><b>Retornos</b></span></a>
 			</div>
 			<div class="tab-content col-lg-5 circle d-lg-flex h-100" id="v-pills-tabContent">
-			  <div class="tab-pane fade show active text-center justify-content-lg-center align-self-lg-center text-center" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"><p>A través del análisis de Big Data se definen las ubicaciones que cumplan los requisitos de inversión de u&v. Reforzamos nuestra propuesta de valor a traves herramientas de Big Data.</p>
+			  <div class="tab-pane fade show active text-center justify-content-lg-center align-self-lg-center text-center" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"><p>A través del análisis de Big Data se definen las ubicaciones que cumplan los requisitos de inversión de U&V. Reforzamos nuestra propuesta de valor a traves herramientas de Big Data.</p>
 
-				<div class="text-center"><img src="https://placeimg.com/60/60/tech" class="pr-2"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech" class="pl-2"></div>
+				<!-- <div class="text-center"><img src="https://placeimg.com/60/60/tech" class="pr-2"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech" class="pl-2"></div> -->
 			</div>
 			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"><p>Proceso exhaustivo de análisis comercial, financiero y técnico. A través de modelos de Machine Learning se procesan millones de datos tanto internos como externos que permiten fácilmente identificar los insights más valiosos.</p>
 
 				
-				<div class="text-center techs"><img src="https://placeimg.com/60/60/tech" class="pr-2"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech" class="pl-2"></div></div>
-			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"><p>Captación de fondos para financiar la adquisición y desarrollos de los proyectos. La estructura buscada es la que combine el capital privado / institucional y financiación bancaria. u&v cuenta con una plataforma digital que permite la eficiente gestión de los activos y transparencia para los inversores</p>
+				</div>
+			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"><p>Captación de fondos para financiar la adquisición y desarrollos de los proyectos. La estructura buscada es la que combine el capital privado / institucional y financiación bancaria. U&V cuenta con una plataforma digital que permite la eficiente gestión de los activos y transparencia para los inversores</p>
 
 				
-				<div class="text-center techs"><img src="https://placeimg.com/60/60/tech" class="pr-2"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech" class="pl-2"></div></div>
+				</div>
 			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"><p>Estructura de desarrollo óptima a través de contratos de gestión con fees predefinidos. Estándares LEED, proyectos en base BIM y monitorización a través de la plataforma de inversión.</p>
 
-				<div class="text-center techs"><img src="https://placeimg.com/60/60/tech" class="pr-2"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech" class="pl-2"></div></div>
+				</div>
 			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-settings2" role="tabpanel" aria-labelledby="v-pills-settings-tab2"><p>La suma de los elementos anteriormente descritos, resulta en la concesión de los objetivos previamente acordados respecto a la inversión, tanto económicos como de plazo.</p>
 
 				
-				<div class="text-center techs"><img src="https://placeimg.com/60/60/tech" class="pr-2"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech" class="pl-2"></div></div>
+				</div>
 			</div>
 		</div>
 		</div>
@@ -176,8 +176,8 @@ get_header();?>
 
 			    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
 			      <div class="card-body">
-			        A través del análisis de Big Data se definen las ubicaciones que cumplan los requisitos de inversión de u&v. Reforzamos nuestra propuesta de valor a traves herramientas de Big Data.
-			        <div class="text-center techs"><img src="https://placeimg.com/60/60/tech" class="pr-2"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech" class="pl-2"></div>
+			        A través del análisis de Big Data se definen las ubicaciones que cumplan los requisitos de inversión de U&V. Reforzamos nuestra propuesta de valor a traves herramientas de Big Data.
+			        
 			      </div>
 			    </div>
 			  </div>
@@ -192,7 +192,7 @@ get_header();?>
 			    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 			      <div class="card-body">
 			        Proceso exhaustivo de análisis comercial, financiero y técnico. A través de modelos de Machine Learning se procesan millones de datos tanto internos como externos que permiten fácilmente identificar los insights más valiosos.
-			        <div class="text-center techs"><img src="https://placeimg.com/60/60/tech" class="pr-2"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech" class="pl-2"></div>
+			        
 			      </div>
 			    </div>
 			  </div>
@@ -206,8 +206,8 @@ get_header();?>
 			    </div>
 			    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
 			      <div class="card-body">
-			        Captación de fondos para financiar la adquisición y desarrollos de los proyectos. La estructura buscada es la que combine el capital privado / institucional y financiación bancaria. u&v cuenta con una plataforma digital que permite la eficiente gestión de los activos y transparencia para los inversores
-			        <div class="text-center techs"><img src="https://placeimg.com/60/60/tech" class="pr-2"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech" class="pl-2"></div>
+			        Captación de fondos para financiar la adquisición y desarrollos de los proyectos. La estructura buscada es la que combine el capital privado / institucional y financiación bancaria. U&V cuenta con una plataforma digital que permite la eficiente gestión de los activos y transparencia para los inversores
+			        
 			      </div>
 			    </div>
 			  </div>
@@ -222,7 +222,7 @@ get_header();?>
 			    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
 			      <div class="card-body">
 			        Estructura de desarrollo óptima a través de contratos de gestión con fees predefinidos. Estándares LEED, proyectos en base BIM y monitorización a través de la plataforma de inversión.
-			        <div class="text-center techs"><img src="https://placeimg.com/60/60/tech" class="pr-2"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech" class="pl-2"></div>
+			        
 			      </div>
 			    </div>
 			  </div>
@@ -237,7 +237,7 @@ get_header();?>
 			    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
 			      <div class="card-body">
 			         La suma de los elementos anteriormente descritos, resulta en la concesión de los objetivos previamente acordados respecto a la inversión, tanto económicos como de plazo
-			         <div class="text-center techs"><img src="https://placeimg.com/60/60/tech" class="pr-2"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech" class="pl-2"></div>
+			         
 			      </div>
 			    </div>
 			  </div>
@@ -344,7 +344,8 @@ get_header();?>
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
 			<div class="col-lg-12">
-				<h3 class="titl">PROYECTOS</h3>
+				<!-- <h3 class="titl">PROYECTOS</h3> -->
+				<h3 >PROYECTOS</h3> 
 				<p>Desbloqueamos el potencial de los edificios impulsando retornos a través de formatos sostenibles.</p>
 			</div>
 		</div>
@@ -430,7 +431,7 @@ get_header();?>
 <section class="team d-flex pt-4 pb-3">
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
-			<h3 class="titl">EQUIPO</h3>
+			<h3 >EQUIPO</h3>
 			<p class="team-text">Conformamos un equipo multidisciplinario con amplia experiencia y expertise en cada una de las áreas de desarrollo.</p>
 
 <div class="col-lg-10 offset-lg-1">
@@ -495,7 +496,7 @@ get_header();?>
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
 			<div class="col-lg-12">
-				<h3 class="titl">NUESTROS PARTNERS</h3>	
+				<h3 >NUESTROS PARTNERS</h3>	
 				<p>Los partners juegan un rol muy activo donde su expertise refuerza los verticales para consolidar toda la propuesta de valor en cada fase del desarrollo.</p>
 
 
@@ -569,7 +570,7 @@ get_header();?>
 
 <section class="cta d-lg-flex flex-lg-column h-100 pb-md-5">
 <!-- Quotes -->
-<div class="quote d-lg-flex flex-lg-column pb-md-5 mt-4">
+<div class="quote d-lg-flex flex-lg-column pb-md-5 mt-5">
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
 			<div class="offset-lg-1 col-lg-10 ">

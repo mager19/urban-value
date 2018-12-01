@@ -415,7 +415,7 @@ p, a { font-family: 'Montserrat', sans-serif; }
 
 a:hover { color: #999; }
 
-header { /*background-color: $vlack;*/ /*background-color: rgba(30, 30, 30, 0.5);*/ padding: 1rem 0; color: #fff; position: absolute; z-index: 2; left: 0; top: 0; width: 100%; }
+header { /*background-color: $vlack;*/ background-color: rgba(30, 30, 30, 0.5); padding: 1rem 0; color: #fff; position: absolute; z-index: 2; left: 0; top: 0; width: 100%; }
 
 header img { height: 35px; }
 
@@ -591,7 +591,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .filosofia .vehiculos-container:hover span.ic { float: left; display: block; margin-right: 12px; color: #88bd54; }
 
-.filosofia h2 { margin-bottom: 1em; }
+.filosofia h2 { margin-bottom: 1em; color: #000; }
 
 .filosofia div#wrapper-postal { width: 320px; height: 200px; margin: 0 auto; position: relative; /*border: 1px solid #888;*/ -webkit-perspective: 700px; -moz-perspective: 700px; perspective: 700px; min-height: 17rem; }
 
@@ -688,6 +688,8 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 .team .equipo:hover .linkedin a { color: #d6d6d6; }
 
 .team .equipo:hover img { filter: grayscale(0); }
+
+.team .equipo:first-child { border-right: 2px solid #fff; border-bottom: 2px solid #fff; }
 
 .team p.team-text { margin-bottom: 1em; text-align: center; width: 100%; }
 
