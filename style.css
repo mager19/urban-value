@@ -788,7 +788,9 @@ hr.colorbar { height: 12px; }
   .footer .clientes { padding-top: 13vh; }
   .footer .last-footer { position: absolute; bottom: 0px; } }
 
-@media screen and (max-width: 768px) { .desarrollo .dess { display: block; }
+@media screen and (max-width: 768px) { header { background-color: transparent; }
+  .dess { width: 100%; margin: 0 auto !important; }
+  .desarrollo .dess { display: block; }
   .desarrollo .desk-top { display: none; }
   .clientes ul li.cliente { width: 86%; }
   .tabbs .desk-top { display: none; }
