@@ -58,6 +58,11 @@
 <?php } ?>
 </div> <!-- Close Main -->
 <?php wp_footer(); ?>
+<script>
+    if (location.hash) {
+        location.href = location.hash;
+    }
+</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130226340-1"></script>
 <script>
