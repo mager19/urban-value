@@ -603,7 +603,7 @@ get_header();?>
 			
 		</div>
 	</div>
-<div class="footer">
+<div class="footer d-lg-flex justify-content-lg-center align-self-lg-center">
 <div class=" last-footer container justify-content-lg-center align-self-lg-center mt-2">
 			<div class="row">
 				<div class="col-lg-3 ">
