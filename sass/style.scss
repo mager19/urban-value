@@ -719,9 +719,19 @@ video{
     text-align: center;
 	padding-top: 8em;
 
+.tipos:hover:nth-child(1) span.ic {
+    color: #88bd54;
+}
+.tipos:hover:nth-child(2) span.ic {
+    color: #09B087;
+}
+.tipos:hover:nth-child(3) span.ic {
+    color: #25C9D2;
+}
 	.vehiculos-container{
 		padding:25px;
 		background-size: cover;
+		background-color: #E2E4E5;
 
 		p{
 			color: #fff;
@@ -729,16 +739,20 @@ video{
 			display: table;
 		}
 		.img-logo{
+			 background-color: #37484F;
+			    margin: -25px -25px 25px;
+			    padding-top: 15px;
 			img{
 				width: 55%;
     			padding: 10px 0 30px;
     		}
 		}
-		span{display: flex;}
+		span{display: flex;color: #000;}
 		span.ic{
 			float: left;
 			display: block;
     		margin-right: 12px;
+    		color: #ABADAE;
 
 			i{
 				width: 39px;
@@ -751,7 +765,7 @@ video{
 			    float: left;
 			    display: block;
 			    margin-right: 12px;
-			    color: #88bd54;
+			    /*color: #88bd54;*/
 			}
 		}
 	}
@@ -1009,6 +1023,10 @@ video{
 		img {
 		    filter: grayscale(1);
 		}
+		p.texto {
+		    font-size: 0.7em;
+		    text-align: left;
+		}
 
 		.linkedin {
 		    position: absolute;
@@ -1151,6 +1169,7 @@ video{
 	    margin-top: 3px;
 	    padding: 12px 40px;
 	    text-decoration: none;
+	    cursor: pointer;
 	}
 	.form{
 		display: none;

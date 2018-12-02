@@ -585,19 +585,27 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .filosofia { /*background-color: $vlack;*/ color: #999; text-align: center; padding-top: 8em; /*********************************************/ }
 
-.filosofia .vehiculos-container { padding: 25px; background-size: cover; }
+.filosofia .tipos:hover:nth-child(1) span.ic { color: #88bd54; }
+
+.filosofia .tipos:hover:nth-child(2) span.ic { color: #09B087; }
+
+.filosofia .tipos:hover:nth-child(3) span.ic { color: #25C9D2; }
+
+.filosofia .vehiculos-container { padding: 25px; background-size: cover; background-color: #E2E4E5; }
 
 .filosofia .vehiculos-container p { color: #fff; text-align: left; display: table; }
 
+.filosofia .vehiculos-container .img-logo { background-color: #37484F; margin: -25px -25px 25px; padding-top: 15px; }
+
 .filosofia .vehiculos-container .img-logo img { width: 55%; padding: 10px 0 30px; }
 
-.filosofia .vehiculos-container span { display: flex; }
+.filosofia .vehiculos-container span { display: flex; color: #000; }
 
-.filosofia .vehiculos-container span.ic { float: left; display: block; margin-right: 12px; }
+.filosofia .vehiculos-container span.ic { float: left; display: block; margin-right: 12px; color: #ABADAE; }
 
 .filosofia .vehiculos-container span.ic i { width: 39px; font-size: 1.8em; margin-top: 5px; }
 
-.filosofia .vehiculos-container:hover span.ic { float: left; display: block; margin-right: 12px; color: #88bd54; }
+.filosofia .vehiculos-container:hover span.ic { float: left; display: block; margin-right: 12px; /*color: #88bd54;*/ }
 
 .filosofia h2 { margin-bottom: 1em; color: #000; }
 
@@ -687,6 +695,8 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .team .equipo img { filter: grayscale(1); }
 
+.team .equipo p.texto { font-size: 0.7em; text-align: left; }
+
 .team .equipo .linkedin { position: absolute; bottom: 10px; font-size: 1.3em; }
 
 .team .equipo .linkedin a { color: #ebebeb; }
@@ -741,7 +751,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .cta input.wpcf7-submit { background-color: #fff; color: #000 !important; border-radius: 50px; text-transform: uppercase; margin-top: 3px; }
 
-.cta a.cta-btn { background-color: #bbbbbb; color: #000 !important; font-weight: 800; border-radius: 50px; text-transform: uppercase; margin-top: 3px; padding: 12px 40px; text-decoration: none; }
+.cta a.cta-btn { background-color: #bbbbbb; color: #000 !important; font-weight: 800; border-radius: 50px; text-transform: uppercase; margin-top: 3px; padding: 12px 40px; text-decoration: none; cursor: pointer; }
 
 .cta .form { display: none; }
 
