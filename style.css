@@ -531,7 +531,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .tabbs .tt4.active span.tab-text { color: #4b56a2; }
 
-.tabbs a.tt4:after { content: "\003D"; width: 2px; height: 19px; color: #4b56a2; position: absolute; top: 333px; left: 56px; color: #4b56a2; font-size: 1.2em; transform: rotate(90deg); }
+.tabbs a.tt4:after { content: "\003D"; width: 2px; height: 19px; color: #4b56a2; position: absolute; top: 333px; left: 48px; color: #4b56a2; font-size: 1.2em; /*transform: rotate(90deg);*/ }
 
 .tabbs .tt5 span.wrap-icon { color: #a0a3a4; }
 
