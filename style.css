@@ -447,7 +447,7 @@ header .main-navigation ul li a:visited { color: #fff; }
 
 .videoWrapper .video__info { position: absolute; z-index: 4; top: 34%; text-align: center; margin-left: auto; margin-right: auto; left: 0; right: 0; width: 80%; }
 
-.videoWrapper .video__info h1 { /*border:8px solid #fff;*/ color: #fff; /*font-size: 4em;*/ font-size: 2.8em; padding: 1em; /*width: 50%; margin-left: 25%;*/ text-transform: uppercase; }
+.videoWrapper .video__info h1 { /*border:8px solid #fff;*/ color: #fff; /*font-size: 4em;*/ font-size: 2.8em; padding: 1em; /*width: 50%; margin-left: 25%;*/ /*text-transform: uppercase;*/ }
 
 .videoWrapper .video__info h1 span { font-weight: 300; display: block; }
 
