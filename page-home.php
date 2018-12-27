@@ -257,7 +257,7 @@ get_header();?>
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2>Por Delante de Nuestra Filosofia Empresarial esta la Pasion por desarrollar productos innovadores</h2>
+				<h2>Por delante de nuestra filosofía empresarial esta la pasión por desarrollar productos innovadores</h2>
 			</div>
 		</div>
 
@@ -434,7 +434,7 @@ get_header();?>
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
 			<h3 >EQUIPO</h3>
-			<p class="team-text">Conformamos un equipo multidisciplinario con amplia experiencia y expertise en cada una de las áreas de desarrollo.</p>
+			<!--<p class="team-text">Conformamos un equipo multidisciplinario con amplia experiencia y expertise en cada una de las áreas de desarrollo.</p>-->
 
 <div class="col-lg-10 offset-lg-1">
 	<div class="row">
