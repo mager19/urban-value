@@ -20,38 +20,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
-/*@font-face {
-    font-family: 'Avenir';
-    src: url('fonts/Avenir-Medium.eot');
-    src: url('fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Avenir-Medium.woff2') format('woff2'),
-        url('fonts/Avenir-Medium.woff') format('woff'),
-        url('fonts/Avenir-Medium.svg#Avenir-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-} */
+/*-------------------------------------------------------------- >>> TABLE OF CONTENTS: ---------------------------------------------------------------- # Normalize # Typography # Elements # Forms # Navigation ## Links ## Menus # Accessibility # Alignments # Clearings # Widgets # Content ## Posts and pages ## Comments # Infinite scroll # Media ## Captions ## Galleries --------------------------------------------------------------*/
+/*@font-face { font-family: 'Avenir'; src: url('fonts/Avenir-Medium.eot'); src: url('fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/Avenir-Medium.woff2') format('woff2'), url('fonts/Avenir-Medium.woff') format('woff'), url('fonts/Avenir-Medium.svg#Avenir-Medium') format('svg'); font-weight: 500; font-style: normal; } */
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -459,6 +429,8 @@ section { padding: 4em 0; }
 
 video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: 0; -ms-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
 
+.desarrollo .box { border-left: 1px solid #eee; }
+
 .desarrollo #postal img { height: 60px; margin-bottom: 25px; }
 
 .desarrollo .dess { display: none; }
@@ -471,19 +443,23 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .tabbs span.wrap-icon { border: 2px dotted transparent; border-radius: 50%; display: inline-block; padding: 4px; text-align: center; }
 
-.tabbs span.wrap-icon img.tab-icon { height: 60px; width: 60px; /*margin: 10px;*/ /*background-color: red;*/ border-radius: 50%; padding: 12px; /*filter: invert(1);*/ }
+.tabbs span.wrap-icon img.tab-icon { height: 60px; width: 60px; /*margin: 10px;*/ /*background-color: red;*/ /*border-radius: 50%;*/ padding: 3px; /*filter: invert(1);*/ }
 
-.tabbs span.wrap-icon i.tab-icon { height: 60px; width: 60px; /*margin: 10px;*/ /*background-color: red;*/ border-radius: 50%; padding: 14px 12px 12px 13px; font-size: 2em; }
+.tabbs span.wrap-icon i.tab-icon { height: 60px; width: 60px; /*margin: 10px;*/ /*background-color: red;*/ /* border-radius: 50%;*/ padding: 14px 12px 12px 13px; font-size: 2em; }
 
-.tabbs span.tab-text { border-bottom: 2px dotted; text-align: center; width: 169px; display: inline-block; top: -11px; position: relative; }
+.tabbs span.tab-text { border-bottom: 2px solid; text-align: left; width: 169px; display: inline-block; top: -11px; position: relative; }
 
 .tabbs .tt1 span.wrap-icon { color: #88bd54; }
 
+.tabbs .tt1 span.wrap-icon img.tab-icon { filter: grayscale(100%); /*background-color: #06a685;*/ }
+
 .tabbs .tt1 span.wrap-icon i.tab-icon { /*background-color: #88bd54;*/ }
 
-.tabbs .tt1 span.tab-text { color: #88bd54; }
+.tabbs .tt1 span.tab-text { /*color: #88bd54;*/ color: #A0A3A4; }
 
 .tabbs .tt1.active span.wrap-icon { color: #88bd54; }
+
+.tabbs .tt1.active span.wrap-icon img.tab-icon { filter: grayscale(0%); /*background-color: #06a685;*/ }
 
 .tabbs .tt1.active span.wrap-icon i.tab-icon { color: #fff; background-color: #88bd54; }
 
@@ -493,11 +469,13 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .tabbs .tt2 span.wrap-icon { color: #06a685; }
 
-.tabbs .tt2 span.wrap-icon img.tab-icon { /*background-color: #06a685;*/ }
+.tabbs .tt2 span.wrap-icon img.tab-icon { filter: grayscale(100%); /*background-color: #06a685;*/ }
 
-.tabbs .tt2 span.tab-text { color: #06a685; }
+.tabbs .tt2 span.tab-text { /*color: #06a685;*/ color: #A0A3A4; }
 
 .tabbs .tt2.active span.wrap-icon { color: #06a685; }
+
+.tabbs .tt2.active span.wrap-icon img.tab-icon { filter: grayscale(0%); /*background-color: #06a685;*/ }
 
 .tabbs .tt2.active span.wrap-icon i.tab-icon { background-color: #06a685; color: #fff; }
 
@@ -507,11 +485,15 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .tabbs .tt3 span.wrap-icon { color: #66c3cd; }
 
+.tabbs .tt3 span.wrap-icon img.tab-icon { filter: grayscale(100%); /*background-color: #06a685;*/ }
+
 .tabbs .tt3 span.wrap-icon i.tab-icon { /*background-color: #66c3cd;*/ }
 
-.tabbs .tt3 span.tab-text { color: #66c3cd; }
+.tabbs .tt3 span.tab-text { /*color: #66c3cd;*/ color: #A0A3A4; }
 
 .tabbs .tt3.active span.wrap-icon { color: #66c3cd; }
+
+.tabbs .tt3.active span.wrap-icon img.tab-icon { filter: grayscale(0%); /*background-color: #06a685;*/ }
 
 .tabbs .tt3.active span.wrap-icon i.tab-icon { background-color: #66c3cd; color: #fff; }
 
@@ -521,11 +503,15 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .tabbs .tt4 span.wrap-icon { color: #4b56a2; }
 
+.tabbs .tt4 span.wrap-icon img.tab-icon { filter: grayscale(100%); /*background-color: #06a685;*/ }
+
 .tabbs .tt4 span.wrap-icon i.tab-icon { /*background-color: #4b56a2;*/ }
 
-.tabbs .tt4 span.tab-text { color: #4b56a2; }
+.tabbs .tt4 span.tab-text { /*color: #4b56a2;*/ color: #A0A3A4; }
 
 .tabbs .tt4.active span.wrap-icon { color: #4b56a2; }
+
+.tabbs .tt4.active span.wrap-icon img.tab-icon { filter: grayscale(0%); /*background-color: #06a685;*/ }
 
 .tabbs .tt4.active span.wrap-icon i.tab-icon { background-color: #4b56a2; color: #fff; }
 
@@ -583,7 +569,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .claim #postal figure.back .more { color: #1e1e1e; background: #999; padding: 7px 12px; border-radius: 50px; font-size: 0.7rem; text-transform: uppercase; font-weight: 600; }
 
-.filosofia { /*background-color: $vlack;*/ color: #999; text-align: center; padding-top: 8em; /*********************************************/ }
+.filosofia { /*background-color: $vlack;*/ background-color: #37484F; color: #999; text-align: center; padding-top: 8em; /*********************************************/ }
 
 .filosofia .tipos:hover:nth-child(1) span.ic { color: #88bd54; }
 
@@ -591,15 +577,19 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .filosofia .tipos:hover:nth-child(3) span.ic { color: #25C9D2; }
 
-.filosofia .vehiculos-container { padding: 25px; background-size: cover; background-color: #E2E4E5; }
+.filosofia .tipos:nth-child(2) span.ic { filter: hue-rotate(59deg); }
+
+.filosofia .tipos:nth-child(3) span.ic { filter: hue-rotate(71deg); }
+
+.filosofia .vehiculos-container { padding: 25px; background-size: cover; /*background-color: #E2E4E5;*/ }
 
 .filosofia .vehiculos-container p { color: #fff; text-align: left; display: table; }
 
-.filosofia .vehiculos-container .img-logo { background-color: #37484F; margin: -25px -25px 25px; padding-top: 15px; }
+.filosofia .vehiculos-container .img-logo { background-color: #37484F; margin: -25px -25px 25px; padding-top: 15px; border-bottom: 1px solid #E2E4E5; }
 
-.filosofia .vehiculos-container .img-logo img { width: 55%; padding: 10px 0 30px; }
+.filosofia .vehiculos-container .img-logo img { /*width: 55%;*/ width: 60%; padding: 10px 0 30px; }
 
-.filosofia .vehiculos-container span { display: flex; color: #000; }
+.filosofia .vehiculos-container span { display: flex; /*color: #000;*/ color: #fff; font-size: 0.8em; }
 
 .filosofia .vehiculos-container span.ic { float: left; display: block; margin-right: 12px; color: #ABADAE; }
 
@@ -607,7 +597,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .filosofia .vehiculos-container:hover span.ic { float: left; display: block; margin-right: 12px; /*color: #88bd54;*/ }
 
-.filosofia h2 { margin-bottom: 1em; color: #000; }
+.filosofia h2 { /*margin-bottom:1em;*/ /*color: #000;*/ color: #fff; }
 
 .filosofia div#wrapper-postal { width: 320px; height: 200px; margin: 0 auto; position: relative; /*border: 1px solid #888;*/ -webkit-perspective: 700px; -moz-perspective: 700px; perspective: 700px; min-height: 17rem; }
 
@@ -663,6 +653,8 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .impacto h2, .impacto h4 { color: #fff; }
 
+.impacto h4 { font-weight: 200; }
+
 .impacto .items { /*background-color: $vlack3;*/ padding: 1em 1em; color: #fff; }
 
 .impacto .items h3.titulo { margin-bottom: 1em; font-size: 1.4rem; color: #fff; }
@@ -673,7 +665,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .impacto .numero__item { padding: 0 25px; }
 
-.impacto .numero__item h4.counter { font-size: 3em; font-weight: 700; text-shadow: 2px 2px 2px #252525; }
+.impacto .numero__item h4.counter { font-size: 2.5em; font-weight: 200; text-shadow: 2px 2px 2px #252525; }
 
 .impacto .numero__item h3 { color: #fff; font-size: 2rem; }
 

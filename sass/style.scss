@@ -358,6 +358,10 @@ video{
 }
 
 .desarrollo{
+	.box{
+		    border-left: 1px solid #eee;
+		 
+	}
 	#postal{
 		img{
 			height: 60px;
@@ -367,6 +371,7 @@ video{
 	.dess{
 		display: none;
 	}
+
 }
 
 .tabbs{
@@ -394,8 +399,8 @@ video{
    			width: 60px;
 		    /*margin: 10px;*/
 		    /*background-color: red;*/
-		    border-radius: 50%;
-		    padding: 12px;
+		    /*border-radius: 50%;*/
+		    padding: 3px;
 		    /*filter: invert(1);*/
 		}
 		i.tab-icon {
@@ -403,15 +408,15 @@ video{
    			width: 60px;
 		    /*margin: 10px;*/
 		    /*background-color: red;*/
-		    border-radius: 50%;
+		   /* border-radius: 50%;*/
 		    padding: 14px 12px 12px 13px;
     		font-size: 2em;
 		}
 		
 	}
 	span.tab-text {
-		    border-bottom: 2px dotted;
-		      text-align: center;
+		    border-bottom: 2px solid;
+		      text-align: left;
 		    width: 169px;
 		    display: inline-block;
 		    top: -11px;
@@ -420,15 +425,26 @@ video{
 	.tt1{
 		span.wrap-icon{
 			color: #88bd54;
+			img.tab-icon{
+				filter: grayscale(100%);
+				/*background-color: #06a685;*/
+			}
 			i.tab-icon{
 				/*background-color: #88bd54;*/
 			}
 		}
-		span.tab-text {color: #88bd54;}
+		span.tab-text {
+			/*color: #88bd54;*/
+			color:#A0A3A4;
+		}
 	}
 	.tt1.active{
 		span.wrap-icon{
 			color: #88bd54;
+			img.tab-icon{
+				filter: grayscale(0%);
+				/*background-color: #06a685;*/
+			}
 			i.tab-icon{
 				color: #fff;
 				background-color: #88bd54;
@@ -449,16 +465,25 @@ video{
 	
 	.tt2{
 		span.wrap-icon{
+
 			color: #06a685;
 			img.tab-icon{
+				filter: grayscale(100%);
 				/*background-color: #06a685;*/
 			}
 		}
-		span.tab-text {color: #06a685;}
+		span.tab-text {
+			/*color: #06a685;*/
+			color:#A0A3A4;
+		}
 	}	
 	.tt2.active{
 		span.wrap-icon{
 			color: #06a685;
+			img.tab-icon{
+				filter: grayscale(0%);
+				/*background-color: #06a685;*/
+			}
 			i.tab-icon{
 				background-color: #06a685;
 				color: #fff;
@@ -479,15 +504,26 @@ video{
 	.tt3{
 		span.wrap-icon{
 			color: #66c3cd;
+			img.tab-icon{
+				filter: grayscale(100%);
+				/*background-color: #06a685;*/
+			}
 			i.tab-icon{
 				/*background-color: #66c3cd;*/
 			}
 		}
-		span.tab-text {color: #66c3cd;}
+		span.tab-text {
+			/*color: #66c3cd;*/
+			color:#A0A3A4;
+		}
 	}
 	.tt3.active{
 		span.wrap-icon{
 			color: #66c3cd;
+			img.tab-icon{
+				filter: grayscale(0%);
+				/*background-color: #06a685;*/
+			}
 			i.tab-icon{
 				background-color: #66c3cd;
 				color: #fff;
@@ -509,15 +545,26 @@ video{
 	.tt4{
 		span.wrap-icon{
 			color: #4b56a2;
+			img.tab-icon{
+				filter: grayscale(100%);
+				/*background-color: #06a685;*/
+			}
 			i.tab-icon{
 				/*background-color: #4b56a2;*/
 			}
 		}
-		span.tab-text {color: #4b56a2;}
+		span.tab-text {
+			/*color: #4b56a2;*/
+			color:#A0A3A4;
+		}
 	}
 	.tt4.active{
 		span.wrap-icon{
 			color: #4b56a2;
+			img.tab-icon{
+				filter: grayscale(0%);
+				/*background-color: #06a685;*/
+			}
 			i.tab-icon{
 				background-color: #4b56a2;
 				color: #fff;
@@ -715,6 +762,7 @@ video{
 
 .filosofia{
 	/*background-color: $vlack;*/
+	background-color: #37484F;
 	color: $white2;
     text-align: center;
 	padding-top: 8em;
@@ -728,10 +776,17 @@ video{
 .tipos:hover:nth-child(3) span.ic {
     color: #25C9D2;
 }
+.tipos:nth-child(2) span.ic {
+    filter: hue-rotate(59deg);
+}
+.tipos:nth-child(3) span.ic {
+    filter: hue-rotate(71deg);
+}
+
 	.vehiculos-container{
 		padding:25px;
 		background-size: cover;
-		background-color: #E2E4E5;
+		/*background-color: #E2E4E5;*/
 
 		p{
 			color: #fff;
@@ -742,12 +797,14 @@ video{
 			 background-color: #37484F;
 			    margin: -25px -25px 25px;
 			    padding-top: 15px;
+			    border-bottom: 1px solid #E2E4E5;
 			img{
-				width: 55%;
+				/*width: 55%;*/
+				width: 60%;
     			padding: 10px 0 30px;
     		}
 		}
-		span{display: flex;color: #000;}
+		span{display: flex;/*color: #000;*/color: #fff;font-size: 0.8em;}
 		span.ic{
 			float: left;
 			display: block;
@@ -773,8 +830,9 @@ video{
 
 /*********************************************/
     h2{
-    	margin-bottom:1em;
-    	color: #000;
+    	/*margin-bottom:1em;*/
+    	/*color: #000;*/
+    	color: #fff;
     }
 
     div#wrapper-postal {
@@ -952,6 +1010,7 @@ video{
 	color: $white2;
 	text-align: center;
 	h2,h4{color: #fff;}
+	h4{font-weight: 200;}
 	/*h4{font-size: ;}*/
 	.items{
 		/*background-color: $vlack3;*/
@@ -974,8 +1033,8 @@ video{
 	    padding: 0 25px;
 
 	    h4.counter{
-	    	font-size: 3em;
-    		font-weight: 700;
+	    	font-size: 2.5em;
+    		font-weight: 200;
     		    text-shadow: 2px 2px 2px #252525;
 	    }
 
@@ -1340,6 +1399,7 @@ header .main-navigation ul li {
 		.desk-top{
 			display: none;
 		}
+
 	}
 
 	.clientes{

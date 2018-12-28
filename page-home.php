@@ -66,7 +66,7 @@ get_header();?>
 						</div>
 							</div>
 							<?php $color = get_sub_field('barra_color'); ?>
-							<hr class="colorbar m-0" style="background-color: <?php echo $color; ?>">
+							<!-- <hr class="colorbar m-0" style="background-color: <?php //echo $color; ?>"> -->
 						</div>					        
 					<?php  endwhile;
 				endif;
@@ -106,7 +106,7 @@ get_header();?>
 						</div>
 							</div>
 							<?php $color = get_sub_field('barra_color'); ?>
-							<hr class="colorbar m-0" style="background-color: <?php echo $color; ?>">
+							<!-- <hr class="colorbar m-0" style="background-color: <?php //echo $color; ?>"> -->
 						</div>					        
 					<?php  endwhile;
 				endif;
@@ -126,33 +126,35 @@ get_header();?>
 				
 			</div>
 		</div>
-		<div class="row mt-5 desk-top">
+		<div class="row mt-3 desk-top">
 			<div class="row">
 			<div class="nav flex-column nav-pills col-lg-3 offset-lg-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 			  <a class="nav-link active tt1" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
-			  	<span class="wrap-icon"><i class="fas fa-map-marker-alt tab-icon"></i></span><span class="tab-text"><b>Localización</b></span></a>
-			  <a class="nav-link tt2" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span class="wrap-icon"><i class="fas fa-search tab-icon"></i></span><span class="tab-text"><b>Análisis</b></span></a>
-			  <a class="nav-link tt3" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><span class="wrap-icon"><i class="fas fa-cog tab-icon"></i></span><span class="tab-text"><b>Estructuración</b></span></a>
-			  <a class="nav-link tt4" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><span class="wrap-icon"><i class="fas fa-file-signature tab-icon"></i></span><span class="tab-text"><b>Gestión</b></span></a>
+			  	<span class="wrap-icon">
+			  		<img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/localizacion_on.svg" width="45"><!-- <i class="fas fa-map-marker-alt tab-icon"></i> --></span><span class="tab-text"><b>Localización</b></span></a>
+			  <a class="nav-link tt2" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span class="wrap-icon"><img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/analisis_on.svg" width="45">
+			  	<!-- <i class="fas fa-search tab-icon"></i> --></span><span class="tab-text"><b>Análisis</b></span></a>
+			  <a class="nav-link tt3" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><span class="wrap-icon"><img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/estructuracion_on.svg" width="45"><!-- <i class="fas fa-cog tab-icon"></i> --></span><span class="tab-text"><b>Estructuración</b></span></a>
+			  <a class="nav-link tt4" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><span class="wrap-icon"><img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/gestion_on.svg" width="45"><!-- <i class="fas fa-file-signature tab-icon"></i> --></span><span class="tab-text"><b>Gestión</b></span></a>
 			   <a class="nav-link tt5" id="v-pills-settings2-tab" data-toggle="pill" href="#v-pills-settings2" role="tab" aria-controls="v-pills-settings2" aria-selected="false"><span class="wrap-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-urban-value-tab.png" class="tab-icon"></span><span class="tab-text"><b>Retornos</b></span></a>
 			</div>
 			<div class="tab-content col-lg-5 circle d-lg-flex h-100" id="v-pills-tabContent">
-			  <div class="tab-pane fade show active text-center justify-content-lg-center align-self-lg-center text-center" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"><p>A través del análisis de <b>Big Data</b> se definen las ubicaciones que cumplan los requisitos de inversión de u&v. Reforzamos nuestra propuesta de valor a traves herramientas de Big Data.</p>
+			  <div class="tab-pane fade show active text-center justify-content-lg-center align-self-lg-center text-center" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"><h3>Localización</h3><p>A través del análisis de <b>Big Data</b> se definen las ubicaciones que cumplan los requisitos de inversión de u&v. Reforzamos nuestra propuesta de valor a traves herramientas de Big Data.</p>
 
 				<!-- <div class="text-center"><img src="https://placeimg.com/60/60/tech" class="pr-2"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech" class="pl-2"></div> -->
 			</div>
-			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"><p>Proceso exhaustivo de análisis comercial, financiero y técnico. A través de modelos de <b>Machine Learning</b> se procesan millones de datos tanto internos como externos que permiten fácilmente identificar los insights más valiosos.</p>
+			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"><h3>Análisis</h3><p>Proceso exhaustivo de análisis comercial, financiero y técnico. A través de modelos de <b>Machine Learning</b> se procesan millones de datos tanto internos como externos que permiten fácilmente identificar los insights más valiosos.</p>
 
 				
 				</div>
-			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"><p>Captación de fondos para financiar la adquisición y desarrollos de los proyectos. La estructura buscada es la que combine el capital privado / institucional y financiación bancaria. u&v cuenta con una <b>Plataforma Digital</b> que permite la eficiente gestión de los activos y transparencia para los inversores</p>
+			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"><h3>Estructuración</h3><p>Captación de fondos para financiar la adquisición y desarrollos de los proyectos. La estructura buscada es la que combine el capital privado / institucional y financiación bancaria. u&v cuenta con una <b>Plataforma Digital</b> que permite la eficiente gestión de los activos y transparencia para los inversores</p>
 
 				
 				</div>
-			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"><p>Estructura de desarrollo óptima a través de contratos de gestión con fees predefinidos. Estándares <b>LEED</b>, proyectos en base <b>BIM</b> y monitorización a través de la plataforma de inversión.</p>
+			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"><h3>Gestión</h3><p>Estructura de desarrollo óptima a través de contratos de gestión con fees predefinidos. Estándares <b>LEED</b>, proyectos en base <b>BIM</b> y monitorización a través de la plataforma de inversión.</p>
 
 				</div>
-			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-settings2" role="tabpanel" aria-labelledby="v-pills-settings-tab2"><p>La suma de los elementos anteriormente descritos, resulta en la concesión de los objetivos previamente acordados respecto a la inversión, tanto económicos como de plazo.</p>
+			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-settings2" role="tabpanel" aria-labelledby="v-pills-settings-tab2"><h3>Retornos</h3><p>La suma de los elementos anteriormente descritos, resulta en la concesión de los objetivos previamente acordados respecto a la inversión, tanto económicos como de plazo.</p>
 
 				
 				</div>
@@ -169,7 +171,7 @@ get_header();?>
 			    <div class="card-header" id="headingOne">
 			      <h5 class="mb-0">
 			        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-			         <i class="fas fa-map-marker-alt tab-icon"></i> LOCALIZACIÓN
+			         <img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/localizacion_on.svg" width="45"> LOCALIZACIÓN
 			        </button>
 			      </h5>
 			    </div>
@@ -185,7 +187,7 @@ get_header();?>
 			    <div class="card-header" id="headingTwo">
 			      <h5 class="mb-0">
 			        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			          <i class="fas fa-search tab-icon"></i> ANÁLISIS
+			          <img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/analisis_on.svg" width="45"> ANÁLISIS
 			        </button>
 			      </h5>
 			    </div>
@@ -200,7 +202,7 @@ get_header();?>
 			    <div class="card-header" id="headingThree">
 			      <h5 class="mb-0">
 			        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-			          <i class="fas fa-cog tab-icon"></i> ESTRUCTURACIÓN
+			          <img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/estructuracion_on.svg" width="45"> ESTRUCTURACIÓN
 			        </button>
 			      </h5>
 			    </div>
@@ -215,7 +217,7 @@ get_header();?>
 			    <div class="card-header" id="headingFour">
 			      <h5 class="mb-0">
 			        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-			          <i class="fas fa-file-signature tab-icon"></i> GESTIÓN
+			          <img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/gestion_on.svg" width="45"> GESTIÓN
 			        </button>
 			      </h5>
 			    </div>
@@ -274,10 +276,10 @@ get_header();?>
 							<img src="<?php the_field('logo'); ?>" alt="" class="mx-auto"/>
 						</div>
 						
-							<p><span class="ic"><i class="fas fa-city"></i></span><span><?php the_field('texto1'); ?></span></p>
-							<p><span class="ic"><i class="fas fa-chart-line"></i></span><span><?php the_field('texto2'); ?></span></p>
-							<p><?php if( get_field('texto3') ): ?><span class="ic"><i class="fas fa-chart-line"></i></span><span><?php the_field('texto3'); ?><?php endif; ?></span></p>
-							<p><span class="ic"><i class="fas fa-coins"></i></span><span><?php the_field('texto4'); ?></span></p>
+							<p><span class="ic"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/i11.png" width="40"><!-- <i class="fas fa-city"></i> --></span><span><?php the_field('texto1'); ?></span></p>
+							<p><span class="ic"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/i12.png" width="40"><!-- <i class="fas fa-chart-line"></i> --></span><span><?php the_field('texto2'); ?></span></p>
+							<p><?php if( get_field('texto3') ): ?><span class="ic"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/i12.png" width="40"><!-- <i class="fas fa-chart-line"></i> --></span><span><?php the_field('texto3'); ?><?php endif; ?></span></p>
+							<p><span class="ic"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/i13.png" width="40"><!-- <i class="fas fa-coins"></i> --></span><span><?php the_field('texto4'); ?></span></p>
 						
 					</div>
 
@@ -325,8 +327,11 @@ get_header();?>
 	                   <div class="col-lg-3">
 	                   		<div class="numero__item">
 	                   			<?php $liveicons = get_sub_field('livicon'); 
-	                   				echo do_shortcode($liveicons);
+	                   			 //var_dump($liveicons);
+
+	                   				//echo do_shortcode($liveicons);
 	                   			?>
+	                   			<img src="<?php echo $liveicons['url']; ?>" width="100">
 	                   			<h4 class="counter" style="color:<?php the_sub_field('color_numero'); ?>"><?php the_sub_field('numero'); ?></h4>
 	                   			<p><?php 
 	                   				$titulo_numero = the_sub_field('titulo_numero'); 
