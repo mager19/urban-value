@@ -20,8 +20,38 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
-/*-------------------------------------------------------------- >>> TABLE OF CONTENTS: ---------------------------------------------------------------- # Normalize # Typography # Elements # Forms # Navigation ## Links ## Menus # Accessibility # Alignments # Clearings # Widgets # Content ## Posts and pages ## Comments # Infinite scroll # Media ## Captions ## Galleries --------------------------------------------------------------*/
-/*@font-face { font-family: 'Avenir'; src: url('fonts/Avenir-Medium.eot'); src: url('fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/Avenir-Medium.woff2') format('woff2'), url('fonts/Avenir-Medium.woff') format('woff'), url('fonts/Avenir-Medium.svg#Avenir-Medium') format('svg'); font-weight: 500; font-style: normal; } */
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*@font-face {
+    font-family: 'Avenir';
+    src: url('fonts/Avenir-Medium.eot');
+    src: url('fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Avenir-Medium.woff2') format('woff2'),
+        url('fonts/Avenir-Medium.woff') format('woff'),
+        url('fonts/Avenir-Medium.svg#Avenir-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+} */
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -681,7 +711,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .quote .slick-dots li button:before { color: #fff; }
 
-.team { /*background-color: $vlack; background-image: url(img/quotes-bg.jpg); background-size: cover; color: $white2;*/ color: #000; text-align: center; }
+.team { /*background-color: $vlack; background-image: url(img/quotes-bg.jpg); background-size: cover; color: $white2;*/ background-image: url(img/team.jpg); color: #000; text-align: center; }
 
 .team .equipo { background-color: #d6d6d6; }
 
