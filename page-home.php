@@ -514,9 +514,6 @@ get_header();?>
 
 
 
-<a href="#" class="top tool" original-title="Top">Top</a>
-
-
 
 
 <div class="slide__clientes2">
