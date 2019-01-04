@@ -178,6 +178,7 @@ function urbanvalue_scripts() {
 	wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/js/main.js' );
 
 	wp_enqueue_script( 'slickjs', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), true );
+	wp_enqueue_script( 'tooltip', get_template_directory_uri() . '/js/jquery.tooltip.js', array('jquery'), true  );
 
 	wp_enqueue_script( 'waypointsjs', 'http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js', array('jquery'), true );
 

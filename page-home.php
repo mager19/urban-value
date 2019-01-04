@@ -367,17 +367,19 @@ get_header();?>
 						<div class="proyecto-img" style="background-image: url(<?php the_post_thumbnail_url(); ?>);">
 							<?php $image_logo = get_field('logo_proyecto'); ?>
 							<img class="proyecto-logo"	src="<?php echo $image_logo['url']; ?>" alt="">
+							<div class="proyecto-header">
+								<h2>
+								<?php $nombrevehiculo = the_field('nombre'); 
+									 _e($nombrevehiculo, 'urbanvalue'); ?>
+								</h2>
+								<p>
+								<?php $subtitulovehiculo = the_field('subtitulo'); 
+										_e($subtitulovehiculo, 'urbanvalue'); ?>
+								</p>			
+							</div>
+
 						</div>
-						<div class="proyecto-header">
-							<h2>
-							<?php $nombrevehiculo = the_field('nombre'); 
-								 _e($nombrevehiculo, 'urbanvalue'); ?>
-							</h2>
-							<p>
-							<?php $subtitulovehiculo = the_field('subtitulo'); 
-									_e($subtitulovehiculo, 'urbanvalue'); ?>
-							</p>			
-						</div>
+						
 						<div class="proyectos__item__content">
 							<div class="row">
 								<div class="col-6">
@@ -416,6 +418,9 @@ get_header();?>
 										</div>
 									</div>
 									
+								</div>
+								<div class="col-md-12  text-center mb-3">
+									<a class="ver-mas" data-index="9" href="#9">VER MÁS</a>
 								</div>
 							</div>
 												
@@ -460,7 +465,7 @@ get_header();?>
 									<h3 class="name"><?php the_sub_field('nombre'); ?></h3>
 									<h5 class="job"><?php the_sub_field('cargo'); ?></h5>
 									<p class="texto"><?php the_sub_field('texto'); ?></p>
-									<div class="linkedin"><a href="<?php the_sub_field('linkedin'); ?>"><i class="fab fa-linkedin-in"></i></a></div>
+									<div class="linkedin"><a href="<?php the_sub_field('linkedin'); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/linkedin-logo-copy.png"></a></div>
 								</div>
 								<div class="col-6 p-0">
 									<?php $image = get_sub_field('foto'); ?>
@@ -508,6 +513,12 @@ get_header();?>
 				<p>Los partners juegan un rol muy activo donde su expertise refuerza los verticales para consolidar toda la propuesta de valor en cada fase del desarrollo.</p>
 
 
+
+<a href="#" class="top tool" original-title="Top">Top</a>
+
+
+
+
 <div class="slide__clientes2">
 	<ul class="listado">
 					<?php 
@@ -518,10 +529,10 @@ get_header();?>
 							if( have_rows('ingresar_cliente') ):
 							
 							    while ( have_rows('ingresar_cliente') ) : the_row();?>
-									<li class="cliente">
+									<li class="cliente tool top" original-title="<?php the_sub_field('texto_cliente'); ?>">
 										<?php $image = get_sub_field('l_cliente'); ?>
-										<img src="<?php echo $image['url']; ?>" alt="">
-										<p class="n-cliente"><?php the_sub_field('texto_cliente'); ?></p>
+										<img src="<?php echo $image['url']; ?>" alt="" >
+										<!-- <p class="n-cliente"><?php //the_sub_field('texto_cliente'); ?></p> -->
 									</li>
 							        
 							<?php  endwhile;
