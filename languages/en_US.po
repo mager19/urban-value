@@ -1,6 +1,5 @@
 # Copyright (C) 2017 Automattic
 # This file is distributed under the GNU General Public License v2 or later.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
@@ -9,53 +8,58 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
-"Last-Translator: \n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: Poedit 2.2\n"
+"PO-Revision-Date: 2019-01-05 01:24+0000\n"
+"Last-Translator: wilman <avraxas@gmail.com>\n"
+"Language-Team: English (United States)\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: _e\n"
 "X-Poedit-SearchPath-0: page-home.php\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Loco-Version: 2.2.0; wp-4.9.9"
 
 #: page-home.php:31
 msgid "U&V DESARROLLA PROYECTOS INMOBILIARIOS INNOVADORES"
-msgstr ""
+msgstr "U&V DEVELOPS INNOVATIVE REAL ESTATE PROJECTS"
 
 #: page-home.php:32
 msgid ""
 "Creamos valor a nuestros inversores a través de una gestión efectiva, fuerte "
 "y sostenible con una base tecnológica integrada."
 msgstr ""
+"We create value for our investors through effective, strong and sustainable "
+"management with an integrated technological base."
 
 #: page-home.php:123
 msgid "PROCESO DE INVERSIÓN"
-msgstr ""
+msgstr "INVESTMENT PROCESS"
 
 #: page-home.php:124
 msgid ""
 "La propuesta de valor se ve reflejada en cada uno de los procesos de "
 "desarrollo."
-msgstr ""
+msgstr "The value proposal is reflected in each of the development processes."
 
 #: page-home.php:134 page-home.php:142
 msgid "Localización"
-msgstr ""
+msgstr "Location"
 
 #: page-home.php:136 page-home.php:146
 msgid "Análisis"
-msgstr ""
+msgstr "Analysis"
 
 #: page-home.php:137 page-home.php:150
 msgid "Estructuración"
-msgstr ""
+msgstr "Structuring"
 
 #: page-home.php:138 page-home.php:154
 msgid "Gestión"
-msgstr ""
+msgstr "Management"
 
 #: page-home.php:139 page-home.php:157
 msgid "Retornos"
-msgstr ""
+msgstr "Returns"
 
 #: page-home.php:142 page-home.php:181
 msgid ""
@@ -63,6 +67,9 @@ msgid ""
 "cumplan los requisitos de inversión de u&v. Reforzamos nuestra propuesta de "
 "valor a traves herramientas de Big Data."
 msgstr ""
+"Through the analysis of  Big Data  the locations that meet the investment "
+"requirements of u & v are defined. We reinforce our value proposition "
+"through Big Data tools."
 
 #: page-home.php:146 page-home.php:196
 msgid ""
@@ -71,6 +78,9 @@ msgid ""
 "internos como externos que permiten fácilmente identificar los insights más "
 "valiosos."
 msgstr ""
+"Comprehensive process of commercial, financial and technical analysis. "
+"Through  Machine Learning  models, millions of data, both internal and "
+"external, are processed to easily identify the most valuable insights."
 
 #: page-home.php:150
 msgid ""
@@ -80,6 +90,10 @@ msgid ""
 "Digital</b> que permite la eficiente gestión de los activos y transparencia "
 "para los inversores."
 msgstr ""
+"ollection of funds to finance the acquisition and development of projects. "
+"The structure sought is one that combines private / institutional capital "
+"and bank financing. u & v has a  Digital Platform  that allows the efficient "
+"management of assets and transparency for investors."
 
 #: page-home.php:154
 msgid ""
@@ -87,25 +101,30 @@ msgid ""
 "predefinidos. Estándares <b>LEED</b>, proyectos en base <b>BIM</b> y "
 "monitorización a través de la plataforma de inversión."
 msgstr ""
+"Optimal development structure through management contracts with predefined "
+"fees. Standards  LEED, projects based  BIM and monitoring through the "
+"investment platform."
 
 #: page-home.php:157
 msgid ""
 "La suma de los elementos anteriormente descritos, resulta en la concesión de "
-"los objetivos previamente acordados respecto a la inversión, tanto económicos "
-"como de plazo."
+"los objetivos previamente acordados respecto a la inversión, tanto "
+"económicos como de plazo."
 msgstr ""
+"The sum of the elements described above, results in the granting of the "
+"previously agreed objectives regarding the investment, both economic and term"
 
 #: page-home.php:174
 msgid "LOCALIZACIÓN"
-msgstr ""
+msgstr "LOCATION"
 
 #: page-home.php:190
 msgid "ANÁLISIS"
-msgstr ""
+msgstr "ANALYSIS"
 
 #: page-home.php:205
 msgid "ESTRUCTURACIÓN"
-msgstr ""
+msgstr "STRUCTURING"
 
 #: page-home.php:211
 msgid ""
@@ -115,10 +134,14 @@ msgid ""
 "Digital</b> que permite la eficiente gestión de los activos y transparencia "
 "para los inversores"
 msgstr ""
+"Collection of funds to finance the acquisition and development of projects. "
+"The structure sought is one that combines private / institutional capital "
+"and bank financing. u & v has a  Digital Platform  that allows the efficient "
+"management of assets and transparency for investors"
 
 #: page-home.php:220
 msgid "GESTIÓN"
-msgstr ""
+msgstr "MANAGEMENT"
 
 #: page-home.php:226
 msgid ""
@@ -126,69 +149,78 @@ msgid ""
 "predefinidos. Estándares LEED, proyectos en base BIM y monitorización a "
 "través de la plataforma de inversión."
 msgstr ""
+"Optimal development structure through management contracts with predefined "
+"fees. Standards  LEED , projects based  BIM  and monitoring through the "
+"investment platform."
 
 #: page-home.php:235
 msgid "RETORNOS"
-msgstr ""
+msgstr "RETURNS"
 
 #: page-home.php:241
 msgid ""
 "La suma de los elementos anteriormente descritos, resulta en la concesión de "
-"los objetivos previamente acordados respecto a la inversión, tanto económicos "
-"como de plazo"
+"los objetivos previamente acordados respecto a la inversión, tanto "
+"económicos como de plazo"
 msgstr ""
+"The sum of the elements described above, results in the granting of the "
+"previously agreed objectives regarding the investment, both economic and term"
 
 #: page-home.php:262
 msgid ""
 "Por delante de nuestra filosofía empresarial esta la pasión por desarrollar "
 "productos innovadores"
 msgstr ""
+"Ahead of our business philosophy is the passion to develop innovative "
+"products"
 
 #: page-home.php:317
 msgid "GENERAMOS IMPACTOS POSITIVOS"
-msgstr ""
+msgstr "WE GENERATE POSITIVE IMPACTS"
 
 #: page-home.php:318
 msgid "Combinamos activos iconicos con tecnologia digital"
-msgstr ""
+msgstr "We combine iconic assets with digital technology"
 
 #: page-home.php:355
 msgid "PROYECTOS"
-msgstr ""
+msgstr "PROJECTS"
 
 #: page-home.php:356
 msgid ""
 "Desbloqueamos el potencial de los edificios impulsando retornos a través de "
 "formatos sostenibles."
 msgstr ""
+"We unlock the potential of buildings by driving returns through sustainable "
+"formats."
 
 #: page-home.php:391
 msgid "UBICACIÓN"
-msgstr ""
+msgstr "LOCATION"
 
 #: page-home.php:398
 msgid "RETORNO"
-msgstr ""
+msgstr "RETURN"
 
 #: page-home.php:409
 msgid "TIEMPO"
-msgstr ""
+msgstr "TIME"
 
 #: page-home.php:416
 msgid "STATUS"
-msgstr ""
+msgstr "STATUS"
 
 #: page-home.php:423
 msgid "VER MÁS"
-msgstr ""
+msgstr "SEE MORE"
 
 #: page-home.php:446
 msgid "EQUIPO"
-msgstr ""
+msgstr "TEAM"
 
 #: page-home.php:512
 msgid "NUESTROS PARTNERS"
-msgstr ""
+msgstr "OUR PARTNERS"
 
 #: page-home.php:513
 msgid ""
@@ -196,11 +228,14 @@ msgid ""
 "verticales para consolidar toda la propuesta de valor en cada fase del "
 "desarrollo."
 msgstr ""
+"The partners play a very active role where their expertise reinforces the "
+"verticals to consolidate the entire value proposition in each phase of the "
+"development."
 
 #: page-home.php:607
 msgid "Nos encantaría conocer más propuestas de valor, contáctanos."
-msgstr ""
+msgstr "We would love to know more value proposals, contact us."
 
 #: page-home.php:608
 msgid "Contacto"
-msgstr ""
+msgstr "Contact"

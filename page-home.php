@@ -28,8 +28,8 @@ get_header();?>
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row ">
 			<div class="col-lg-12 text-center">
-				<h2 class="mb-3"><b>U&V DESARROLLA PROYECTOS INMOBILIARIOS INNOVADORES</b></h2>
-				<h4 class="mb-3">Creamos valor a nuestros inversores a través de una gestión efectiva, fuerte y sostenible con una base tecnológica integrada.</h4>
+				<h2 class="mb-3"><b><?php _e('U&V DESARROLLA PROYECTOS INMOBILIARIOS INNOVADORES', 'urbanvalue'); ?></b></h2>
+				<h4 class="mb-3"><?php _e('Creamos valor a nuestros inversores a través de una gestión efectiva, fuerte y sostenible con una base tecnológica integrada.','urbanvalue'); ?></h4>
 				<!-- <h3 class="mb-3"><b>Una propuesta de valor única en el sector.</b></h3> -->
 			</div>
 		</div>
@@ -120,8 +120,8 @@ get_header();?>
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row ">
 			<div class="col-lg-12 text-center">
-				<h2 class="mb-3"><b>PROCESO DE INVERSIÓN</b></h2>
-				<h4 class="mb-3">La propuesta de valor se ve reflejada en cada uno de los procesos de desarrollo.
+				<h2 class="mb-3"><b><?php _e('PROCESO DE INVERSIÓN', 'urbanvalue'); ?></b></h2>
+				<h4 class="mb-3"><?php _e('La propuesta de valor se ve reflejada en cada uno de los procesos de desarrollo.', 'urbanvalue'); ?>
 				</h4>
 				
 			</div>
@@ -131,30 +131,30 @@ get_header();?>
 			<div class="nav flex-column nav-pills col-lg-3 offset-lg-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 			  <a class="nav-link active tt1" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
 			  	<span class="wrap-icon">
-			  		<img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/localizacion_on.svg" width="45"><!-- <i class="fas fa-map-marker-alt tab-icon"></i> --></span><span class="tab-text"><b>Localización</b></span></a>
+			  		<img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/localizacion_on.svg" width="45"><!-- <i class="fas fa-map-marker-alt tab-icon"></i> --></span><span class="tab-text"><b><?php _e('Localización', 'urbanvalue'); ?></b></span></a>
 			  <a class="nav-link tt2" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span class="wrap-icon"><img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/analisis_on.svg" width="45">
-			  	<!-- <i class="fas fa-search tab-icon"></i> --></span><span class="tab-text"><b>Análisis</b></span></a>
-			  <a class="nav-link tt3" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><span class="wrap-icon"><img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/estructuracion_on.svg" width="45"><!-- <i class="fas fa-cog tab-icon"></i> --></span><span class="tab-text"><b>Estructuración</b></span></a>
-			  <a class="nav-link tt4" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><span class="wrap-icon"><img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/gestion_on.svg" width="45"><!-- <i class="fas fa-file-signature tab-icon"></i> --></span><span class="tab-text"><b>Gestión</b></span></a>
-			   <a class="nav-link tt5" id="v-pills-settings2-tab" data-toggle="pill" href="#v-pills-settings2" role="tab" aria-controls="v-pills-settings2" aria-selected="false"><span class="wrap-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-urban-value-tab.png" class="tab-icon"></span><span class="tab-text"><b>Retornos</b></span></a>
+			  	<!-- <i class="fas fa-search tab-icon"></i> --></span><span class="tab-text"><b><?php _e('Análisis', 'urbanvalue'); ?></b></span></a>
+			  <a class="nav-link tt3" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><span class="wrap-icon"><img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/estructuracion_on.svg" width="45"><!-- <i class="fas fa-cog tab-icon"></i> --></span><span class="tab-text"><b><?php _e('Estructuración', 'urbanvalue'); ?></b></span></a>
+			  <a class="nav-link tt4" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><span class="wrap-icon"><img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/gestion_on.svg" width="45"><!-- <i class="fas fa-file-signature tab-icon"></i> --></span><span class="tab-text"><b><?php _e('Gestión', 'urbanvalue'); ?></b></span></a>
+			   <a class="nav-link tt5" id="v-pills-settings2-tab" data-toggle="pill" href="#v-pills-settings2" role="tab" aria-controls="v-pills-settings2" aria-selected="false"><span class="wrap-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-urban-value-tab.png" class="tab-icon"></span><span class="tab-text"><b><?php _e('Retornos', 'urbanvalue'); ?></b></span></a>
 			</div>
 			<div class="tab-content col-lg-5 circle d-lg-flex h-100" id="v-pills-tabContent">
-			  <div class="tab-pane fade show active text-center justify-content-lg-center align-self-lg-center text-center" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"><h3>Localización</h3><p>A través del análisis de <b>Big Data</b> se definen las ubicaciones que cumplan los requisitos de inversión de u&v. Reforzamos nuestra propuesta de valor a traves herramientas de Big Data.</p>
+			  <div class="tab-pane fade show active text-center justify-content-lg-center align-self-lg-center text-center" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"><h3><?php _e('Localización', 'urbanvalue'); ?></h3><p><?php _e('A través del análisis de <b>Big Data</b> se definen las ubicaciones que cumplan los requisitos de inversión de u&v. Reforzamos nuestra propuesta de valor a traves herramientas de Big Data.', 'urbanvalue'); ?></p>
 
 				<!-- <div class="text-center"><img src="https://placeimg.com/60/60/tech" class="pr-2"><img src="https://placeimg.com/60/60/tech"><img src="https://placeimg.com/60/60/tech" class="pl-2"></div> -->
 			</div>
-			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"><h3>Análisis</h3><p>Proceso exhaustivo de análisis comercial, financiero y técnico. A través de modelos de <b>Machine Learning</b> se procesan millones de datos tanto internos como externos que permiten fácilmente identificar los insights más valiosos.</p>
+			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"><h3><?php _e('Análisis', 'urbanvalue'); ?></h3><p><?php _e('Proceso exhaustivo de análisis comercial, financiero y técnico. A través de modelos de <b>Machine Learning</b> se procesan millones de datos tanto internos como externos que permiten fácilmente identificar los insights más valiosos.', 'urbanvalue'); ?></p>
 
 				
 				</div>
-			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"><h3>Estructuración</h3><p>Captación de fondos para financiar la adquisición y desarrollos de los proyectos. La estructura buscada es la que combine el capital privado / institucional y financiación bancaria. u&v cuenta con una <b>Plataforma Digital</b> que permite la eficiente gestión de los activos y transparencia para los inversores</p>
+			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"><h3><?php _e('Estructuración', 'urbanvalue'); ?></h3><p><?php _e('Captación de fondos para financiar la adquisición y desarrollos de los proyectos. La estructura buscada es la que combine el capital privado / institucional y financiación bancaria. u&v cuenta con una <b>Plataforma Digital</b> que permite la eficiente gestión de los activos y transparencia para los inversores.', 'urbanvalue'); ?></p>
 
 				
 				</div>
-			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"><h3>Gestión</h3><p>Estructura de desarrollo óptima a través de contratos de gestión con fees predefinidos. Estándares <b>LEED</b>, proyectos en base <b>BIM</b> y monitorización a través de la plataforma de inversión.</p>
+			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"><h3><?php _e('Gestión', 'urbanvalue'); ?></h3><p><?php _e('Estructura de desarrollo óptima a través de contratos de gestión con fees predefinidos. Estándares <b>LEED</b>, proyectos en base <b>BIM</b> y monitorización a través de la plataforma de inversión.', 'urbanvalue'); ?></p>
 
 				</div>
-			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-settings2" role="tabpanel" aria-labelledby="v-pills-settings-tab2"><h3>Retornos</h3><p>La suma de los elementos anteriormente descritos, resulta en la concesión de los objetivos previamente acordados respecto a la inversión, tanto económicos como de plazo.</p>
+			  <div class="tab-pane fade justify-content-lg-center align-self-lg-center text-center" id="v-pills-settings2" role="tabpanel" aria-labelledby="v-pills-settings-tab2"><h3><?php _e('Retornos', 'urbanvalue'); ?></h3><p><?php _e('La suma de los elementos anteriormente descritos, resulta en la concesión de los objetivos previamente acordados respecto a la inversión, tanto económicos como de plazo.', 'urbanvalue'); ?></p>
 
 				
 				</div>
@@ -171,14 +171,14 @@ get_header();?>
 			    <div class="card-header" id="headingOne">
 			      <h5 class="mb-0">
 			        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-			         <img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/localizacion_on.svg" width="45"> LOCALIZACIÓN
+			         <img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/localizacion_on.svg" width="45"> <?php _e('LOCALIZACIÓN', 'urbanvalue'); ?>
 			        </button>
 			      </h5>
 			    </div>
 
 			    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
 			      <div class="card-body">
-			        A través del análisis de <b>Big Data</b> se definen las ubicaciones que cumplan los requisitos de inversión de u&v. Reforzamos nuestra propuesta de valor a traves herramientas de Big Data.
+			        <?php _e('A través del análisis de <b>Big Data</b> se definen las ubicaciones que cumplan los requisitos de inversión de u&v. Reforzamos nuestra propuesta de valor a traves herramientas de Big Data.', 'urbanvalue'); ?>
 			        
 			      </div>
 			    </div>
@@ -187,13 +187,13 @@ get_header();?>
 			    <div class="card-header" id="headingTwo">
 			      <h5 class="mb-0">
 			        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			          <img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/analisis_on.svg" width="45"> ANÁLISIS
+			          <img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/analisis_on.svg" width="45"> <?php _e('ANÁLISIS', 'urbanvalue'); ?>
 			        </button>
 			      </h5>
 			    </div>
 			    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 			      <div class="card-body">
-			        Proceso exhaustivo de análisis comercial, financiero y técnico. A través de modelos de <b>Machine Learning</b> se procesan millones de datos tanto internos como externos que permiten fácilmente identificar los insights más valiosos.
+			        <?php _e('Proceso exhaustivo de análisis comercial, financiero y técnico. A través de modelos de <b>Machine Learning</b> se procesan millones de datos tanto internos como externos que permiten fácilmente identificar los insights más valiosos.', 'urbanvalue'); ?>
 			        
 			      </div>
 			    </div>
@@ -202,13 +202,13 @@ get_header();?>
 			    <div class="card-header" id="headingThree">
 			      <h5 class="mb-0">
 			        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-			          <img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/estructuracion_on.svg" width="45"> ESTRUCTURACIÓN
+			          <img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/estructuracion_on.svg" width="45"> <?php _e('ESTRUCTURACIÓN', 'urbanvalue'); ?>
 			        </button>
 			      </h5>
 			    </div>
 			    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
 			      <div class="card-body">
-			        Captación de fondos para financiar la adquisición y desarrollos de los proyectos. La estructura buscada es la que combine el capital privado / institucional y financiación bancaria. u&v cuenta con una <b>Plataforma Digital</b> que permite la eficiente gestión de los activos y transparencia para los inversores
+			        <?php _e('Captación de fondos para financiar la adquisición y desarrollos de los proyectos. La estructura buscada es la que combine el capital privado / institucional y financiación bancaria. u&v cuenta con una <b>Plataforma Digital</b> que permite la eficiente gestión de los activos y transparencia para los inversores', 'urbanvalue'); ?>
 			        
 			      </div>
 			    </div>
@@ -217,13 +217,13 @@ get_header();?>
 			    <div class="card-header" id="headingFour">
 			      <h5 class="mb-0">
 			        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-			          <img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/gestion_on.svg" width="45"> GESTIÓN
+			          <img class="tab-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/gestion_on.svg" width="45"> <?php _e('GESTIÓN', 'urbanvalue'); ?>
 			        </button>
 			      </h5>
 			    </div>
 			    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
 			      <div class="card-body">
-			        Estructura de desarrollo óptima a través de contratos de gestión con fees predefinidos. Estándares LEED, proyectos en base BIM y monitorización a través de la plataforma de inversión.
+			        <?php _e('Estructura de desarrollo óptima a través de contratos de gestión con fees predefinidos. Estándares LEED, proyectos en base BIM y monitorización a través de la plataforma de inversión.', 'urbanvalue'); ?>
 			        
 			      </div>
 			    </div>
@@ -232,13 +232,13 @@ get_header();?>
 			    <div class="card-header" id="headingFive">
 			      <h5 class="mb-0">
 			        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-			          <img src="<?php echo get_template_directory_uri(); ?>/img/logo-urban-value-tab.png" class="tab-icon"> RETORNOS
+			          <img src="<?php echo get_template_directory_uri(); ?>/img/logo-urban-value-tab.png" class="tab-icon"> <?php _e('RETORNOS', 'urbanvalue'); ?>
 			        </button>
 			      </h5>
 			    </div>
 			    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
 			      <div class="card-body">
-			         La suma de los elementos anteriormente descritos, resulta en la concesión de los objetivos previamente acordados respecto a la inversión, tanto económicos como de plazo
+			         <?php _e('La suma de los elementos anteriormente descritos, resulta en la concesión de los objetivos previamente acordados respecto a la inversión, tanto económicos como de plazo', 'urbanvalue'); ?>
 			         
 			      </div>
 			    </div>
@@ -259,7 +259,7 @@ get_header();?>
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2>Por delante de nuestra filosofía empresarial esta la pasión por desarrollar productos innovadores</h2>
+				<h2><?php _e('Por delante de nuestra filosofía empresarial esta la pasión por desarrollar productos innovadores', 'urbanvalue'); ?></h2>
 			</div>
 		</div>
 
@@ -314,14 +314,15 @@ get_header();?>
 	<div class="justify-content-lg-center align-self-lg-center ">
 		<div class="row ">
 			<div class="col-lg-12">
-				<h2 class="titulo">GENERAMOS IMPACTOS POSITIVOS</h3>
-				<h4>Combinamos activos iconicos con tecnologia digital</h4>
+				<h2 class="titulo"><?php _e('GENERAMOS IMPACTOS POSITIVOS', 'urbanvalue'); ?></h3>
+				<h4><?php _e('Combinamos activos iconicos con tecnologia digital', 'urbanvalue'); ?></h4>
 				
 			</div>
 		</div>
 
 		<div class="row numberss items mt-5">
 			<?php
+			if (get_locale() == 'es_ES') { 
                 if( have_rows('numero_item' , 'option') ):
                 	while ( have_rows('numero_item' , 'option') ) : the_row();?>
 	                   <div class="col-lg-3">
@@ -340,7 +341,27 @@ get_header();?>
 	                   		</div>						
 						</div>
           <?php 
-      			endwhile; endif; 
+      			endwhile; endif; }
+      			if (get_locale() == 'en_US') { 
+                if( have_rows('numero_item_i' , 'option') ):
+                	while ( have_rows('numero_item_i' , 'option') ) : the_row();?>
+	                   <div class="col-lg-3">
+	                   		<div class="numero__item_i">
+	                   			<?php $liveicons = get_sub_field('livicon'); 
+	                   			 //var_dump($liveicons);
+
+	                   				//echo do_shortcode($liveicons);
+	                   			?>
+	                   			<img src="<?php echo $liveicons['url']; ?>" width="100">
+	                   			<h4 class="counter" style="color:<?php the_sub_field('color_numero'); ?>"><?php the_sub_field('numero'); ?></h4>
+	                   			<p><?php 
+	                   				$titulo_numero = the_sub_field('titulo_numero'); 
+	                   				_e($titulo_numero, 'urbanvalue');
+	                   			?></p>
+	                   		</div>						
+						</div>
+          <?php 
+      			endwhile; endif; }
                 	wp_reset_postdata();?>
 		</div>
 	</div>
@@ -352,8 +373,8 @@ get_header();?>
 		<div class="row">
 			<div class="col-lg-12">
 				<!-- <h3 class="titl">PROYECTOS</h3> -->
-				<h3 >PROYECTOS</h3> 
-				<p>Desbloqueamos el potencial de los edificios impulsando retornos a través de formatos sostenibles.</p>
+				<h3 ><?php _e('PROYECTOS', 'urbanvalue'); ?></h3> 
+				<p><?php _e('Desbloqueamos el potencial de los edificios impulsando retornos a través de formatos sostenibles.', 'urbanvalue'); ?></p>
 			</div>
 		</div>
 		
@@ -388,14 +409,14 @@ get_header();?>
 											<img src="<?php echo get_template_directory_uri(); ?>/img/ubicacion.png">
 										</div>
 										<div class="col-9 bloke">
-											<p class="item">UBICACIÓN</p>
+											<p class="item"><?php _e('UBICACIÓN', 'urbanvalue'); ?></p>
 											<p class="item-info"><?php the_field('ubicacion'); ?></p>
 										</div>
 										<div class="col-3 text-right pr-0">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/retorno.png">
 										</div>
 										<div class="col-9 bloke">
-											<p class="item">RETORNO</p>
+											<p class="item"><?php _e('RETORNO', 'urbanvalue'); ?></p>
 											<p class="item-info"><?php the_field('retorno'); ?></p>
 										</div>
 									</div>
@@ -406,21 +427,21 @@ get_header();?>
 											<img src="<?php echo get_template_directory_uri(); ?>/img/calendar.png">
 										</div>
 										<div class="col-9 bloke">
-											<p class="item">TIEMPO</p>
+											<p class="item"><?php _e('TIEMPO', 'urbanvalue'); ?></p>
 											<p class="item-info"><?php the_field('tiempo'); ?></p>
 										</div>
 										<div class="col-3 text-right pr-0">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/status.png">
 										</div>
 										<div class="col-9 bloke">
-											<p class="item">STATUS</p>
+											<p class="item"><?php _e('STATUS', 'urbanvalue'); ?></p>
 											<p class="item-info"><?php the_field('status'); ?></p>
 										</div>
 									</div>
 									
 								</div>
 								<div class="col-md-12  text-center mb-3">
-									<a class="ver-mas" data-index="9" href="#9">VER MÁS</a>
+									<a class="ver-mas" data-index="9" href="#9"><?php _e('VER MÁS', 'urbanvalue'); ?></a>
 								</div>
 							</div>
 												
@@ -443,7 +464,7 @@ get_header();?>
 <section id="7" class="team d-flex pt-4 pb-3">
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
-			<h3 >EQUIPO</h3>
+			<h3 ><?php _e('EQUIPO', 'urbanvalue'); ?></h3>
 			<!--<p class="team-text">Conformamos un equipo multidisciplinario con amplia experiencia y expertise en cada una de las áreas de desarrollo.</p>-->
 
 <div class="col-lg-10 offset-lg-1">
@@ -509,8 +530,8 @@ get_header();?>
 	<div class="container justify-content-lg-center align-self-lg-center">
 		<div class="row">
 			<div class="col-lg-12">
-				<h3 >NUESTROS PARTNERS</h3>	
-				<p>Los partners juegan un rol muy activo donde su expertise refuerza los verticales para consolidar toda la propuesta de valor en cada fase del desarrollo.</p>
+				<h3 ><?php _e('NUESTROS PARTNERS', 'urbanvalue'); ?></h3>	
+				<p><?php _e('Los partners juegan un rol muy activo donde su expertise refuerza los verticales para consolidar toda la propuesta de valor en cada fase del desarrollo.', 'urbanvalue'); ?></p>
 
 
 
@@ -591,7 +612,7 @@ get_header();?>
 		<div class="row">
 			<div class="offset-lg-1 col-lg-10 ">
 				<div class="quote-slider">
-				    <div><p>“Real estate cannot be lost or stolen, nor can it be carried away. Purchased with common sense, paid for in full, and managed with reasonable care, it is about the safest investment in the world.”</p> <h6>Franklin D. Roosevelt</h6></div>
+				    <div><p>“Real estate cannot be lost or stolen, nor can it be carried away. Purchased with common sense, paid for in full, and managed with reasonable care, it is about the safest investment in the world.”</p> <h6>Franklin D. Roosevelt </h6></div>
 				    <div><p>“This is a real-estate-driven economy from top to bottom.”</p><h6>Christopher Thornberg</h6></div>
 				    <div><p>“Real estate is an imperishable asset, ever increasing in value. It is the most solid security that human ingenuity has devised. It is the basis of all security and about the only indestructible security.”</p> <h6>Russell Sage, American Financier and Politician</h6></div>
 				 </div>
@@ -604,8 +625,8 @@ get_header();?>
 		<div class="cta-container offset-lg-2 col-lg-8">
 			<div class="cta-txt">
 
-			<p>Nos encantaría conocer más propuestas de valor, contáctanos.</p>
-			<a class="cta-btn" >Contacto</a></div>
+			<p><?php _e('Nos encantaría conocer más propuestas de valor, contáctanos.', 'urbanvalue'); ?></p>
+			<a class="cta-btn" ><?php _e('Contacto', 'urbanvalue'); ?></a></div>
 			<?php //echo do_shortcode( '[contact-form-7 id="139" title="CTA"]' );?>
 			<div class="form">
 				<button type="button" class="close" aria-label="Close">
