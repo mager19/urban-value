@@ -378,9 +378,9 @@ get_header();?>
 			</div>
 		</div>
 		
-		<div class="row">
+		<div class="row ">
 			<?php
-			$args = array( 'post_type' => 'proyectos',  'post_per_page' => '12', 'order' => 'ASC');
+			$args = array( 'post_type' => 'proyectos',  'posts_per_page' => 3, 'order' => 'DESC');
 			$loop = new WP_Query( $args );
 			if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 				<div class="col-lg-4">

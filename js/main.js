@@ -86,6 +86,7 @@ $('.responsive-slide').slick({
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 4,
+  variableWidth: true,
   responsive: [
     {
       breakpoint: 1024,

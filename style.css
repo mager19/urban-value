@@ -739,7 +739,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .team p.team-text { margin-bottom: 1em; text-align: center; width: 100%; }
 
-.team h3 { margin: 0 auto 1em; width: 100%; }
+.team h3 { margin: 0 auto 1em; width: 100%; color: #fff; }
 
 .team h3.name { font-size: 1.2rem !important; /*margin-top: 10px;*/ /*color: #fff;*/ margin-bottom: 2px; text-align: left; }
 
@@ -753,7 +753,7 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .clientes ul { margin: 0 auto; }
 
-.clientes ul li.cliente { width: 20%; float: left; list-style: none; height: 120px; padding: 32px 0 10px; }
+.clientes ul li.cliente { width: 20%; /*width: 25%;*/ float: left; list-style: none; height: 120px; padding: 32px 0 10px; }
 
 .clientes ul li.cliente:nth-child(even) { background: #d6d6d6; }
 
