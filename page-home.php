@@ -547,10 +547,10 @@ get_header();?>
 							if( have_rows('ingresar_cliente') ):
 							
 							    while ( have_rows('ingresar_cliente') ) : the_row();?>
-									<li class="cliente tool top" original-title="<?php the_sub_field('texto_cliente'); ?>">
+									<li class="cliente " >
 										<?php $image = get_sub_field('l_cliente'); ?>
 										<img src="<?php echo $image['url']; ?>" alt="" >
-										<!-- <p class="n-cliente"><?php //the_sub_field('texto_cliente'); ?></p> -->
+										<p class="n-cliente"><?php the_sub_field('texto_cliente'); ?></p>
 									</li>
 							        
 							<?php  endwhile;

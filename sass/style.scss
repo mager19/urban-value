@@ -1192,7 +1192,23 @@ video{
 		    &:nth-child(odd) {background: #ebebeb}
 		    p.n-cliente {
 			    font-size: 0.8em;
+			    display: none;
+
 			}
+			&:hover{
+				p.n-cliente {
+			    	display:block;
+				    position: relative;
+				    background: #8e8e8e;
+				    color: #fff;
+				    width: 320px;
+				    padding: 10px;
+				    top: -15px;
+				    left: -52px;
+				}
+			
+			 }
+			
 		}
 	}
 }
@@ -1496,5 +1512,21 @@ header .main-navigation ul li {
 		    padding: 30px 20px;
 		    li a {font-size: 1em;    padding: 5px 0; display: block;}
 		}
+	}
+	.clientes{
+		ul{
+		li.cliente{
+			
+		   
+			&:hover{
+				p.n-cliente {
+			    	
+				    left: 0;
+				}
+			
+			 }
+			
+		}
+	}
 	}
 }

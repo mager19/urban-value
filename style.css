@@ -759,7 +759,9 @@ video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 10
 
 .clientes ul li.cliente:nth-child(odd) { background: #ebebeb; }
 
-.clientes ul li.cliente p.n-cliente { font-size: 0.8em; }
+.clientes ul li.cliente p.n-cliente { font-size: 0.8em; display: none; }
+
+.clientes ul li.cliente:hover p.n-cliente { display: block; position: relative; background: #8e8e8e; color: #fff; width: 320px; padding: 10px; top: -15px; left: -52px; }
 
 .cta { background-color: #f5f5f5; background-image: url(img/fondo-contacto-new-york.jpg); background-size: cover; color: #fff; text-align: center; padding-top: 0px; }
 
@@ -846,4 +848,5 @@ hr.colorbar { height: 12px; }
   section.videoWrapper .video__info h1 { font-size: 1.8em; }
   button.menu-toggle { background: rgba(230, 230, 230, 0.24); }
   .menu-menu-1-container #primary-menu { position: absolute; top: 43px; right: 1px; width: 280px; background-color: #000; padding: 30px 20px; }
-  .menu-menu-1-container #primary-menu li a { font-size: 1em; padding: 5px 0; display: block; } }
+  .menu-menu-1-container #primary-menu li a { font-size: 1em; padding: 5px 0; display: block; }
+  .clientes ul li.cliente:hover p.n-cliente { left: 0; } }
